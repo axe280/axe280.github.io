@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+  <div id="modalOrder" class="st-modal mfp-hide">
+    <div class="modal-head">
+      <span class="title-site title-site_h3">Записаться на прием</span>
+      <p>Отправьте форму и менеджер перезвонит в течении 15 мин в рабочее время.</p>
+    </div>
+    <div class="modal-inner">
+      <form action="#" class="st-form">
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Имя</div>
+            <input type="text" class="input-placeholder">
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Телефон</div>
+            <input type="tel" class="input-placeholder">
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Дата</div>
+            <input type="text" class="input-placeholder">
+          </label>
+        </div>
+        <div class="modal-form-bottom">
+          <button class="btn btn_md" type="submit">записаться на прием</button>
+          <div class="st-check">
+            <label>
+              <input type="checkbox" checked>
+              <span class="fake-checkbox">
+                <svg class="icon icon-check">
+                  <use xlink:href="img/sprite.svg#check"></use>
+                </svg>
+              </span>
+              <span class="st-check__text">Согласен на <a href="#">обработку персональных данных</a></span>
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  
+  <div id="modalReview" class="st-modal mfp-hide">
+    <div class="modal-head">
+      <span class="title-site title-site_h3">Оставьте отзыв о враче или клинике</span>
+      <p>Вы можете написать отзыв о клинике или о враче, если выберете его из списка</p>
+    </div>
+    <div class="modal-inner">
+      <form action="#" class="st-form">
+        <div class="form-group">
+          <label class="field-item textarea-label">
+            <div class="field-item__label">Ваш отзыв</div>
+            <textarea name="" id="" class="input-placeholder"></textarea>
+          </label>
+        </div>
+        <div class="select-doctors">
+          <div class="form-group">
+            <button class="btn-select" type="button">+</button>
+            <div class="select-selected-field">Имплантолог Харькова</div>
+          </div>
+  
+          <div class="form-group">
+            <button class="btn-select" type="button">-</button>
+            <div class="select-max">
+              <select name="" id="">
+                <option class="hideme">Выберете врача</option>
+                <option value="">Галина Владимировна Харькова</option>
+                <option value="">Галина Владимировна</option>
+                <option value="">Галина Владимировна Харькова</option>
+                <option value="">Галина Владимировна</option>
+                <option value="">Галина Владимировна Харькова</option>
+                <option value="">Галина Владимировна</option>
+                <option value="">Галина Владимировна Харькова</option>
+                <option value="">Галина Владимировна</option>
+                <option value="">Галина Владимировна Харькова</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Ваше имя</div>
+            <input type="tel" class="input-placeholder">
+          </label>
+        </div>
+        <div class="modal-form-bottom">
+          <button class="btn btn_md" type="submit">записаться на прием</button>
+          <div class="st-check">
+            <label>
+              <input type="checkbox" checked>
+              <span class="fake-checkbox">
+                <svg class="icon icon-check">
+                  <use xlink:href="img/sprite.svg#check"></use>
+                </svg>
+              </span>
+              <span class="st-check__text">Согласен на <a href="#">обработку персональных данных</a></span>
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  
+  <div id="modalQuestion" class="st-modal mfp-hide">
+    <div class="modal-head">
+      <span class="title-site title-site_h3">Задайте вопрос врачу</span>
+      <p>Вы можете задать интересующие вас вопросы нашим врачам-специалистам. </p>
+    </div>
+    <div class="modal-inner">
+      <form action="#" class="st-form">
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Заголовок вопроса*</div>
+            <input type="text" class="input-placeholder">
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="field-item textarea-label">
+            <div class="field-item__label">Ваш вопрос*</div>
+            <textarea name="" id="" class="input-placeholder more-textarea-size"></textarea>
+          </label>
+        </div>
+  
+        <div class="form-group">
+          <div class="choice-file">
+            <div class="choice-files-list">
+              <div class="choice-files-item">
+                <div class="choice-file-name">Название файла.jpg</div>
+                <svg class="icon icon-close">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+                <div class="file-progress-i">
+                  <div class="file-progress-inner" style="width: 30%"></div>
+                </div>
+              </div>
+  
+              <div class="choice-files-item">
+                <div class="choice-file-name">Длинное назва...jpg</div>
+                <svg class="icon icon-close">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </div>
+  
+              <div class="choice-files-item">
+                <div class="choice-file-name error-file-n">Ошибка загрузки</div>
+                <svg class="icon icon-close">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </div>
+              
+            </div>
+            <div class="upload-button-wrapp">
+              <button class="add-file link_st">+ Прикрепить файл</button>
+              <span class="upload-aside-text">Для объективного ответа на вопросы, нужны объективные данные, а это фотографии и снимки. Можно приложить до 5 файлов.</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="select-max">
+            <select name="" id="">
+              <option class="hideme">Выберите специализацию врача</option>
+              <option value="">Имплантолог</option>
+              <option value="">Имплантолог</option>
+              <option value="">Имплантолог</option>
+              <option value="">Имплантолог</option>
+              <option value="">Имплантолог</option>
+              <option value="">Имплантолог</option>
+              <option value="">Имплантолог</option>
+              <option value="">Имплантолог</option>
+              <option value="">Имплантолог</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-inner-tt">Укажите Ваши контакты, чтобы получить ответ.</div>
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Имя</div>
+            <input type="text" class="input-placeholder">
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">E-mail</div>
+            <input type="mail" class="input-placeholder">
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="field-item">
+            <div class="field-item__label">Телефон</div>
+            <input type="tel" class="input-placeholder">
+          </label>
+        </div>
+        <div class="modal-form-bottom">
+          <button class="btn btn_md" type="submit">отправить вопрос</button>
+          <div class="st-check">
+            <label>
+              <input type="checkbox" checked>
+              <span class="fake-checkbox">
+                <svg class="icon icon-check">
+                  <use xlink:href="img/sprite.svg#check"></use>
+                </svg>
+              </span>
+              <span class="st-check__text">Согласен на <a href="#">обработку персональных данных</a></span>
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  
+  <!-- header -->
+  <header id="header" class="header">
+    <div class="container">
+      <div class="head-menu group">
+        <div class="logo"><a href="preview.html"><img src="img/logo.png" alt=""></a></div>
+  
+        <button class="burger-menu" type="button">
+          <svg class="icon icon-menu">
+            <use xlink:href="img/sprite.svg#menu"></use>
+          </svg>
+        </button>
+  
+        <div class="head-menu-mobile-wrapp">
+        
+          <nav class="main-menu">
+            <ul class="menu">
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Цены</a></li>
+              <li><a href="#">Врачи</a></li>
+              <li><a href="#">Кейсы</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Клиники</a></li>
+            </ul>
+  
+            <div class="head-search-wrapp">
+              <button class="h-search-open-btn btn-search" type="button">
+                <svg class="icon icon-search">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+  
+              <form action="#" class="form-search">
+                <input type="text" placeholder="Поиск по сайту">
+                <button type="submit" class="btn-search">
+                  <svg class="icon icon-search">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </nav>
+  
+  
+          <div class="head-contacts">
+            <div class="head-contacts__info">
+              <div class="head-phone-numb">
+                <a href="tel: +7(812) 305-00-14">+7(812) 305-00-14</a>
+              </div>
+              <div class="question-st">
+                <svg class="icon icon-question">
+                  <use xlink:href="img/sprite.svg#question"></use>
+                </svg>
+                <a href="#modalQuestion" class="modal-open">Задать вопрос врачу</a>
+              </div>
+            </div>
+            <a href="#modalOrder" class="btn btn_max modal-open">записаться <span>на прием</span></a>
+          </div>
+  
+  
+          <div class="menu-wrapper-fixed">
+            <div class="container">
+              <button class="header-close-btn" type="button">
+                <svg class="icon icon-close">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </button>
+  
+              <div class="head-inner-menu">
+                <div class="mobile-tt-menu">Услуги</div>
+                <div class="head-menu-services">
+                  <div class="head-menu-list">
+                    <div class="head-menu-list-tt">Профилактика</div>
+                    <ul>
+                      <li><a href="#">Техника очищения зубов</a></li>
+                      <li><a href="#">Профессиональная чистка зубов</a></li>
+                      <li><a href="#">Чистка зубов Air flow</a></li>
+                      <li><a href="#">Гигиена зубов при протезировании</a></li>
+                      <li><a href="#">Гигиена и брекет-система</a></li>
+                      <li><a href="#">Гигиена вокруг имплантов</a></li>
+                    </ul>
+                  </div>
+  
+                  <div class="head-menu-list">
+                    <div class="head-menu-list-tt">Протезирование зубов</div>
+                    <ul>
+                      <li><a href="#">Съемные зубные протезы</a></li>
+                      <li><a href="#">Металлокерамические коронки</a></li>
+                      <li><a href="#">Циркониевые коронки и коронки из оксида алюминия</a></li>
+                      <li><a href="#">Протезирование на имплантах</a></li>
+                    </ul>
+                  </div>
+  
+                  <div class="head-menu-list">
+                    <div class="head-menu-list-tt">Имплантация зубов</div>
+                    <ul>
+                      <li><a href="#">Имплантация зубов Astra Tech</a></li>
+                      <li><a href="#">Импланты Nobel Replace</a></li>
+                      <li><a href="#">Подготовка к имплантации</a></li>
+                      <li><a href="#">Одномоментная имплантация</a></li>
+                      <li><a href="#">Безопасная имплантация</a></li>
+                      <li><a href="#">Компьютерная диагностика и хирургия по шаблонам Nobel Guide</a></li>
+                    </ul>
+                  </div>
+  
+                  <div class="head-menu-list">
+                    <div class="head-menu-list-tt">Лечение зубов</div>
+                    <ul>
+                      <li><a href="#">Лечение кариеса</a></li>
+                      <li><a href="#">Лечение пульпита</a></li>
+                      <li><a href="#">Лечение периодонтита</a></li>
+                    </ul>
+                  </div>
+  
+                  <div class="head-menu-list">
+                    <div class="head-menu-list-tt">Лечение десен</div>
+                    <ul>
+                      <li><a href="#">Шинирование зубов</a></li>
+                      <li><a href="#">Кровоточивость десен</a></li>
+                      <li><a href="#">Воспаление десен</a></li>
+                      <li><a href="#">Лечение стоматита</a></li>
+                    </ul>
+                  </div>
+  
+                  <div class="head-menu-list">
+                    <div class="head-menu-list-tt">Протезирование зубов</div>
+                    <ul>
+                      <li><a href="#">Травмы зубов у детей и взрослых</a></li>
+                      <li><a href="#">Удаление зуба</a></li>
+                      <li><a href="#">Синуслифтинг</a></li>
+                      <li><a href="#">Костная пластика</a></li>
+                      <li><a href="#">Удаление зубов «мудрости»</a></li>
+                      <li><a href="#">Исправление прикуса хирургическим путем</a></li>
+                    </ul>
+                  </div>
+  
+                  <div class="head-menu-list">
+                    <div class="head-menu-list-tt">Детская стоматология</div>
+                    <ul>
+                      <li><a href="#">Лечение кариеса молочных зубов</a></li>
+                      <li><a href="#">Серебрение молочных зубов</a></li>
+                      <li><a href="#">Исправление прикуса у детей</a></li>
+                      <li><a href="#">Лечение стоматита у детей</a></li>
+                      <li><a href="#">Герметизация фиссур</a></li>
+                      <li><a href="#">Лечение травм зубов у детей</a></li>
+                      <li><a href="#">Лечение зубов под наркозом у детей</a></li>
+                      <li><a href="#">Удаление молочных зубов у детей</a></li>
+                    </ul>
+                  </div>
+  
+                  <div class="head-menu-list">
+                    <div class="head-menu-list-tt">Эстетическая стоматология</div>
+                    <ul>
+                      <li><a href="#">Реставрация зубов винирами</a></li>
+                      <li><a href="#">Отбеливание зубов</a></li>
+                      <li><a href="#">Художественная реставрация зубов</a></li>
+                    </ul>
+                  </div>
+  
+                  <div class="head-menu-list">
+                    <div class="head-menu-list-tt">Рентгенография</div>
+                    <ul>
+                      <li><a href="#">Текст</a></li>
+                    </ul>
+                  </div>
+  
+                  <div class="head-menu-list">
+                    <div class="head-menu-list-tt">Исправление прикуса</div>
+                    <ul>
+                      <li><a href="#">Текст</a></li>
+                    </ul>
+                  </div>
+  
+                  <div class="head-menu-list">
+                    <div class="head-menu-list-tt">анестезиология</div>
+                    <ul>
+                      <li><a href="#">Текст</a></li>
+                    </ul>
+                  </div>
+  
+                  <div class="head-menu-list">
+                    <div class="head-menu-list-tt">школа гигиены</div>
+                    <ul>
+                      <li><a href="#">Текст</a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="mobile-tt-menu">Клиника</div>
+                <ul class="mobile-menu">
+                  <li><a href="#">Цены</a></li>
+                  <li><a href="#">Врачи</a></li>
+                  <li><a href="#">Кейсы</a></li>
+                  <li><a href="#">Акции</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Задать вопрос врачу</a></li>
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+    </div>
+  </header>
+  <!-- end header -->
+
+
+  <div id="middle">
+    <section class="section-st section-st_dark">
+      <div class="container">
+        <span class="title-site title-site_h2">Breadcrumbs</span>
+        <ul class="bread-crumbs">
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li>Item 3 huaonteh nnteoa hu</li>
+          <li>Item 3 huaonteh nnteoa hu</li>
+          <li>Item 3 huaonteh nnteoa hu</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="section-st section-st_dark">
+      <div class="container">
+        <span class="title-site title-site_h2">Tabs nav</span>
+        <div class="tabs-nav">
+          <a href="#" class="tabs-item">Детская стоматология</a>
+          <a href="#" class="tabs-item active">Имплантация</a>
+          <a href="#" class="tabs-item">Исправление прикуса</a>
+          <a href="#" class="tabs-item">Лечение зубов</a>
+          <a href="#" class="tabs-item">Лечение десен</a>
+          <a href="#" class="tabs-item">Чистка зубов</a>
+          <a href="#" class="tabs-item">Отбеливание</a>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+
+    <section class="section-st section-st_light">
+      <div class="container">
+        <span class="title-site title-site_h2">Pagination</span>
+        <ul class="pagination">
+          <li class="pagination__prev"><a href="#">
+            <svg class="icon icon-arr-left">
+              <use xlink:href="img/sprite.svg#arr-left"></use>
+            </svg>
+          </a></li>
+          <li class="pagination__active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li class="pagination__next"><a href="#">
+            <svg class="icon icon-arr-right">
+              <use xlink:href="img/sprite.svg#arr-right"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="section-st section-st_dark">
+      <div class="container">
+        <span class="title-site title-site_h2">Buttons</span>
+        <a href="#" class="btn btn_sm">Small</a>
+        <a href="#" class="btn btn_sm" disabled>Disabled</a>
+        <a href="#" class="btn btn_sm btn_second-st">Second style</a>
+        <a href="#" class="btn btn_sm btn_border">Border</a>
+        <a href="#" class="btn btn_sm btn_border" disabled>Border disabled</a>
+        <a href="#" class="btn btn_sm btn_second-st btn_border">Border second</a>
+        <a href="#" class="btn btn_sm btn_second-st btn_border" disabled>Border second disabled</a>
+        <br>
+        <br>
+        <a href="#" class="btn">Default</a>
+        <a href="#" class="btn" disabled>Disabled</a>
+        <a href="#" class="btn btn_second-st">Second style</a>
+        <a href="#" class="btn btn_border">Border</a>
+        <a href="#" class="btn btn_border" disabled>Border disabled</a>
+        <a href="#" class="btn btn_second-st btn_border">Border second</a>
+        <a href="#" class="btn btn_second-st btn_border" disabled>Border second disabled</a>
+        <br>
+        <br>
+        <a href="#" class="btn btn_md">Middle</a>
+        <a href="#" class="btn btn_md" disabled>Disabled</a>
+        <a href="#" class="btn btn_md btn_second-st">Second style</a>
+        <a href="#" class="btn btn_md btn_border">Border</a>
+        <a href="#" class="btn btn_md btn_border" disabled>Border disabled</a>
+        <a href="#" class="btn btn_md btn_second-st btn_border">Border second</a>
+        <a href="#" class="btn btn_md btn_second-st btn_border" disabled>Border second disabled</a>
+        <br>
+        <br>
+        <a href="#" class="btn btn_light">Default</a>
+        <a href="#" class="btn btn_light" disabled>Disabled</a>
+        <a href="#" class="btn btn_light btn_second-st">Second style</a>
+        <a href="#" class="btn btn_light btn_border">Border</a>
+        <a href="#" class="btn btn_light btn_border" disabled>Border disabled</a>
+        <br>
+        <br>
+      </div>
+    </section>
+
+
+    <section class="section-st section-st_light">
+      <div class="container">
+        <form action="#" class="st-form">
+          <span class="st-form__tt title-site title-site_h2">Form</span>
+        
+          <div class="select-doctors">
+            <div class="form-group">
+              <button class="btn-select" type="button">+</button>
+              <div class="select-selected-field">Галина Владимировна Харькова</div>
+            </div>
+        
+            <div class="form-group field-error">
+              <button class="btn-select" type="button">-</button>
+              <div class="select-max">
+                <select name="" id="">
+                  <option class="hideme">Выберете врача</option>
+                  <option value="">Галина Владимировна Харькова</option>
+                  <option value="">Галина Владимировна</option>
+                  <option value="">Галина Владимировна Харькова</option>
+                  <option value="">Галина Владимировна</option>
+                  <option value="">Галина Владимировна Харькова</option>
+                  <option value="">Галина Владимировна</option>
+                  <option value="">Галина Владимировна Харькова</option>
+                  <option value="">Галина Владимировна</option>
+                  <option value="">Галина Владимировна Харькова</option>
+                </select>
+              </div>
+              <div class="field-error__text">Сообщение об ошибке...</div>
+            </div>
+          </div>
+        
+          <div class="form-group field-error">
+            <label class="field-item focused">
+              <div class="field-item__label">Text placeholder</div>
+              <input type="text" class="input-placeholder" value="Name">
+            </label>
+            <div class="field-error__text">Сообщение об ошибке...</div>
+          </div>
+        
+          <div class="form-group">
+            <label class="field-item">
+              <div class="field-item__label">Text placeholder</div>
+              <input type="text" class="input-placeholder">
+            </label>
+            <div class="field-error__text">Сообщение об ошибке...</div>
+          </div>
+        
+          <div class="form-group">
+            <label class="field-item">
+              <div class="field-item__label">Text placeholder</div>
+              <input type="text" class="input-placeholder">
+            </label>
+            <div class="field-error__text">Сообщение об ошибке...</div>
+          </div>
+        
+          <div class="form-group">
+            <label class="field-item">
+              <div class="field-item__label">Text placeholder</div>
+              <input type="text" class="input-placeholder">
+            </label>
+            <div class="field-error__text">Сообщение об ошибке...</div>
+          </div>
+        
+        
+          <div class="form-group text_center">
+            <button class="btn btn_md" type="submit">Submit</button>
+          </div>
+        </form>
+        
+        
+        <form action="#" class="st-form st-form_colorful">
+          <span class="st-form__tt title-site title-site_h2 color_light">Записаться на прием</span>
+        
+          <div class="form-group field-error">
+            <label class="field-item focused">
+              <div class="field-item__label">Text placeholder</div>
+              <input type="text" class="input-placeholder" value="Имя">
+            </label>
+            <div class="field-error__text">Сообщение об ошибке...</div>
+          </div>
+        
+          <div class="half-form-group">
+            <div class="form-group">
+              <label class="field-item">
+                <div class="field-item__label">Телефон</div>
+                <input type="text" class="input-placeholder">
+              </label>
+            </div>
+        
+            <div class="form-group">
+              <label class="field-item">
+                <div class="field-item__label">Дата</div>
+                <input type="text" class="input-placeholder">
+              </label>
+            </div>
+          </div>
+        
+          <div class="form-group">
+            <div class="st-check">
+              <label>
+                <input type="checkbox">
+                <span class="fake-checkbox">
+                  <svg class="icon icon-check">
+                    <use xlink:href="img/sprite.svg#check"></use>
+                  </svg>
+                </span>
+                <span class="st-check__text">Согласен на <a href="#">обработку персональных данных</a></span>
+              </label>
+            </div>
+          </div>
+        
+          <button class="btn btn_second-st" type="submit">записаться</button>
+        </form>
+        
+        
+        <br><br><br>
+        
+        <div class="colorful-inner-form-wrapp">
+          <form action="#" class="st-form st-form_colorful">
+            <span class="st-form__tt title-site title-site_h2 color_light">Узнайте вашу стоимость в рассрочку</span>
+        
+            <div class="form-group">
+              <label class="field-item">
+                <div class="field-item__label">Сумма по плану лечения </div>
+                <input type="text" class="input-placeholder">
+              </label>
+            </div>
+        
+            <div class="form-group">
+              <label class="field-item">
+                <div class="field-item__label">Срок рассрочки, в мес</div>
+                <input type="text" class="input-placeholder">
+              </label>
+            </div>
+        
+            <div class="form-group">
+              <label class="field-item">
+                <div class="field-item__label">Первоначальный взнос, % от общей суммы</div>
+                <input type="text" class="input-placeholder">
+              </label>
+            </div>
+        
+            <button class="btn btn_second-st btn_min-width" type="submit">Рассчитать</button>
+          </form>
+        
+          <div class="colorful-form-bottom">
+            <div class="summ-form-inline">
+              <div class="summ-form-tt">Стоимость лечения в рассрочку:</div>
+              <div class="summ-form-val">0 руб.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-st section-st_dark">
+      <div class="container">
+        <span class="title-site title-site_h2">Text</span>
+        <div class="text-bl">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          <h1>h1 title</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          <div class="text_center">
+            <h2>h2 Text center</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          </div>
+          <div class="text_right">
+            <h3>h3 text right</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          </div>
+          <div>
+            <h4>h4 text uppercase</h4>
+            <p class="text_uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          </div>
+          <h5>h5 Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          <h6>h6 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, similique. Architecto quo cum, sunt consequuntur quaerat, commodi ratione natus laboriosam deserunt error numquam et optio, possimus beatae rem ex. Unde.</p>
+          <br>
+          <ul>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora magnam, similique quam blanditiis aperiam accusamus quia. Sed nam ullam ut maiores. Voluptas deleniti delectus, temporibus nam enim vero ea molestiae.</p>
+          <br>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, similique. Architecto quo cum, sunt consequuntur quaerat, commodi ratione natus laboriosam deserunt error numquam et optio, possimus beatae rem ex. Unde.</p>
+          <br>
+        </div>
+
+
+        <span class="title-site title-site_h3">Two column text</span>
+        <div class="text-bl-grid">
+          <div class="text-bl text-bl-grid__half-col">
+            <p><a href="#" class="link_st">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sapiente nemo, eligendi facilis accusamus sequi est hic rerum et repellendus voluptas provident. Nisi, nihil qui earum a, pariatur esse, fuga nobis possimus quisquam repudiandae nostrum placeat ipsa itaque? Veniam cumque laboriosam repudiandae, totam nihil doloremque explicabo. Recusandae voluptatibus, tenetur praesentium sed cum dicta a tempora. Esse delectus commodi totam enim, laborum a excepturi assumenda sit voluptatum consequatur accusantium impedit ea quisquam libero. Ipsa, molestiae fugit neque ut, adipisci est iusto dicta aliquam maiores nulla tempora consequatur amet alias, eveniet nam numquam ab iste non possimus similique? Quia quo esse distinctio.</a></p>
+          </div>
+          <div class="text-bl text-bl-grid__half-col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, non consequuntur harum aliquam quibusdam placeat. Ipsam alias consequuntur, iure vitae ad. Quas error ut dolorum vero et commodi voluptatum. Distinctio perferendis fuga, excepturi? Tempore, corporis architecto! Pariatur hic dignissimos libero ullam. Molestiae ullam, voluptatibus sunt labore. Consequuntur et sapiente maxime harum esse aperiam, rem amet est numquam quos nobis optio veniam maiores neque repellat minima, debitis blanditiis odio. Quam molestiae non nobis hic qui et explicabo sit, debitis, accusantium laboriosam illum blanditiis. Amet explicabo a vitae quos praesentium doloribus, modi consequatur? Velit dolores officia libero vel sapiente beatae, quibusdam! Fugiat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section 
+      class="section-colorful-b section-banner-main"
+      style="background-image: url('img/main-banner.png')"
+    >
+      <div class="container">
+        <div class="colorful-section-bg">
+          <div class="three-d-fix">
+            <a href="#">
+              <span class="three-d-icon">
+                <svg class="icon icon-play">
+                  <use xlink:href="img/sprite.svg#play"></use>
+                </svg>
+              </span>
+              <span>Смотреть видео о клинике</span>
+            </a>
+          </div>
+
+          <div class="colorful-section-bg__body">
+            <div class="main-banner-info">
+              <svg class="icon icon-qw">
+                <use xlink:href="img/sprite.svg#qw"></use>
+              </svg>
+              Здравствуйте! <br>Меня зовут Варвара Висленко, <br>я основатель, идеолог и главный врач клиник Белая Медведица.
+            </div>
+            <a href="#" class="btn btn_min-width btn_second-st">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="section-st">
+    </section>
+
+
+
+
+     <section 
+      class="section-colorful-b section-service-bg"
+      style="background-image: url('img/extra-banner1.png')"
+    >
+      <div class="container">
+        <ul class="bread-crumbs">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li>Имплантация зубов</li>
+        </ul>
+
+        <div class="colorful-section-bg">
+          <div class="colorful-section-bg__body">
+            <div class="service-banner-info">
+              <h1 class="title-site_h2">Имплантация зубов</h1>
+              <p>Операция по установке в челюстную ткань стоматологического штифта, который будет играть роль корня зуба</p>
+            </div>
+          </div>
+          <div class="colorful-section-bg__footer">
+            <div class="section-bg-btns">
+              <a href="#" class="btn btn_min-width btn_second-st">посмотреть примеры работ</a>
+              <div class="question-st">
+                <svg class="icon icon-question">
+                  <use xlink:href="img/sprite.svg#question"></use>
+                </svg>
+                <a href="#modalQuestion" class="modal-open">Задать вопрос по имплантации</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="section-st">
+    </section>
+
+
+
+
+    <section 
+      class="section-colorful-b section-doctor-bg"
+      style="background-image: url('img/doctor-banner1.png')"
+    >
+      <div class="container">
+        <ul class="bread-crumbs">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Наша команда</a></li>
+          <li>Варвара Андреевна Висленко</li>
+        </ul>
+
+        <div class="section-doc-info">
+          <h1>Варвара Андреевна Висленко</h1>
+          <p>Главный врач, врач-стоматолог терапевт, хирург, имплантолог, пародонтолог, детский стоматолог</p>
+          <div class="section-doc-inline">
+            <span>Стаж 10 лет</span>
+            <a href="#" class="link_st">5 отзывов</a>
+          </div>
+        </div>
+
+        <div class="section-doc-quote">
+          <svg class="icon icon-qw">
+            <use xlink:href="img/sprite.svg#qw"></use>
+          </svg>
+          То, какой сейчас является Клиника Белая Медведица - есть работающее воплощение моей идеи внимательного и безопасного комплексного подхода к человеку. Не к пациенту, который оплачивает услугу. А к человеку, который хочет быть здоров, спокоен и счастлив.
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section-st">
+    </section>
+
+
+    <section 
+      class="section-colorful-b section-banner-form"
+      style="background-image: url('img/form-banner2.png')"
+    >
+      <div class="container">
+        <div class="colorful-section-bg">
+          <div class="colorful-section-bg__body">
+            <form action="#" class="st-form st-form_colorful">
+              <div class="form-group">
+                <span class="st-form__tt title-site title-site_h2 color_light">Запишитесь на осмотр <br>и консультацию</span>
+                <p>С вами свяжется администратор, чтобы подобрать удобный филиал клиники, врача, дату и время приема.</p>
+              </div>
+
+              <div class="form-group field-error">
+                <label class="field-item focused">
+                  <div class="field-item__label">Text placeholder</div>
+                  <input type="text" class="input-placeholder" value="Имя">
+                </label>
+                <div class="field-error__text">Сообщение об ошибке...</div>
+              </div>
+
+              <div class="half-form-group">
+                <div class="form-group">
+                  <label class="field-item">
+                    <div class="field-item__label">Телефон</div>
+                    <input type="text" class="input-placeholder">
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="field-item">
+                    <div class="field-item__label">Дата</div>
+                    <input type="text" class="input-placeholder">
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="st-check">
+                  <label>
+                    <input type="checkbox">
+                    <span class="fake-checkbox">
+                      <svg class="icon icon-check">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="st-check__text">Согласен на <a href="#">обработку персональных данных</a></span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="btn btn_second-st btn_min-width" type="submit">записаться</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section-st">
+      <div class="container">
+        <div class="team-flex">
+          <div class="team-item" style="background-image: url('img/doctor1.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Варвара Андреевна <br>Висленко</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">5 отзывов</a>
+              </div>
+              <div class="team-item-text">Главный врач, врач-стоматолог терапевт, хирург, имплантолог, пародонтолог, детский стоматолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor2.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Александр Евгеньевич <br>Мельников</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">15 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач стоматолог-терапевт, хирург, имплантолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor3.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Галина Петровна <br>Богачева</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">10 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач-стоматолог терапевт</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor2.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Александр Евгеньевич <br>Мельников</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">15 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач стоматолог-терапевт, хирург, имплантолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor3.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Галина Петровна <br>Богачева</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">10 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач-стоматолог терапевт</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor1.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Варвара Андреевна <br>Висленко</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">5 отзывов</a>
+              </div>
+              <div class="team-item-text">Главный врач, врач-стоматолог терапевт, хирург, имплантолог, пародонтолог, детский стоматолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor1.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Варвара Андреевна <br>Висленко</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">5 отзывов</a>
+              </div>
+              <div class="team-item-text">Главный врач, врач-стоматолог терапевт, хирург, имплантолог, пародонтолог, детский стоматолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor2.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Александр Евгеньевич <br>Мельников</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">15 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач стоматолог-терапевт, хирург, имплантолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor3.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Галина Петровна <br>Богачева</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">10 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач-стоматолог терапевт</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor2.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Александр Евгеньевич <br>Мельников</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">15 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач стоматолог-терапевт, хирург, имплантолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor3.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Галина Петровна <br>Богачева</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">10 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач-стоматолог терапевт</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor1.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Варвара Андреевна <br>Висленко</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">5 отзывов</a>
+              </div>
+              <div class="team-item-text">Главный врач, врач-стоматолог терапевт, хирург, имплантолог, пародонтолог, детский стоматолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor1.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Варвара Андреевна <br>Висленко</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">5 отзывов</a>
+              </div>
+              <div class="team-item-text">Главный врач, врач-стоматолог терапевт, хирург, имплантолог, пародонтолог, детский стоматолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor2.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Александр Евгеньевич <br>Мельников</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">15 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач стоматолог-терапевт, хирург, имплантолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor3.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Галина Петровна <br>Богачева</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">10 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач-стоматолог терапевт</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor2.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Александр Евгеньевич <br>Мельников</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">15 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач стоматолог-терапевт, хирург, имплантолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor3.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Галина Петровна <br>Богачева</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">10 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач-стоматолог терапевт</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor1.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Варвара Андреевна <br>Висленко</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">5 отзывов</a>
+              </div>
+              <div class="team-item-text">Главный врач, врач-стоматолог терапевт, хирург, имплантолог, пародонтолог, детский стоматолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor1.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Варвара Андреевна <br>Висленко</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">5 отзывов</a>
+              </div>
+              <div class="team-item-text">Главный врач, врач-стоматолог терапевт, хирург, имплантолог, пародонтолог, детский стоматолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor2.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Александр Евгеньевич <br>Мельников</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">15 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач стоматолог-терапевт, хирург, имплантолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor3.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Галина Петровна <br>Богачева</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">10 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач-стоматолог терапевт</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor2.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Александр Евгеньевич <br>Мельников</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">15 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач стоматолог-терапевт, хирург, имплантолог</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor3.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Галина Петровна <br>Богачева</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">10 отзывов</a>
+              </div>
+              <div class="team-item-text">Врач-стоматолог терапевт</div>
+            </div>
+          </div>
+
+          <div class="team-item" style="background-image: url('img/doctor1.png')">
+            <a href="#" class="team-inner-link"></a>
+            <div class="team-item-info">
+              <a href="#" class="team-item-tt">Варвара Андреевна <br>Висленко</a>
+              <div class="team-item-inline-s">
+                <span>Стаж 10 лет</span>
+                <a href="#" class="link_st">5 отзывов</a>
+              </div>
+              <div class="team-item-text">Главный врач, врач-стоматолог терапевт, хирург, имплантолог, пародонтолог, детский стоматолог</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section-colorful-b section-slider-bg">
+      <div class="abs-slider owl-carousel">
+        <div class="abs-item">
+          <img src="img/form-banner1.png" alt="">
+        </div>
+        <div class="abs-item">
+          <img src="img/form-banner1.png" alt="">
+        </div>
+        <div class="abs-item">
+          <img src="img/form-banner1.png" alt="">
+        </div>
+      </div>
+      <div class="container">
+        <div class="colorful-section-bg">
+          <div class="three-d-fix">
+            <a href="#">
+              <span class="three-d-icon">
+                <svg class="icon icon-play">
+                  <use xlink:href="img/sprite.svg#play"></use>
+                </svg>
+              </span>
+              <span>3D-тур по клинике</span>
+            </a>
+          </div>
+
+          <div class="colorful-section-bg__body">
+            <form action="#" class="st-form st-form_colorful">
+              <div class="form-group">
+                <span class="st-form__tt title-site title-site_h2 color_light">Записаться на прием</span>
+              </div>
+
+              <div class="form-group field-error">
+                <label class="field-item focused">
+                  <div class="field-item__label">Text placeholder</div>
+                  <input type="text" class="input-placeholder" value="Имя">
+                </label>
+                <div class="field-error__text">Сообщение об ошибке...</div>
+              </div>
+
+              <div class="half-form-group">
+                <div class="form-group">
+                  <label class="field-item">
+                    <div class="field-item__label">Телефон</div>
+                    <input type="text" class="input-placeholder">
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="field-item">
+                    <div class="field-item__label">Дата</div>
+                    <input type="text" class="input-placeholder">
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="st-check">
+                  <label>
+                    <input type="checkbox">
+                    <span class="fake-checkbox">
+                      <svg class="icon icon-check">
+                        <use xlink:href="img/sprite.svg#check"></use>
+                      </svg>
+                    </span>
+                    <span class="st-check__text">Согласен на <a href="#">обработку персональных данных</a></span>
+                  </label>
+                </div>
+              </div>
+
+              <button class="btn btn_second-st btn_min-width" type="submit">записаться</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section-st section-st_dark">
+      <div class="section-inner-space">
+        <div class="container">
+          <span class="title-site title-site_h1 mobile-lowercase">Другие статьи об имплантации</span>
+        </div>
+
+        <div class="scroll-section">
+          <div class="flex-scroll-items">
+            <div class="flex-article-item">
+              <a href="#" class="f-art-photo"><img src="img/service2.png" alt=""></a>
+              <a href="#" class="f-art-tt">Лечение под седацией</a>
+              <div class="f-art-text">«Лечение под седацией» полная санация полости рта у детей и взрослых во сне под контролем команды анестезиологов.</div>
+              <div class="b-img-info">
+                <div class="b-img-inline">
+                  <div class="b-img-item">07 Января 2019</div>
+                  <a href="#" class="b-img-item">
+                    <svg class="icon icon-comment">
+                      <use xlink:href="img/sprite.svg#comment"></use>
+                    </svg>
+                    <span>4</span>
+                  </a>
+                  <a href="#" class="b-img-item">
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span>15</span>
+                  </a>
+                </div>
+                <a href="#" class="link_st">Варвара Висленко</a>
+              </div>
+            </div>
+
+            <div class="flex-article-item">
+              <a href="#" class="f-art-photo"><img src="img/service3.png" alt=""></a>
+              <a href="#" class="f-art-tt">Лечение под седацией</a>
+              <div class="f-art-text">«Лечение под седацией» полная санация полости рта у детей и взрослых во сне под контролем команды анестезиологов.</div>
+              <div class="b-img-info">
+                <div class="b-img-inline">
+                  <div class="b-img-item">07 Января 2019</div>
+                  <a href="#" class="b-img-item">
+                    <svg class="icon icon-comment">
+                      <use xlink:href="img/sprite.svg#comment"></use>
+                    </svg>
+                    <span>4</span>
+                  </a>
+                  <a href="#" class="b-img-item">
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span>15</span>
+                  </a>
+                </div>
+                <a href="#" class="link_st">Варвара Висленко</a>
+              </div>
+            </div>
+
+            <div class="flex-article-item">
+              <a href="#" class="f-art-photo"><img src="img/service4.png" alt=""></a>
+              <a href="#" class="f-art-tt">Лечение под седацией</a>
+              <div class="f-art-text">«Лечение под седацией» полная санация полости рта у детей и взрослых во сне под контролем команды анестезиологов.</div>
+              <div class="b-img-info">
+                <div class="b-img-inline">
+                  <div class="b-img-item">07 Января 2019</div>
+                  <a href="#" class="b-img-item">
+                    <svg class="icon icon-comment">
+                      <use xlink:href="img/sprite.svg#comment"></use>
+                    </svg>
+                    <span>4</span>
+                  </a>
+                  <a href="#" class="b-img-item">
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span>15</span>
+                  </a>
+                </div>
+                <a href="#" class="link_st">Варвара Висленко</a>
+              </div>
+            </div>
+
+
+            <div class="flex-article-item">
+              <a href="#" class="f-art-photo"><img src="img/service4.png" alt=""></a>
+              <a href="#" class="f-art-tt">Лечение под седацией</a>
+              <div class="f-art-text">«Лечение под седацией» полная санация полости рта у детей и взрослых во сне под контролем команды анестезиологов.</div>
+              <div class="b-img-info">
+                <div class="b-img-inline">
+                  <div class="b-img-item">07 Января 2019</div>
+                  <a href="#" class="b-img-item">
+                    <svg class="icon icon-comment">
+                      <use xlink:href="img/sprite.svg#comment"></use>
+                    </svg>
+                    <span>4</span>
+                  </a>
+                  <a href="#" class="b-img-item">
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span>15</span>
+                  </a>
+                </div>
+                <a href="#" class="link_st">Варвара Висленко</a>
+              </div>
+            </div>
+
+
+            <div class="flex-article-item">
+              <a href="#" class="f-art-photo"><img src="img/service4.png" alt=""></a>
+              <a href="#" class="f-art-tt">Лечение под седацией</a>
+              <div class="f-art-text">«Лечение под седацией» полная санация полости рта у детей и взрослых во сне под контролем команды анестезиологов.</div>
+              <div class="b-img-info">
+                <div class="b-img-inline">
+                  <div class="b-img-item">07 Января 2019</div>
+                  <a href="#" class="b-img-item">
+                    <svg class="icon icon-comment">
+                      <use xlink:href="img/sprite.svg#comment"></use>
+                    </svg>
+                    <span>4</span>
+                  </a>
+                  <a href="#" class="b-img-item">
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span>15</span>
+                  </a>
+                </div>
+                <a href="#" class="link_st">Варвара Висленко</a>
+              </div>
+            </div>
+
+
+            <div class="flex-article-item">
+              <a href="#" class="f-art-photo"><img src="img/service4.png" alt=""></a>
+              <a href="#" class="f-art-tt">Лечение под седацией</a>
+              <div class="f-art-text">«Лечение под седацией» полная санация полости рта у детей и взрослых во сне под контролем команды анестезиологов.</div>
+              <div class="b-img-info">
+                <div class="b-img-inline">
+                  <div class="b-img-item">07 Января 2019</div>
+                  <a href="#" class="b-img-item">
+                    <svg class="icon icon-comment">
+                      <use xlink:href="img/sprite.svg#comment"></use>
+                    </svg>
+                    <span>4</span>
+                  </a>
+                  <a href="#" class="b-img-item">
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                    <span>15</span>
+                  </a>
+                </div>
+                <a href="#" class="link_st">Варвара Висленко</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div><!-- #middle-->
+
+</div><!-- #wrapper -->
+
+
+<!-- footer -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="footer-row">
+      <div class="footer-col">
+        <span class="title-site title-site_h3">Услуги</span>
+        <ul class="footre-nav">
+          <li><a href="#">Исправление прикуса</a></li>
+          <li><a href="#">Протезирование зубов</a></li>
+          <li><a href="#">Имплантация зубов</a></li>
+          <li><a href="#">Лечение зубов</a></li>
+          <li><a href="#">Лечение десен</a></li>
+          <li><a href="#">Профилактика болезней зубов</a></li>
+          <li><a href="#">Хирургическая стоматология</a></li>
+          <li><a href="#">Детская стоматология</a></li>
+          <li><a href="#">Эстетическая стоматология</a></li>
+          <li><a href="#">Рентгенография</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <span class="title-site title-site_h3">Клиника</span>
+        <ul class="footre-nav">
+          <li><a href="#">Цены</a></li>
+          <li><a href="#">Врачи</a></li>
+          <li><a href="#">Кейсы</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Задать вопрос врачу</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col hide-form-xl">
+        <span class="title-site title-site_h3">Записаться на прием</span>
+        <form action="#" class="st-form st-form_colorful">
+          <div class="form-group">
+            <label class="field-item">
+              <div class="field-item__label">Имя</div>
+              <input type="text" class="input-placeholder">
+            </label>
+          </div>
+
+          <div class="half-form-group">
+            <div class="form-group">
+              <label class="field-item">
+                <div class="field-item__label">Телефон</div>
+                <input type="text" class="input-placeholder">
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label class="field-item">
+                <div class="field-item__label">Дата</div>
+                <input type="text" class="input-placeholder">
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="st-check">
+              <label>
+                <input type="checkbox">
+                <span class="fake-checkbox">
+                  <svg class="icon icon-check">
+                    <use xlink:href="img/sprite.svg#check"></use>
+                  </svg>
+                </span>
+                <span class="st-check__text">Согласен на <a href="#">обработку персональных данных</a></span>
+              </label>
+            </div>
+          </div>
+
+          <button class="btn btn_second-st btn_min-width" type="submit">записаться</button>
+        </form>
+      </div>
+
+      <div class="footer-col f-contacts-col">
+        <div class="footer-contacts">
+          <div class="f-contacts-bl">
+            <div class="f-contacts-tt"><a href="tel: +7(812) 305-00-14">+7(812) 305-00-14</a> </div>
+            <div class="f-contacts-text">Ежедневно с 9:00 до 21:00</div>
+            <div class="f-contacts-text"><a href="mailto:mail@wbdent.ru" class="link_light">mail@wbdent.ru</a></div>
+          </div>
+          <div class="f-contacts-bl">
+            <div class="f-contacts-tt">м. пр. Просвещения</div>
+            <div class="f-contacts-text">Выборгское шоссе д.23 корп 2</div>
+          </div>
+          <div class="f-contacts-bl">
+            <div class="f-contacts-tt">м. пл. Ленина </div>
+            <div class="f-contacts-text">ул. Комиссара Смирнова, д.15</div>
+          </div>
+          <div class="f-contacts-bl">
+            <div class="footer-soc">
+              <a href="#" class="footer-soc-item">
+                <svg class="icon icon-fb">
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer-soc-item">
+                <svg class="icon icon-insta">
+                  <use xlink:href="img/sprite.svg#insta"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer-soc-item">
+                <svg class="icon icon-vk">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer-soc-item">
+                <svg class="icon icon-tube">
+                  <use xlink:href="img/sprite.svg#tube"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer-bottom">
+      <div class="copy">© Белая Медведица. 2018. Все права защищены</div>
+      <a href="#" class="link_light">Политика конфиденциальности </a>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+
+
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/owl.carousel.min.js"></script>
+<script src="js/libs/jquery.magnific-popup.js"></script>
+<script src="js/libs/full-calendar.min.js"></script>
+<script src="js/libs/ru.js"></script>
+<script src="js/libs/daygrid.min.js"></script>
+<script src="js/libs/jcf.js"></script>
+<script src="js/libs/jcf.select.js"></script>
+<script src="js/libs/jcf.scrollable.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="">
+  <meta name="format-detection" content="telephone=no">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800|Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <div id="modalPay" style="display: none;" class="st-modal-min">
+    <div class="st-modal-min__head">
+      <span class="title-site title-site_h6">Оплатите, чтобы начать <br>активацию сервиса</span>
+      <p class="text_light-gray">Для оплаты Вы будете перенаправлены на <br>платежный шлюз ПАО СБЕРБАНК.</p>
+    </div>
+
+    <div class="st-modal-min__body">
+      <div class="pay-fields-info">
+        <div class="form-group">
+          <div class="pay-field-item">
+            <span class="pay-fields-tt">30 дней подписки всего за RUB 2990</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <ul class="pay-inline-img">
+            <li><img src="img/visa.png" alt=""></li>
+            <li><img src="img/mir.png" alt=""></li>
+            <li><img src="img/mastercard.png" alt=""></li>
+          </ul>
+        </div>
+
+        <div class="form-group-btn text_center">
+          <button class="btn btn_md btn_max" type="submit">оплатить</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="st-modal-min__footer">
+      <div class="privacy-inf">Совершая оплату, вы принимаете условия <a href="#">пользовательского соглашения</a></div>
+    </div>
+  </div>
+
+
+  <div id="modalReg" style="display: none;" class="st-modal-min">
+    <div class="st-modal-min__head">
+      <span class="title-site title-site_h6">Зарегистрируйтесь, чтобы посмотреть обьявления или <a href="#" class="text_spec-color">войдите</a></span>
+      <p>По вашемо запросу найдено 350 обьявлений</p>
+    </div>
+
+    <div class="st-modal-min__body">
+      <form action="#" class="st-form">
+        <div class="form-group">
+          <div class="field-item">
+            <label class="field-item__label">Ваше имя</label>
+            <div class="field-item__field">
+              <input type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="field-item">
+            <label class="field-item__label">Ваш email</label>
+            <div class="field-item__field">
+              <input type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="field-item">
+            <label class="field-item__label">Телефон</label>
+            <div class="field-item__field">
+              <input type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="field-item">
+            <label class="field-item__label">Пароль</label>
+            <div class="field-item__field">
+              <input type="password">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="field-item">
+            <label class="field-item__label">Повторите пароль</label>
+            <div class="field-item__field">
+              <input type="password">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group-btn text_center">
+          <button class="btn btn_md btn_max" type="submit">зарегистрироваться</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="st-modal-min__footer">
+      <div class="privacy-inf">Регистрируясь, вы разрешаете обработку своих персональных данных в соответствии с <a href="#">политикой конфиденциальности</a></div>
+    </div>
+  </div>
+
+  <div id="modalEnter" style="display: none;" class="st-modal-min">
+    <div class="st-modal-min__head">
+      <span class="title-site title-site_h6">Вход в личный кабинет</span>
+      <p>По вашемо запросу найдено 350 обьявлений</p>
+    </div>
+
+    <div class="st-modal-min__body">
+      <form action="#" class="st-form">
+        <div class="form-group">
+          <div class="field-item">
+            <label class="field-item__label">Логин/email</label>
+            <div class="field-item__field">
+              <input type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="field-item">
+            <label class="field-item__label">Пароль</label>
+            <div class="field-item__field">
+              <input type="password">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group-btn text_center">
+          <button class="btn btn_md btn_max" type="submit">Войти</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="st-modal-min__footer">
+      <div class="modal-inline-links">
+        <a href="#" class="text_light-gray">Забыли пароль?</a>
+        <a href="#" class="text_light-gray">Регистрация</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- header -->
+  <header id="header" class="header">
+    <div class="container group">
+      <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+
+
+      <div class="head-menu">
+        <div class="burger-menu">
+          <div class="burger-menu-box">
+            <div class="burger-menu-inner"></div>
+          </div>
+        </div>
+
+
+        <div class="menu-wrapper-fixed">
+          <div class="menu-open-wrapper">
+
+            <nav class="header-nav">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Поиск</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link active">личный кабинет</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Выйти</a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <!-- end header -->
+
+
+  <div id="middle">
+    <div class="container">
+      <div class="cabinet-wrapp">
+        <div class="cabinet-data-half">
+          <span class="title-site title-site_h3 title_bold-st">Оплата</span>
+          <div class="pay-fields-info">
+            <div class="form-group">
+              <div class="pay-field-item">
+                <span class="pay-fields-tt">На счету</span>
+                <span class="pay-fields-value">2990 руб</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="pay-field-item">
+                <span class="pay-fields-tt">Осталось</span>
+                <span class="pay-fields-value"> 30 дней</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <ul class="pay-inline-img">
+                <li><img src="img/visa.png" alt=""></li>
+                <li><img src="img/mir.png" alt=""></li>
+                <li><img src="img/mastercard.png" alt=""></li>
+              </ul>
+            </div>
+
+            <div class="form-group-btn text_center">
+              <button class="btn btn_md btn_max" type="submit" data-fancybox data-src="#modalPay">оплатить</button>
+            </div>
+
+            <div class="privacy-inf">Совершая оплату, вы принимаете условия <a href="#">пользовательского соглашения</a></div>
+          </div>
+        </div>
+
+        <div class="cabinet-data-half">
+          <form action="#" class="st-form">
+            <span class="title-site title-site_h3 title_bold-st">Ваши данные</span>
+            <div class="form-group">
+              <div class="field-item field-item_focused">
+                <label class="field-item__label">Ваше имя</label>
+                <div class="field-item__field">
+                  <input type="text" value="Андрей">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="field-item field-item_focused">
+                <div class="icon-att-form">
+                  <div class="icon-att-info">
+                    <b>Lorem ipsum dolor.</b>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, inventore, placeat. Eius, esse quo culpa sunt natus ad distinctio ipsa.</p>
+                  </div>
+                </div>
+                <label class="field-item__label">Ваш email</label>
+                <div class="field-item__field">
+                  <input type="text" value="cyber.realtor@gmail.com">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="field-item field-item_focused">
+                <label class="field-item__label">Телефон</label>
+                <div class="field-item__field">
+                  <input type="text" value="+7456 305060">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="field-item field-item_focused">
+                <label class="field-item__label">Пароль</label>
+                <div class="field-item__field">
+                  <input type="password" value="password">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="field-item field-item_focused">
+                <label class="field-item__label">Повторите пароль</label>
+                <div class="field-item__field">
+                  <input type="password" value="password">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group-btn text_center">
+              <button class="btn btn_md btn_max" type="submit">Сохранить изменения</button>
+              <button class="btn btn_md btn_max btn_border" type="submit">Изменить поиск</button>
+            </div>
+
+            <div class="att-info">
+              <div class="icon-att-form"></div>
+              <div>На эту почту в 12:00 отправляется письмо, если&nbsp;по&nbsp;вашим параметрам фильтра, которые вы&nbsp;сохранили, появились новые предложения.</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="section-question">
+      <div class="container">
+        <div class="section-question__info">
+          <span class="title-site title-site_h2 text_uppercase">Есть вопросы? <span class="text_spec-color">Напишите мы ответим.</span></span>
+        </div>
+
+        <div class="section-question__form-wrapp">
+          <div class="text_center hidden_desktop">
+            <i class="icon icon-mail"></i>
+          </div>
+
+          <form action="#" class="st-form st-form_inline">
+            <div class="form-group">
+              <div class="field-item">
+                <label class="field-item__label">Ваше имя</label>
+                <div class="field-item__field">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="field-item">
+                <label class="field-item__label">Ваш email</label>
+                <div class="field-item__field">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="field-item">
+                <label class="field-item__label">Вопрос</label>
+                <div class="field-item__field">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group-btn">
+              <button class="btn btn_md btn_max" type="submit">
+                отправить <i class="icon icon-send"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div><!-- #middle-->
+
+</div><!-- #wrapper -->
+
+
+<!-- footer -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="footer-items">
+      <div class="footer-item">
+        <div class="footer-logo">Лого</div>
+        <p class="hidden_mobile"><b>Big data</b> — инструменты и методы обработки огромного объёма данных,чтобы их использовать для конкретных задач и целей. </p>
+        <div class="soc-inline">
+          <a href="#" class="soc-inline__item">
+            <i class="icon icon-vk"></i>
+          </a>
+          <a href="#" class="soc-inline__item">
+            <i class="icon icon-insta"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-item">
+        <span class="title-site title-site_h6 text_light hidden_mobile">Меню</span>
+        <div class="footer-list footer-list_nav">
+          <div class="footer-list__item"><a href="#">Регистрация</a></div>
+          <div class="footer-list__item"><a href="#">Личный кабинет</a></div>
+          <div class="footer-list__item"><a href="#">Оформление подпсики</a></div>
+        </div>
+      </div>
+
+      <div class="footer-item">
+        <span class="title-site title-site_h6 text_light hidden_mobile">Контакты:</span>
+        <div class="footer-list">
+          <div class="footer-list__item">help@name.com</div>
+          <div class="footer-list__item"><b>ИП Фамилия Имя Отчество</b></div>
+          <div class="footer-list__item">Адрес: 195274, г. Санкт-Петербург, пр-т Луначарского, д. 82, корп. 1, кв. 147</div>
+        </div>
+        <div class="contact-us">
+          <span class="icon icon-f-mail"></span>
+          <b>Связаться</b> с Название
+        </div>
+      </div>
+
+      <div class="footer-item">
+        <div class="footer-pay">
+          <div class="footer-pay__item"><img src="img/master.png" alt=""></div>
+          <div class="footer-pay__item"><img src="img/visa2.png" alt=""></div>
+          <div class="footer-pay__item"><img src="img/ssl.png" alt=""></div>
+          <div class="footer-pay__item"><img src="img/card.png" alt=""></div>
+        </div>
+        <div class="footer-list">
+          <div class="footer-list__item text_uppercase">безопасные платежи</div>
+          <div class="footer-list__item"><a href="#">Пользовательское соглашение</a></div>
+          <div class="footer-list__item"><a href="#">Обработка персональных данных</a></div>
+        </div>
+        <div class="footer-list footer-list_inline-mob">
+          <div class="footer-list__item">ИНН: 780443271793 </div>
+          <div class="footer-list__item">ОГРНИП: 317784700127722</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copy">© 2018/Все права защищены</div>
+  </div>
+</footer>
+<!-- end footer -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libsmin/owl.carousel.min.js"></script>
+<script src="js/libsmin/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

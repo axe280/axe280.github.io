@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Title</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+    <div class="site-body-wrapper">
+
+
+
+      <div id="signin" style="display: none;">
+        <div class="modal-st">
+          <div class="modal-head">
+            <div class="title-site title-site_h2">Вход</div>
+          </div>
+          <div class="modal-inner">
+            <form action="#" class="modal-form">
+              <div class="form-group">
+                <label class="field-item">
+                  <div class="field-item__label">Электронная почта</div>
+                  <div class="field-item__field">
+                    <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+                  </div>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label class="field-item">
+                  <div class="field-item__label">Пароль</div>
+                  <div class="field-item__field">
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра" required>
+                  </div>
+                </label>
+                <div class="m-aside-link text_right"><a href="#">Забыли пароль?</a></div>
+              </div>
+
+              <button class="btn btn_md btn_max" type="submit">Войти</button>
+              <span class="modal-terms">Вход означает согласие с <a href="#">Пользовательским соглашением</a></span>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- header -->
+      <header id="header" class="header">
+        <div class="container container_max">
+          <div class="header-panel">
+
+            <div class="logo"><a href="preview.html">Top Photo Spots</a></div>
+
+
+            <div class="burger-menu">
+              <div class="burger-menu-box">
+                <div class="burger-menu-inner"></div>
+              </div>
+            </div>
+
+
+
+            <div class="mobile-open-head">
+              <div class="header-search">
+                <form action="#" class="form-search">
+                  <input type="text" placeholder="Поиск по названию, городу, региону...">
+                  <button type="submit">
+                    <svg class="icon icon-search">
+                      <use xlink:href="img/icon/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+
+              <a href="#" class="header-fav">
+                <div class="header-fav__icon">
+                  <span class="h-fav-value">2</span>
+                  <svg class="icon icon-favourite">
+                    <use xlink:href="img/icon/sprite.svg#favourite"></use>
+                  </svg>
+                </div>
+                <span class="header-fav__text">Избранное</span>
+              </a>
+
+              <div class="header-authorization h-auth_auhtorized"><!-- h-auth_auhtorized -->
+                <div class="h-auth-btns">
+                  <button data-fancybox data-src="#signin" class="btn btn_head-signin">Войти</button>
+                  <a href="#" class="btn">Регистрация</a>
+                </div>
+
+                <div class="h-auth-panel">
+                  <div class="avatar avatar_sm">
+                    <div class="avatar__img">
+                      <img src="img/avatar.png" alt="">
+                      <svg class="icon icon-photo">
+                        <use xlink:href="img/icon/sprite.svg#photo"></use>
+                      </svg>
+                    </div>
+                    <div class="avatar__info">
+                      <div class="avatar-name">
+                        Александр
+                        <svg class="icon icon-arr-bottom">
+                          <use xlink:href="img/icon/sprite.svg#arr-bottom"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="h-auth-menu">
+                    <ul>
+                      <li><a href="#">Моя лента</a></li>
+                      <li><a href="#">Настройка</a></li>
+                      <li><a href="#">Мои локации</a></li>
+                      <li><a href="#">Понравившиеся места</a></li>
+                      <li><a href="#">Мои закладки</a></li>
+                      <li><a href="#">Выход</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+
+
+      <main class="main">
+        <div class="container">
+          <div class="inner-head">
+            <h1>Фотографы</h1>
+            <p>Фотограф на свадьбу обязан быть профессионалом высшей категории, поэтому на сайте представлены только самые проверенные и лучшие представители профессии. Идеальное сочетание цены и качества услуг поможет значительно снизить затраты. По окончании торжества в распоряжении заказчика будут все необходимые материалы для красивого портфолио.</p>
+
+            <div class="head-filter">
+              <div class="filter-search">
+                <form action="#" class="form-search">
+                  <input type="text" placeholder="Поиск по имени">
+                  <button type="submit">
+                    <svg class="icon icon-search">
+                      <use xlink:href="img/icon/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <div class="filter-select">
+               <select class="select">
+                  <option value="v1">Россия</option>
+                  <option value="v2">Беларусь</option>
+                  <option value="v3">Украина</option>
+                  <option value="v4">Казахстан</option>
+                </select>
+              </div>
+              <div class="filter-select">
+                <select class="select">
+                  <option value="v1">Казань</option>
+                  <option value="v2">Брест</option>
+                  <option value="v3">Москва</option>
+                  <option value="v4">Харьков</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="photographers-wrapp">
+            <ul class="photographers-list">
+              <li>
+                <a href="#" class="avatar avatar_vertical">
+                  <div class="avatar__img">
+                    <svg class="icon icon-photo">
+                      <use xlink:href="img/icon/sprite.svg#photo"></use>
+                    </svg>
+                    <img src="" alt="">
+                  </div>
+                  <div class="avatar__recomended">
+                    <svg class="icon icon-shield">
+                      <use xlink:href="img/icon/sprite.svg#shield"></use>
+                    </svg>
+                    <span>Рекомендуем</span>
+                  </div>
+                  <div class="avatar__info">
+                    <div class="avatar-name">Артем Дугин</div>
+                    <div class="avatar-location">Россия, Новосибирск</div>
+                    <div class="avatar-map">
+                      <svg class="icon icon-map-pin">
+                        <use xlink:href="img/icon/sprite.svg#map-pin"></use>
+                      </svg>
+                      <div class="avatar-map__value">30</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="avatar avatar_vertical">
+                  <div class="avatar__img">
+                    <svg class="icon icon-photo">
+                      <use xlink:href="img/icon/sprite.svg#photo"></use>
+                    </svg>
+                    <img src="img/photographer-img1.jpg" alt="">
+                  </div>
+                  <div class="avatar__recomended">
+                    <svg class="icon icon-shield">
+                      <use xlink:href="img/icon/sprite.svg#shield"></use>
+                    </svg>
+                    <span>Рекомендуем</span>
+                  </div>
+                  <div class="avatar__info">
+                    <div class="avatar-name">Ирина Усманова</div>
+                    <div class="avatar-location">Россия, Москва</div>
+                  </div>
+                </a>
+               </li>
+              <li>
+                <a href="#" class="avatar avatar_vertical">
+                  <div class="avatar__img">
+                    <svg class="icon icon-photo">
+                      <use xlink:href="img/icon/sprite.svg#photo"></use>
+                    </svg>
+                    <img src="img/photographer-img2.jpg" alt="">
+                  </div>
+                  <div class="avatar__recomended">
+                    <svg class="icon icon-shield">
+                      <use xlink:href="img/icon/sprite.svg#shield"></use>
+                    </svg>
+                    <span>Рекомендуем</span>
+                  </div>
+                  <div class="avatar__info">
+                    <div class="avatar-name">Любовь Локоткова</div>
+                    <div class="avatar-location">Италия, Милан</div>
+                    <div class="avatar-map">
+                      <svg class="icon icon-map-pin">
+                        <use xlink:href="img/icon/sprite.svg#map-pin"></use>
+                      </svg>
+                      <div class="avatar-map__value">30</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="avatar avatar_vertical">
+                  <div class="avatar__img">
+                    <svg class="icon icon-photo">
+                      <use xlink:href="img/icon/sprite.svg#photo"></use>
+                    </svg>
+                    <img src="img/photographer-img3.jpg" alt="">
+                  </div>
+                  <div class="avatar__info">
+                    <div class="avatar-name">Артем Дугин</div>
+                    <div class="avatar-location">Россия, Казань</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="avatar avatar_vertical">
+                  <div class="avatar__img">
+                    <svg class="icon icon-photo">
+                      <use xlink:href="img/icon/sprite.svg#photo"></use>
+                    </svg>
+                    <img src="" alt="">
+                  </div> 
+                  <div class="avatar__info">
+                    <div class="avatar-name">Артем Дугин</div>
+                    <div class="avatar-location">Чехия, Прага</div>
+                    <div class="avatar-map">
+                      <svg class="icon icon-map-pin">
+                        <use xlink:href="img/icon/sprite.svg#map-pin"></use>
+                      </svg>
+                      <div class="avatar-map__value">30</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="avatar avatar_vertical">
+                  <div class="avatar__img">
+                    <svg class="icon icon-photo">
+                      <use xlink:href="img/icon/sprite.svg#photo"></use>
+                    </svg>
+                    <img src="img/photographer-img4.jpg" alt="">
+                  </div>
+                  <div class="avatar__info">
+                    <div class="avatar-name">Анатолий Серегин</div>
+                    <div class="avatar-location">Россия, Санкт-Петербург</div>
+                    <div class="avatar-map">
+                      <svg class="icon icon-map-pin">
+                        <use xlink:href="img/icon/sprite.svg#map-pin"></use>
+                      </svg>
+                      <div class="avatar-map__value">30</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="avatar avatar_vertical">
+                  <div class="avatar__img">
+                    <svg class="icon icon-photo">
+                      <use xlink:href="img/icon/sprite.svg#photo"></use>
+                    </svg>
+                    <img src="img/photographer-img5.jpg" alt="">
+                  </div>
+                  <div class="avatar__info">
+                    <div class="avatar-name">Елена Иванова</div>
+                    <div class="avatar-location">Россия, Томск</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="avatar avatar_vertical">
+                  <div class="avatar__img">
+                    <svg class="icon icon-photo">
+                      <use xlink:href="img/icon/sprite.svg#photo"></use>
+                    </svg>
+                    <img src="img/photographer-img2.jpg" alt="">
+                  </div>
+              
+                  <div class="avatar__info">
+                    <div class="avatar-name">Любовь Локоткова</div>
+                    <div class="avatar-location">Италия, Милан</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="avatar avatar_vertical">
+                  <div class="avatar__img">
+                    <svg class="icon icon-photo">
+                      <use xlink:href="img/icon/sprite.svg#photo"></use>
+                    </svg>
+                    <img src="img/photographer-img3.jpg" alt="">
+                  </div>
+                  <div class="avatar__info">
+                    <div class="avatar-name">Артем Дугин</div>
+                    <div class="avatar-location">Россия, Казань</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="avatar avatar_vertical">
+                  <div class="avatar__img">
+                    <svg class="icon icon-photo">
+                      <use xlink:href="img/icon/sprite.svg#photo"></use>
+                    </svg>
+                    <img src="" alt="">
+                  </div>
+                  <div class="avatar__info">
+                    <div class="avatar-name">Артем Дугин</div>
+                    <div class="avatar-location">Италия, Милан </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main><!-- main -->
+
+    </div><!-- body wrapper -->
+
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">Карта сайта</a></li>
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Правила сайта</a></li>
+            <li><a href="#">Новые локации</a></li>
+            <li><a href="#">Фотографы</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li>
+              <div class="footer-lang-tt">
+                Русский
+                <svg class="icon icon-arr-bottom">
+                  <use xlink:href="img/icon/sprite.svg#arr-bottom"></use>
+                </svg>
+              </div>
+
+              <ul class="footer-lang-list">
+                <li class="active">Русский</li>
+                <li>English</li>
+                <li>Français</li>
+                <li>Deutsch</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="soc-inline">
+            <a href="#" class="soc-inline__icon">
+              <svg class="icon icon-facebook">
+                <use xlink:href="img/icon/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="soc-inline__icon">
+              <svg class="icon icon-twitter">
+                <use xlink:href="img/icon/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="soc-inline__icon">
+              <svg class="icon icon-instagram">
+                <use xlink:href="img/icon/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </div>
+          <span class="copy">&copy; Topphotospots.com, 2019</span>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+  </div><!-- site wrapper -->
+
+
+  <script src="js/libs/jquery.min.js"></script>
+  <script src="js/libs/owl.carousel.min.js"></script>
+  <script src="js/libs/jquery.fancybox.min.js"></script>
+  <script src="js/libs/selectize.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,2279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Title</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <div class="site-body-wrapper">
+
+
+      <div id="signin" style="display: none;">
+        <div class="modal-st">
+          <div class="modal-head">
+            <div class="title-site title-site_h2"><a href="#">Регистрация</a> Вход</div>
+          </div>
+          <div class="modal-inner">
+            <form action="#" class="modal-form">
+              <div class="form-group">
+                <label class="field-item">
+                  <div class="field-item__label">Имя</div>
+                  <div class="field-item__field">
+                    <input type="text" required>
+                  </div>
+                </label>
+              </div>
+      
+              <div class="form-group">
+                <label class="field-item">
+                  <div class="field-item__label">Электронная почта</div>
+                  <div class="field-item__field">
+                    <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+                  </div>
+                </label>
+              </div>
+      
+              <div class="form-group">
+                <label class="field-item">
+                  <div class="field-item__label">Текущий пароль</div>
+                  <div class="field-item__field">
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра" required>
+                  </div>
+                </label>
+              </div>
+      
+              <button class="btn btn_max" type="submit">Продолжить</button>
+              <span class="modal-terms">Вход означает согласие с <a href="#">Пользовательским соглашением</a></span>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div id="passModal" style="display: none;">
+        <div class="modal-st">
+          <div class="modal-head">
+            <div class="title-site title-site_h2">Восстановление пароля</div>
+          </div>
+          <div class="modal-inner">
+            <form action="#" class="modal-form">
+              <div class="form-group">
+                <label class="field-item">
+                  <div class="field-item__label">Электронная почта</div>
+                  <div class="field-item__field">
+                    <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+                  </div>
+                </label>
+              </div>
+      
+              <div class="modal-btns">
+                <button class="btn" type="submit">Продолжить</button>
+                <button class="btn btn_border btn_default" type="button" data-fancybox-close>Отмена</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      <!-- header -->
+      <header id="header" class="header">
+        <div class="container container_max">
+          <div class="header-panel">
+            <div class="burger-menu">
+              <div class="burger-menu-box">
+                <div class="burger-menu-inner"></div>
+              </div>
+            </div>
+      
+            <div class="logo"><a href="preview.html">Spravochnik.info</a></div>
+      
+            <div class="header-search">
+              <form action="#" class="form-search">
+                <input type="text" placeholder="Поиск по названию компании">
+                <button type="submit" class="fa fa-search"></button>
+              </form>
+              <button class="head-city js-head-city-open" type="button">
+                <span class="fa fa-map-marker-alt"></span>
+                <span class="head-city__name">Петропавловск-Камчатский</span>
+              </button>
+            </div>
+      
+            <a href="#" class="header-fav">
+              <div class="header-fav__icon">
+                <span class="far fa-heart"></span>
+                <span class="h-fav-value">2</span>
+              </div>
+              <span class="header-fav__text">Избранное</span>
+            </a>
+      
+            <div class="header-authorization h-auth_auhtorized">
+              <div class="h-auth-btns">
+                <button data-fancybox data-src="#signin" class="btn btn_border btn_default">Вход</button>
+                <button data-fancybox data-src="#signin" class="btn btn_border btn_default">Зарегистрироваться</button>
+              </div>
+      
+              <a href="#" class="avatar avatar_head">
+                <div class="avatar__icon">
+                  <span class="fa fa-user"></span>
+                </div>
+                <div class="avatar__name">Александр</div>
+              </a>
+            </div>
+          </div>
+      
+      
+          <div class="menu-wrapper-fixed">
+            <div class="menu-open-wrapper">
+      
+              <div class="desktop-head-menu">
+                <div class="close-r-area js-close-r-area"></div>
+                <button class="desktop-close-menu js-desk-close-menu">
+                  <span class="fa fa-times"></span>
+                </button>
+                <div class="logo"><a href="preview.html">Spravochnik.info</a></div>
+              </div>
+      
+              <nav class="header-nav">
+                <ul class="menu">
+                  <li class="menu-item">
+                    <a href="#" class="menu-item__link">Рейтинг компаний</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-item__link">События</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-item__link">Отзывы</a>
+                  </li>
+                </ul>
+      
+                <div class="menu-company-w">
+                  <div class="menu-company-w__tt">Выбор компаний</div>
+                  <ul class="menu">
+                    <li class="menu-item">
+                      <a href="#" class="menu-item__link">Поесть</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-item__link">Бары</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-item__link">Кофейни</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-item__link">Доставка еды</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-item__link">Магазины</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-item__link">Клиники</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-item__link">Такси</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-item__link">СТО</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-item__link">Салоны красоты</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-item__link">Отели</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-item__link">Развлечения</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#" class="menu-item__link">Бытовые услуги</a>
+                    </li>
+                    <li class="menu-item menu-item_hidden">
+                      <a href="#" class="menu-item__link">Поесть</a>
+                    </li>
+                    <li class="menu-item menu-item_hidden">
+                      <a href="#" class="menu-item__link">Бары</a>
+                    </li>
+                    <li class="menu-item menu-item_hidden">
+                      <a href="#" class="menu-item__link">Кофейни</a>
+                    </li>
+                    <li class="menu-item menu-item_hidden">
+                      <a href="#" class="menu-item__link">Доставка еды</a>
+                    </li>
+                    <li class="menu-item menu-item_hidden">
+                      <a href="#" class="menu-item__link">Магазины</a>
+                    </li>
+                    <li class="menu-item menu-item_hidden">
+                      <a href="#" class="menu-item__link">Клиники</a>
+                    </li>
+                    <li class="menu-item menu-item_hidden">
+                      <a href="#" class="menu-item__link">Такси</a>
+                    </li>
+                    <li class="menu-item menu-item_hidden">
+                      <a href="#" class="menu-item__link">СТО</a>
+                    </li>
+                    <li class="menu-item menu-item_hidden">
+                      <a href="#" class="menu-item__link">Салоны красоты</a>
+                    </li>
+                    <li class="menu-item menu-item_hidden">
+                      <a href="#" class="menu-item__link">Отели</a>
+                    </li>
+                    <li class="menu-item menu-item_hidden">
+                      <a href="#" class="menu-item__link">Развлечения</a>
+                    </li>
+                    <li class="menu-item menu-item_hidden">
+                      <a href="#" class="menu-item__link">Бытовые услуги</a>
+                    </li>
+                  </ul>
+                  <div class="menu-company-w__show-more js-show-more-main-menu">Показать  все рубрики</div>
+                </div>
+              </nav>
+      
+            </div>
+          </div>
+      
+      
+          <div class="city-wrapper-fixed">
+            <div class="city-open-wrapper">
+              <div class="city-open-head">
+                <div class="city-open-head__tt">Выбор города</div>
+                <button type="button" class="city-open-head__close js-city-close">
+                  <span class="fa fa-times"></span>
+                </button>
+              </div>
+              <div class="city-list-wrapper">
+                <div class="city-list-item">
+                  <ul>
+                    <li><a href="#">Москва</a></li>
+                    <li><a href="#">Санкт-Петербург</a></li>
+                    <li><a href="#">Екатеринбург</a></li>
+                    <li><a href="#">Новосибирск</a></li>
+                    <li><a href="#" class="active">Казань</a></li>
+                    <li><a href="#">Нижний Новгород</a></li>
+                    <li><a href="#">Новосибирск</a></li>
+                    <li><a href="#">Красноярск</a></li>
+                    <li><a href="#">Красноярск</a></li>
+                    <li><a href="#">Красноярск</a></li>
+                    <li><a href="#">Красноярск</a></li>
+                  </ul>
+                </div>
+      
+                <div class="city-list-item">
+                  <ul>
+                    <li><a href="#">Абакан</a><span class="city-list-val">A</span></li>
+                    <li><a href="#">Альметьевск</a></li>
+                    <li><a href="#">Армавир</a></li>
+                    <li><a href="#">Архангельск</a></li>
+                    <li><a href="#">Астрахань</a></li>
+                  </ul>
+                </div>
+      
+                <div class="city-list-item">
+                  <ul>
+                    <li><a href="#">Великий Новгород</a><span class="city-list-val">В</span></li>
+                    <li><a href="#">Владивосток</a></li>
+                    <li><a href="#">Владивосток</a></li>
+                    <li><a href="#">Владивосток</a></li>
+                    <li><a href="#">Владивосток</a></li>
+                  </ul>
+                </div>
+      
+                <div class="city-list-item">
+                  <ul>
+                    <li><a href="#">Набережные Челны</a><span class="city-list-val">Н</span></li>
+                    <li><a href="#">Новороссийск</a></li>
+                    <li><a href="#">Находка</a></li>
+                    <li><a href="#">Новосибирск</a></li>
+                    <li><a href="#">Новосибирск</a></li>
+                    <li><a href="#">Новосибирск</a></li>
+                    <li><a href="#">Новосибирск</a></li>
+                    <li><a href="#">Новосибирск</a></li>
+                    <li><a href="#">Новосибирск</a></li>
+                    <li><a href="#">Новосибирск</a></li>
+                  </ul>
+                </div>
+      
+                <div class="city-list-item">
+                  <ul>
+                    <li><a href="#">Омск</a><span class="city-list-val">О</span></li>
+                    <li><a href="#">Оренбург</a></li>
+                    <li><a href="#">Орёл</a></li>
+                  </ul>
+                </div>
+      
+                <div class="city-list-item">
+                  <ul>
+                    <li><a href="#">Пенза</a><span class="city-list-val">П</span></li>
+                    <li><a href="#">Петропавловск-Камчатский</a></li>
+                    <li><a href="#">Петрозаводск</a></li>
+                    <li><a href="#">Петрозаводск</a></li>
+                    <li><a href="#">Петрозаводск</a></li>
+                    <li><a href="#">Петрозаводск</a></li>
+                  </ul>
+                </div>
+      
+                <div class="city-list-item">
+                  <ul>
+                    <li><a href="#">Омск</a><span class="city-list-val">О</span></li>
+                    <li><a href="#">Оренбург</a></li>
+                    <li><a href="#">Орёл</a></li>
+                  </ul>
+                </div>
+      
+                <div class="city-list-item">
+                  <ul>
+                    <li><a href="#">Пенза</a><span class="city-list-val">П</span></li>
+                    <li><a href="#">Петропавловск-Камчатский</a></li>
+                    <li><a href="#">Петрозаводск</a></li>
+                    <li><a href="#">Петрозаводск</a></li>
+                    <li><a href="#">Петрозаводск</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+
+
+      <div class="container">
+        <div class="page-columns">
+          <main class="main">
+            <section class="section-st">
+              <span class="title-site title-site_h2">Bread crumbs</span>
+              <ul class="bread-crumbs">
+                <li><a href="#">Справочник Казани</a></li>
+                <li><a href="#">Справочник</a></li>
+                <li>Рейтинг компаний</li>
+              </ul>
+            </section>
+
+
+            <section class="section-st">
+              <span class="title-site title-site_h2">modal windows</span>
+              <button data-fancybox data-src="#signin" class="btn btn_lg">Вход</button>
+              <button data-fancybox data-src="#signin" class="btn btn_lg">Регистрация</button>
+              <button data-fancybox data-src="#passModal" class="btn btn_lg">Восстановление пароля</button>
+            </section>
+
+
+            <section class="section-st section-st_light">
+              <span class="title-site title-site_h2">Pagination</span>
+              <ul class="pagination">
+                <li class="pagination__prev"><a href="#"><span class="fa fa-chevron-left"></span></a></li>
+                <li class="pagination__active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="pagination__next"><a href="#"><span class="fa fa-chevron-right"></span></a></li>
+              </ul>
+            </section>
+
+
+            <section class="section-st">
+              <span class="title-site title-site_h2">Buttons</span>
+              <h4>small</h4>
+              <a href="#" class="btn btn_sm">Small</a>
+              <a href="#" class="btn btn_sm btn_min-width">Min w</a>
+              <a href="#" class="btn btn_sm btn_border btn_default">Border</a>
+              <br>
+              <br>
+              <h4>default and more styles</h4>
+              <a href="#" class="btn">Btn</a>
+              <a href="#" class="btn btn_weight-font">btn weight font</a>
+              <a href="#" class="btn btn_min-width">Min width</a>
+              <br><br>
+              <a href="#" class="btn btn_default">btn_default</a>
+              <a href="#" class="btn btn_danger">btn_danger</a>
+              <a href="#" class="btn btn_attention">btn_attention</a>
+              <a href="#" class="btn btn_success">btn_success</a>
+              <br><br>
+              <a href="#" class="btn btn_border">Border</a>
+              <a href="#" class="btn btn_border btn_default">Border btn_default</a>
+              <a href="#" class="btn btn_border btn_danger">Border btn_danger</a>
+              <a href="#" class="btn btn_border btn_attention">Border btn_attention</a>
+              <a href="#" class="btn btn_border btn_success">Border btn_success</a>
+              <br><br>
+              <a href="#" class="btn">
+                <span class="fa fa-hand-peace fa_left"></span>
+                icon left
+              </a>
+              <a href="#" class="btn">
+                icon right
+                <span class="fa fa-hand-peace fa_right"></span>
+              </a>
+              <br>
+              <br>
+              <h4>middle</h4>
+              <a href="#" class="btn btn_md">Middle</a>
+              <a href="#" class="btn btn_md btn_min-width">Min width</a>
+              <a href="#" class="btn btn_md btn_border btn_default">Border</a>
+              <br>
+              <br>
+              <a href="#" class="btn btn_lg">Large</a>
+              <a href="#" class="btn btn_lg btn_min-width">Min width</a>
+              <a href="#" class="btn btn_lg btn_border btn_default">Border</a>
+            </section>
+
+
+            <section class="section-st section-st_light">
+              <span class="title-site title-site_h2">Form</span>
+              <form action="#" class="st-form">
+                <fieldset>
+                  <legend>Информация</legend>
+              
+                  <div class="avatar avatar_form">
+                    <div class="avatar__icon">
+                      <span class="far fa-user"></span>
+                    </div>
+                    <button class="btn btn_border btn_default">Изменить фото</button>
+                  </div>
+              
+                  <div class="form-group-grid">
+                    <div class="form-group form-group-grid__half-col">
+                      <label class="field-item">
+                        <div class="field-item__label">Email</div>
+                        <div class="field-item__field">
+                          <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+                        </div>
+                      </label>
+                    </div>
+              
+                    <div class="form-group form-group-grid__half-col">
+                      <label class="field-item">
+                        <div class="field-item__label">Домашний регион</div>
+                        <div class="field-item__field">
+                          <div class="select-wrapp-max-width">
+                            <select>
+                              <option class="hideme">Выбрать</option>
+                              <option>option 1</option>
+                              <option>option 2</option>
+                              <option>option 3</option>
+                              <option>option 4</option>
+                              <option>option 5</option>
+                              <option>option 6</option>
+                            </select>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+              
+                  <div class="form-group">
+                    <label class="field-item">
+                      <div class="field-item__label">Статус</div>
+                      <div class="field-item__field">
+                        <input type="text">
+                      </div>
+                    </label>
+                  </div>
+              
+              
+                  <div class="form-group">
+                    <label class="field-item">
+                      <div class="field-item__label">О себе</div>
+                      <div class="field-item__field">
+                        <textarea name="text-description"></textarea>
+                      </div>
+                    </label>
+                  </div>
+              
+                  <div class="form-group-grid">
+                    <div class="form-group form-group-grid__half-col">
+                      <label class="field-item">
+                        <div class="field-item__label">Фотогалерея</div>
+                        <div class="field-item__field">
+                          <span class="field-item-head-info">Вы можете загрузить до 10 файлов JPG или PNG до 6 МБ каждый</span>
+                          <input type="file" multiple>
+                        </div>
+                      </label>
+                    </div>
+              
+                     <div class="form-group form-group-grid__half-col">
+                      <label class="field-item">
+                        <div class="field-item__label">Логотип</div>
+                        <div class="field-item__field">
+                          <input type="file">
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              
+              
+                <fieldset>
+                  <div class="form-worktime">
+                    <div class="single-label">Режим работы</div>
+                    <div class="form-group-grid">
+                      <div class="form-group form-group-grid__half-col">
+                        <div class="select-wrapp-max-width">
+                          <select>
+                            <option selected>Понедельник</option>
+                            <option>Вторник</option>
+                            <option>Среда</option>
+                            <option>Четверг</option>
+                            <option>Пятница</option>
+                            <option>Суббота</option>
+                            <option>Воскресенье</option>
+                          </select>
+                        </div>
+                      </div>
+              
+                      <div class="form-group form-group-grid__half-col">
+                        <div class="worktime-params">
+                          <div class="worktime-params__checkbox">
+                            <label class="checkbox-st">
+                              <input type="checkbox">
+                              <span class="checkbox-st__fake"></span>
+                              <span class="checkbox-st__text">без перерыва на обед</span>
+                            </label>
+                          </div>
+              
+                          <div class="worktime-params__time">
+                            <div class="select-wrapp-worktime">
+                              <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option selected>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>00</option>
+                              </select>
+                            </div>
+                            <span class="worktime-sep">:</span>
+                            <div class="select-wrapp-worktime">
+                              <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option selected>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>00</option>
+                              </select>
+                            </div>
+                            <span class="worktime-sep">-</span>
+                            <div class="select-wrapp-worktime">
+                              <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option selected>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>00</option>
+                              </select>
+                            </div>
+                            <span class="worktime-sep">:</span>
+                            <div class="select-wrapp-worktime">
+                              <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option selected>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>00</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              
+              
+                    <div class="form-group-grid">
+                      <div class="form-group form-group-grid__half-col">
+                        <div class="select-wrapp-max-width">
+                          <select>
+                            <option>Понедельник</option>
+                            <option>Вторник</option>
+                            <option>Среда</option>
+                            <option>Четверг</option>
+                            <option selected>Пятница</option>
+                            <option>Суббота</option>
+                            <option>Воскресенье</option>
+                          </select>
+                        </div>
+                      </div>
+              
+                      <div class="form-group form-group-grid__half-col">
+                        <div class="worktime-params">
+                          <div class="worktime-params__checkbox">
+                            <label class="checkbox-st">
+                              <input type="checkbox" checked>
+                              <span class="checkbox-st__fake"></span>
+                              <span class="checkbox-st__text">без перерыва на обед</span>
+                            </label>
+                          </div>
+              
+                          <div class="worktime-params__time">
+                            <div class="select-wrapp-worktime">
+                              <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option selected>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>00</option>
+                              </select>
+                            </div>
+                            <span class="worktime-sep">:</span>
+                            <div class="select-wrapp-worktime">
+                              <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option selected>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>00</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              
+              
+                    <button class="add-field" type="button">+ Добавить поле</button>
+                  </div>
+                </fieldset>
+              
+              
+                <fieldset>
+                  <div class="form-group-grid_desktop">
+                    <div class="form-group form-group-grid__half-col">
+                      <label class="field-item">
+                        <div class="field-item__label">Стоимость</div>
+                        <div class="field-item__field">
+                          <input type="text" required>
+                        </div>
+                      </label>
+                    </div>
+              
+                    <div class="form-group form-group-grid__half-col">
+                      <div class="field-item">
+                        <div class="field-item__label">Дата</div>
+              
+                        <div class="field-item__field">
+                          <div class="datepicker-grid-wrapp">
+                            <div class="datepicker-field">
+                              <input type="text" placeholder="с" name="from" id="from" class="js-single-datepicker" autocomplete="off">
+                            </div>
+                            <div class="datepicker-field">
+                              <input type="text" placeholder="по" name="to" id="to" class="js-single-datepicker" autocomplete="off">
+                            </div>
+              
+                            <div class="datepicker-checkbox">
+                              <label class="checkbox-st">
+                                <input type="checkbox">
+                                <span class="checkbox-st__fake"></span>
+                                <span class="checkbox-st__text">Бессрочно</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              
+              
+                <fieldset class="form-group-min-margin">
+                  <legend>Аккаунт в социальных сетях</legend>
+                  <div class="single-label single-label_title">Аккаунт в социальных сетях</div>
+              
+                  <div class="form-group-grid">
+                    <div class="form-group form-group-grid__half-col">
+                      <label class="field-item field-item_brands-ic">
+                        <div class="field-item__label">
+                          <span class="fab fa-vk"></span> Вконтакте
+                        </div>
+                        <div class="field-item__field">
+                          <input type="text">
+                        </div>
+                      </label>
+                    </div>
+              
+                    <div class="form-group form-group-grid__half-col">
+                      <label class="field-item field-item_brands-ic">
+                        <div class="field-item__label">
+                          <span class="fab fa-facebook-f"></span> Facebook
+                        </div>
+                        <div class="field-item__field">
+                          <input type="text">
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+              
+              
+                  <div class="form-group-grid">
+                    <div class="form-group form-group-grid__half-col">
+                      <label class="field-item field-item_brands-ic">
+                        <div class="field-item__label">
+                          <span class="fab fa-instagram"></span> Instagram
+                        </div>
+                        <div class="field-item__field">
+                          <input type="text">
+                        </div>
+                      </label>
+                    </div>
+              
+                    <div class="form-group form-group-grid__half-col">
+                      <label class="field-item field-item_brands-ic">
+                        <div class="field-item__label">
+                          <span class="fab fa-twitter"></span> Twitter
+                        </div>
+                        <div class="field-item__field">
+                          <input type="text">
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              
+              
+                <fieldset class="form-group-min-margin">
+                  <legend>Изменить пароль</legend>
+              
+                  <div class="form-group">
+                    <label class="field-item">
+                      <div class="field-item__label">Текущий пароль</div>
+                      <div class="field-item__field">
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра" required>
+                      </div>
+                    </label>
+                  </div>
+              
+                  <div class="form-group-grid">
+                    <div class="form-group form-group-grid__half-col">
+                      <label class="field-item">
+                        <div class="field-item__label">Новый пароль</div>
+                        <div class="field-item__field">
+                          <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра" required>
+                        </div>
+                      </label>
+                    </div>
+              
+                    <div class="form-group form-group-grid__half-col">
+                      <label class="field-item">
+                        <div class="field-item__label">Повторить пароль</div>
+                        <div class="field-item__field">
+                          <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра" required>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              
+              
+                <div class="form-b-btn form-b-btn_sp-between">
+                  <button class="btn btn_min-width btn_border btn_danger" type="button">Удалить аккаунт</button>
+                  <button class="btn btn_min-width" type="submit">Сохранить</button>
+                </div>
+              
+                <div class="form-b-btn form-b-btn_right">
+                  <button class="btn btn_min-width" type="submit">right button</button>
+                </div>
+              </form>
+              
+              
+              <form action="" class="comment-form">
+                <div class="comment-form__head">
+                  <div class="comment-form-head-field">
+                    <div>
+                      <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <span>или <a href="#">войти</a></span>
+                  </div>
+              
+                  <div class="comment-form-rating">
+                    <span class="comment-form-rating__title">Оценка</span>
+                    <div class="stars-rating">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="comment-form__body">
+                  <textarea placeholder="Сообщение"></textarea>
+                  <div class="spec-upload-file js-spec-file">
+                    <input type="file" multiple>
+                  </div>
+                </div>
+              
+                <div class="form-capcha-btn">
+                  <div class="form-capcha-item">
+                    <img src="img/capcha.png" alt="">
+                  </div>
+                  <button class="btn btn_mobile-max" type="submit">Отправить</button>
+                </div>
+              </form>
+            </section>
+
+
+            <section class="section-st">
+              <div class="inner-head">
+                <div class="title-site title-site_h1">События</div>
+              </div>
+
+              <div class="events events_grid-info">
+                <div class="event">
+                  <a href="#" class="event-img">
+                    <img src="img/pop-event-5.png" alt="">
+
+                    <div class="event-img__label">Бессрочно</div>
+                    <div class="event-img-footer">
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                          <span class="event-star-text">8 отзывов</span>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 28
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+
+                  <div class="event-body">
+                    <div class="event-body__head">
+                      <a href="#" class="event-tt">Химчистка салона легкового автомобиля или внедорожника</a>
+                    </div>
+                    <div class="event-body__inner">
+                      <p>Химчистка салона проводится в несколько этапов. Всё начинается с сухой чистки профессиональным автомобильным пылесосом.</p>
+                    </div>
+                    <div class="event-body__footer">
+                      <div class="event-icon-wrapp">
+                        <span class="far fa-building"></span>
+                        <a href="#">Фитнес-клуб «Maximus»</a>
+                      </div>
+                      <div class="event-icon-wrapp">
+                        <span class="fa fa-map-marker-alt"></span>
+                        <span>Минская, 9</span>
+                      </div>
+                      <div class="event-pin-icon">
+                        <span class="fa fa-thumbtack"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="event">
+                  <a href="#" class="event-img">
+                    <img src="img/pop-event-1.png" alt="">
+
+                    <div class="event-img__label">Осталось 32 дня</div>
+                    <div class="event-img-footer">
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                          <span class="event-star-text">8 отзывов</span>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 28
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+
+                  <div class="event-body">
+                    <div class="event-body__head">
+                      <a href="#" class="event-tt">Регулировка развала-схождения</a>
+                    </div>
+                    <div class="event-body__inner">
+                      <p>Развал-схождение сильно влияет на поведение автомобиля на дороге, на состояние узлов и агрегатов ходовой части. Развал-схождение сильно влияет на поведение автомобиля на ...</p>
+                    </div>
+                    <div class="event-body__footer">
+                      <div class="event-icon-wrapp">
+                        <span class="far fa-building"></span>
+                        <a href="#">Фитнес-клуб «Maximus»</a>
+                      </div>
+                      <div class="event-icon-wrapp">
+                        <span class="fa fa-map-marker-alt"></span>
+                        <span>Минская, 9</span>
+                      </div>
+                      <div class="event-pin-icon">
+                        <span class="fa fa-thumbtack"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="event">
+                  <a href="#" class="event-img">
+                    <img src="img/pop-event-3.png" alt="">
+
+                    <div class="event-img__label">Осталось 7 дней</div>
+                    <div class="event-img-footer">
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                          <span class="event-star-text">Отзывов еще нет</span>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 0
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+
+                  <div class="event-body">
+                    <div class="event-body__head">
+                      <a href="#" class="event-tt">Участия в индивидуальной обучающей программе по коррекции вес</a>
+                    </div>
+                    <div class="event-body__inner">
+                      <p>С помощью правильно подобранного питания можно не только изменить вес (снизить или увеличить), но и стабилизировать течение болезней внутренних органов, восстановить ...</p>
+                    </div>
+                    <div class="event-body__footer">
+                      <div class="event-icon-wrapp">
+                        <span class="far fa-building"></span>
+                        <a href="#">Фитнес-клуб «Maximus»</a>
+                      </div>
+                      <div class="event-icon-wrapp">
+                        <span class="fa fa-map-marker-alt"></span>
+                        <span>Минская, 9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="event">
+                  <a href="#" class="event-img">
+                    <img src="img/pop-event-1.png" alt="">
+
+                    <div class="event-img__label">Бессрочно</div>
+                    <div class="event-img-footer">
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                          </div>
+                          <span class="event-star-text">8 отзывов</span>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 28
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+
+                  <div class="event-body">
+                    <div class="event-body__head">
+                      <a href="#" class="event-tt">Два билета «Стандартный» на колесо обозрения «Вокруг света» со скидкой 50%</a>
+                    </div>
+                    <div class="event-body__inner">
+                      <p>Химчистка салона проводится в несколько этапов. Всё начинается с сухой чистки профессиональным автомобильным ...</p>
+                    </div>
+                    <div class="event-body__footer">
+                      <div class="event-icon-wrapp">
+                        <span class="far fa-building"></span>
+                        <a href="#">Аквапарк Ривьера</a>
+                      </div>
+                      <div class="event-icon-wrapp">
+                        <span class="fa fa-map-marker-alt"></span>
+                        <span>Минская, 9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="event">
+                  <a href="#" class="event-img">
+                    <img src="img/pop-event-1.png" alt="">
+
+                    <div class="event-img__label">Бессрочно</div>
+                    <div class="event-img-footer">
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                          </div>
+                          <span class="event-star-text">8 отзывов</span>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 28
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+
+                  <div class="event-body">
+                    <div class="event-body__head">
+                      <a href="#" class="event-tt">Два билета «Стандартный» на колесо обозрения «Вокруг света» со скидкой 50%</a>
+                    </div>
+                    <div class="event-body__inner">
+                      <p>Химчистка салона проводится в несколько этапов. Всё начинается с сухой чистки профессиональным автомобильным ...</p>
+                    </div>
+                    <div class="event-body__footer">
+                      <div class="event-icon-wrapp">
+                        <span class="far fa-building"></span>
+                        <a href="#">Аквапарк Ривьера</a>
+                      </div>
+                      <div class="event-icon-wrapp">
+                        <span class="fa fa-map-marker-alt"></span>
+                        <span>Минская, 9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="event">
+                  <a href="#" class="event-img">
+                    <img src="img/pop-event-1.png" alt="">
+
+                    <div class="event-img__label">Бессрочно</div>
+                    <div class="event-img-footer">
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                          </div>
+                          <span class="event-star-text">8 отзывов</span>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 28
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+
+                  <div class="event-body">
+                    <div class="event-body__head">
+                      <a href="#" class="event-tt">Два билета «Стандартный» на колесо обозрения «Вокруг света» со скидкой 50%</a>
+                    </div>
+                    <div class="event-body__inner">
+                      <p>Химчистка салона проводится в несколько этапов. Всё начинается с сухой чистки профессиональным автомобильным ...</p>
+                    </div>
+                    <div class="event-body__footer">
+                      <div class="event-icon-wrapp">
+                        <span class="far fa-building"></span>
+                        <a href="#">Аквапарк Ривьера</a>
+                      </div>
+                      <div class="event-icon-wrapp">
+                        <span class="fa fa-map-marker-alt"></span>
+                        <span>Минская, 9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="event">
+                  <a href="#" class="event-img">
+                    <img src="img/pop-event-1.png" alt="">
+
+                    <div class="event-img__label">Бессрочно</div>
+                    <div class="event-img-footer">
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                          </div>
+                          <span class="event-star-text">8 отзывов</span>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 28
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+
+                  <div class="event-body">
+                    <div class="event-body__head">
+                      <a href="#" class="event-tt">Два билета «Стандартный» на колесо обозрения «Вокруг света» со скидкой 50%</a>
+                    </div>
+                    <div class="event-body__inner">
+                      <p>Химчистка салона проводится в несколько этапов. Всё начинается с сухой чистки профессиональным автомобильным ...</p>
+                    </div>
+                    <div class="event-body__footer">
+                      <div class="event-icon-wrapp">
+                        <span class="far fa-building"></span>
+                        <a href="#">Аквапарк Ривьера</a>
+                      </div>
+                      <div class="event-icon-wrapp">
+                        <span class="fa fa-map-marker-alt"></span>
+                        <span>Минская, 9</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn_border btn_default btn_mobile-max btn_min-width">Показать все события</a>
+            </section>
+
+
+            <section class="section-st">
+              <div class="inner-head">
+                <div class="title-site title-site_h1">Другие события компании</div>
+              </div>
+
+              <div class="events">
+                <div class="event">
+                  <a href="#" class="event-img">
+                    <img src="img/event1.png" alt="">
+
+                    <div class="event-img__label">Бессрочно</div>
+                    <div class="event-img-footer">
+                      <div class="event-img-name">Эффективная промывка форсунок</div>
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                          <span class="event-star-text">8 отзывов</span>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 115
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+
+                <div class="event">
+                  <a href="#" class="event-img">
+                    <img src="img/event2.png" alt="">
+
+                    <div class="event-img__label">Осталось 9 дней</div>
+                    <div class="event-img-footer">
+                      <div class="event-img-name">Химчистка салона легкового автомобиля или внедорожника</div>
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                          <span class="event-star-text">Отзывов еще нет</span>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 115
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+
+                <div class="event">
+                  <a href="#" class="event-img">
+                    <img src="img/event3.png" alt="">
+
+                    <div class="event-img__label">Осталось 32 дня</div>
+                    <div class="event-img-footer">
+                      <div class="event-img-name">Антибактериальная чистка кондиционера 799 руб.!</div>
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                          </div>
+                          <span class="event-star-text">15 отзывов</span>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 15
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn_border btn_default btn_mobile-max btn_min-width">Показать все события</a>
+            </section>
+
+
+
+            <section class="section-st">
+              <div class="inner-head">
+                <div class="title-site title-site_h1">Популярные события</div>
+              </div>
+
+              <div class="events events_min-info events_lg-size">
+                <div class="event">
+                  <a href="#" class="event-img">
+                    <img src="img/pop-event-1.png" alt="">
+
+                    <div class="event-img-footer">
+                      <div class="event-img-name">Два билета «Стандартный» на колесо обозрения «Вокруг света» со скидкой 50%</div>
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 28
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+
+                <div class="event">
+                  <a href="#" class="event-img">
+                    <img src="img/pop-event-2.png" alt="">
+
+                    <div class="event-img-footer">
+                      <div class="event-img-name">Посещение океанариума</div>
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 0
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+
+                <div class="event">
+                  <a href="#" class="event-img">
+                    <img src="img/pop-event-3.png" alt="">
+
+                    <div class="event-img-footer">
+                      <div class="event-img-name">Целый день развлечений в ТРЦ «Миллениум» в рестопарке Fun Jump</div>
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                          </div>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 115
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+
+                <div class="event event_long">
+                  <a href="#" class="event-img">
+                    <img src="img/pop-event-4.png" alt="">
+
+                    <div class="event-img-footer">
+                      <div class="event-img-name">Химчистка салона легкового автомобиля или внедорожника</div>
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star"></span>
+                          </div>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 28
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+
+                <div class="event">
+                  <a href="#" class="event-img">
+                    <img src="img/pop-event-1.png" alt="">
+
+                    <div class="event-img-footer">
+                      <div class="event-img-name">Два билета «Стандартный» на колесо обозрения «Вокруг света» со скидкой 50%</div>
+                      <div class="event-img-bottom">
+                        <div class="event-rating">
+                          <div class="stars-rating">
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                            <span class="fa fa-star active"></span>
+                          </div>
+                        </div>
+
+                        <div class="event-view">
+                          <span class="fa fa-eye"></span> 28
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn_border btn_default btn_mobile-max btn_min-width">Все события</a>
+            </section>
+
+
+
+            <section class="section-st">
+              <div class="inner-head">
+                <div class="title-site title-site_h1">Популярные организации</div>
+              </div>
+
+              <div class="services">
+                <div class="service service_gold">
+                  <div class="service__head">
+                    <div class="service-name"><a href="#">Детейлинг центр Гранд А сервис</a></div>
+                    <div class="service-rating">
+                      <div class="stars-rating">
+                        <span class="fa fa-star active"></span>
+                        <span class="fa fa-star active"></span>
+                        <span class="fa fa-star active"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <a href="#" class="service-review">115 отзывов</a>
+                    </div>
+                  </div>
+
+                  <div class="service__body">
+                    <div class="service-info">
+                      <div class="service-info-item">
+                        <div class="service-info-inner">
+                          <div class="service-icon-wrapp">
+                            <span class="fa fa-map-marker-alt"></span>
+                            <span class="service-adress">Республика Татарстан, Казань, поселок Игумново, Лесозаводская улица, 8</span>
+                            <span class="service-adress hidden-adress">Казань, ул. Юлиуса Фучика, 92</span>
+                            <span class="service-adress hidden-adress">Казань, улица Эсперанто, 41А</span>
+                            <div class="service-more-adress hidden-mobile">
+                              <span class="more-adress js-more-adress">+еще 2 адреса</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="service-status service-status_open">
+                          <div class="service-icon-wrapp">
+                            <span class="far fa-clock"></span>
+                            Открыто
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="service-info-item hidden-mobile">
+                        <div class="service-info-inner">
+                          <div class="service-icon-wrapp">
+                            <span class="fa fa-phone-alt"></span>
+                            <a href="tel: +7 (843) 202-20-68">+7 (843) 202-20-68</a>
+                          </div>
+                        </div>
+                        <div class="service-info-inner">
+                          <div class="service-icon-wrapp">
+                            <span class="fa fa-laptop-code"></span>
+                            <a href="#" target="_blank">http://www.grandaservis.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="service-answer hidden-mobile">
+                    <div class="service-answer-inner">
+                      <div class="service-icon-wrapp">
+                        <span class="far fa-comment"></span>
+                        <p>Брал здесь с пробегом Ладу гранту. Двухлетка с небольшим пробегом. Боялся, что какие-то дефекты - раз так быстро продали, но менеджер заверил, что с ней все в норме. Езжу полгода и правда все в норме.</p>
+                        <span class="service-date">01.09.2019</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="service">
+                  <div class="service__head">
+                    <div class="service-name"><a href="#">Автосервис Гараж</a></div>
+                    <div class="service-rating">
+                      <div class="stars-rating">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <span class="service-review">Отзывов еще нет</span>
+                    </div>
+                  </div>
+
+                  <div class="service__body">
+                    <div class="service-info">
+                      <div class="service-info-item">
+                        <div class="service-info-inner">
+                          <div class="service-icon-wrapp">
+                            <span class="fa fa-map-marker-alt"></span>
+                            Казань, ул. Юлиуса Фучика, 92
+                          </div>
+                        </div>
+                        <div class="service-status service-status_closed">
+                          <div class="service-icon-wrapp">
+                            <span class="far fa-clock"></span>
+                            Закрыто
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="service-info-item hidden-mobile">
+                        <div class="service-info-inner">
+                          <div class="service-icon-wrapp">
+                            <span class="fa fa-phone-alt"></span>
+                            <a href="tel: +7 (843) 202-20-68">+7 (843) 202-20-68</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="service">
+                  <div class="service__head">
+                    <div class="service-name">
+                      <div class="service-name__label">событие</div>
+                      <a href="#">Химчистка салона легкового автомобиля или внедорожника</a>
+                    </div>
+                    <div class="service-rating">
+                      <div class="stars-rating">
+                        <span class="fa fa-star active"></span>
+                        <span class="fa fa-star active"></span>
+                        <span class="fa fa-star active"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <a href="#" class="service-review">10 отзывов</a>
+                    </div>
+                  </div>
+
+                  <div class="service__body">
+                    <div class="service-info">
+                      <p>Химчистка салона проводится в несколько этапов. Всё начинается с сухой чистки профессиональным автомобильным пылесосом, снабженным специальными насадками, с помощью которого удаляется мелкий мусор и песок со всех автомобильных поверхностей...</p>
+
+                      <div class="service-info-item">
+                        <div class="service-info-inner">
+                          <div class="service-icon-wrapp">
+                            <span class="fa fa-map-marker-alt"></span>
+                            <span class="service-adress">Казань, Минская, 9</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="service-info-item">
+                        <div class="service-info-inner service-info-inner_flex">
+                          <div class="service-icon-wrapp">
+                            <span class="far fa-building"></span>
+                            <a href="#">Фитнес-клуб «Maximus»</a>
+                          </div>
+
+                          <div class="service-aside-flex">Осталось 32 дня</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="section-st">
+              <div class="inner-head">
+                <div class="title-site title-site_h1">Отзывы</div>
+              </div>
+
+              <div class="reviews">
+                <div class="review">
+                  <div class="review__head">
+                    <div class="review-user-name"><a href="#">Алина</a></div>
+                    <div class="stars-rating">
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                    </div>
+                    <div class="review-date">01.09.2019</div>
+                  </div>
+                  <div class="review__body">
+                    <p>В данном сервисе постоянно меняю масло, свечи и другие расходники. Всегда все четко, быстро, недорого. Выходит намного выгоднее, чем обслуживаться у официалов, но при этом качество нисколько не ниже. Молодцы ребята, хорошо работают, не говоря о том, что бесплатно делают диагностику))) СПАСИБО</p>
+                  </div>
+                  <div class="review__bottom">
+                    <div class="review-link-group">
+                      <span class="review-reply-button">
+                        <span class="fa fa-reply"></span>
+                        Ответить
+                      </span>
+                    </div>
+                    <div class="like-dislike-panel">
+                      <button type="button" class="like-dislike-panel__item disabled">
+                        <span class="fa fa-thumbs-up"></span>
+                      </button>
+                      <button type="button" class="like-dislike-panel__item disabled">
+                        <span class="fa fa-thumbs-down"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="review">
+                  <div class="review__head">
+                    <div class="review-user-name">Регина</div>
+                    <div class="stars-rating">
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                    </div>
+                    <div class="review-date">01.09.2019</div>
+                  </div>
+                  <div class="review__body">
+                    <p>В данном сервисе постоянно меняю масло, свечи и другие расходники. Всегда все четко, быстро, недорого. Выходит намного выгоднее, чем обслуживаться у официалов, но при этом качество нисколько не ниже. Молодцы ребята, хорошо работают, не говоря о том, что бесплатно делают диагностику))) СПАСИБО</p>
+                  </div>
+                  <div class="review__bottom">
+                    <div class="review-link-group">
+                      <span class="review-reply-button">
+                        <span class="fa fa-reply"></span>
+                        Ответить
+                      </span>
+                      <span class="review-show-answers js-show-answer">
+                        Смотреть ответы
+                        <span class="fa fa-chevron-down"></span>
+                      </span>
+                    </div>
+                    <div class="like-dislike-panel">
+                      <div class="like-dislike-panel__item">
+                        10 <span class="fa fa-thumbs-up"></span>
+                      </div>
+                      <div class="like-dislike-panel__item">
+                        1 <span class="fa fa-thumbs-down"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="review-answer">
+                    <div class="review-answer__head">
+                      <div class="review-user-name">Гость1</div>
+                      <div class="review-answer-title">в ответ на комментарий Регина</div>
+                      <div class="review-date">01.09.2019</div>
+                    </div>
+                    <div class="review-answer__body">
+                      <p>В данном сервисе постоянно меняю масло, свечи и другие расходники. Всегда все четко, быстро, недорого. Выходит намного выгоднее, чем обслуживаться у официалов, но при этом качество нисколько не ниже. Молодцы ребята, хорошо работают, не говоря о том, что бесплатно делают диагностику))) СПАСИБО</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="section-st">
+              <div class="inner-head">
+                <div class="title-site title-site_h1">Полезные отзывы</div>
+              </div>
+
+              <div class="reviews reviews_grid">
+                <div class="review">
+                  <div class="review__head">
+                    <div class="review-user-name"><a href="#">Сергей</a></div>
+                    <div class="stars-rating">
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                    </div>
+                    <div class="review-date">01.09.2019</div>
+                  </div>
+                  <div class="review__body">
+                    <p>Отличный сервис, рекомендую! Недавно сотрудники данной компании отремонтировали проколотую шину! Всё быстро и оперативно, цена достойная.</p>
+                  </div>
+                  <div class="review__bottom review__bottom_mobile-column">
+                    <div class="review-link-group">
+                      <a href="#" class="review-link-st">Автосалон «Автолига»</a>
+                    </div>
+                    <div class="like-dislike-panel">
+                      <button type="button" class="like-dislike-panel__item">
+                        10 <span class="fa fa-thumbs-up"></span>
+                      </button>
+                      <button type="button" class="like-dislike-panel__item disabled">
+                        <span class="fa fa-thumbs-down"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review">
+                  <div class="review__head">
+                    <div class="review-user-name"><a href="#">Александр</a></div>
+                    <div class="stars-rating">
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="review-date">01.09.2019</div>
+                  </div>
+                  <div class="review__body">
+                    <p>Всегда пользуюсь. Бывает что ожидание дольше чем у других, но главное что у них цена лучше. А машины приезжают те же что и у других. ...</p>
+                  </div>
+                  <div class="review__bottom review__bottom_mobile-column">
+                    <div class="review-link-group">
+                      <a href="#" class="review-link-st">Сервис заказа такси «Максим»</a>
+                    </div>
+                    <div class="like-dislike-panel">
+                      <button type="button" class="like-dislike-panel__item">
+                        8 <span class="fa fa-thumbs-up"></span>
+                      </button>
+                      <button type="button" class="like-dislike-panel__item disabled">
+                        <span class="fa fa-thumbs-down"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review">
+                  <div class="review__head">
+                    <div class="review-user-name">Сергей</div>
+                    <div class="stars-rating">
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                    </div>
+                    <div class="review-date">01.09.2019</div>
+                  </div>
+                  <div class="review__body">
+                    <p>Фитнес действительно красивый, большой еще и с потрясающим видом на водохранилище. И конечно же всех мучает один и тот же вопрос с ремонтом ...</p>
+                  </div>
+                  <div class="review__bottom review__bottom_mobile-column">
+                    <div class="review-link-group">
+                      <a href="#" class="review-link-st">Фитнес-клуб «Maximus» </a>
+                    </div>
+                    <div class="like-dislike-panel">
+                      <button type="button" class="like-dislike-panel__item">
+                        5 <span class="fa fa-thumbs-up"></span>
+                      </button>
+                      <button type="button" class="like-dislike-panel__item disabled">
+                        <span class="fa fa-thumbs-down"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review">
+                  <div class="review__head">
+                    <div class="review-user-name"><a href="#">Сергей</a></div>
+                    <div class="stars-rating">
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                    </div>
+                    <div class="review-date">01.09.2019</div>
+                  </div>
+                  <div class="review__body">
+                    <p>Отличный сервис, рекомендую! Недавно сотрудники данной компании отремонтировали проколотую шину! Всё быстро и оперативно, цена достойная.</p>
+                  </div>
+                  <div class="review__bottom review__bottom_mobile-column">
+                    <div class="review-link-group">
+                      <a href="#" class="review-link-st">Автосалон «Автолига»</a>
+                    </div>
+                    <div class="like-dislike-panel">
+                      <button type="button" class="like-dislike-panel__item">
+                        10 <span class="fa fa-thumbs-up"></span>
+                      </button>
+                      <button type="button" class="like-dislike-panel__item disabled">
+                        <span class="fa fa-thumbs-down"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review">
+                  <div class="review__head">
+                    <div class="review-user-name"><a href="#">Александр</a></div>
+                    <div class="stars-rating">
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="review-date">01.09.2019</div>
+                  </div>
+                  <div class="review__body">
+                    <p>Всегда пользуюсь. Бывает что ожидание дольше чем у других, но главное что у них цена лучше. А машины приезжают те же что и у других. ...</p>
+                  </div>
+                  <div class="review__bottom review__bottom_mobile-column">
+                    <div class="review-link-group">
+                      <a href="#" class="review-link-st">Сервис заказа такси «Максим»</a>
+                    </div>
+                    <div class="like-dislike-panel">
+                      <button type="button" class="like-dislike-panel__item">
+                        8 <span class="fa fa-thumbs-up"></span>
+                      </button>
+                      <button type="button" class="like-dislike-panel__item disabled">
+                        <span class="fa fa-thumbs-down"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="review">
+                  <div class="review__head">
+                    <div class="review-user-name">Сергей</div>
+                    <div class="stars-rating">
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                    </div>
+                    <div class="review-date">01.09.2019</div>
+                  </div>
+                  <div class="review__body">
+                    <p>Фитнес действительно красивый, большой еще и с потрясающим видом на водохранилище. И конечно же всех мучает один и тот же вопрос с ремонтом ...</p>
+                  </div>
+                  <div class="review__bottom review__bottom_mobile-column">
+                    <div class="review-link-group">
+                      <a href="#" class="review-link-st">Фитнес-клуб «Maximus» </a>
+                    </div>
+                    <div class="like-dislike-panel">
+                      <button type="button" class="like-dislike-panel__item">
+                        5 <span class="fa fa-thumbs-up"></span>
+                      </button>
+                      <button type="button" class="like-dislike-panel__item disabled">
+                        <span class="fa fa-thumbs-down"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn_border btn_default btn_min-width">Все отзывы</a>
+            </section>
+
+
+            <section class="section-st">
+              <div class="inner-head">
+                <div class="title-site title-site_h3">Все отзывы подряд</div>
+              </div>
+
+              <div class="reviews">
+                <div class="review answer-opened">
+                  <div class="review__head">
+                    <div class="review-user-name"><a href="#">Регина</a></div>
+                    <div class="stars-rating">
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                      <span class="fa fa-star active"></span>
+                    </div>
+                    <div class="review-date">01.09.2019</div>
+                  </div>
+                  <div class="review__body">
+                    <p>В данном сервисе постоянно меняю масло, свечи и другие расходники. Всегда все четко, быстро, недорого. Выходит намного выгоднее, чем обслуживаться у официалов, но при этом качество нисколько не ниже. Молодцы ребята, хорошо работают, не говоря о том, что бесплатно делают диагностику))) СПАСИБО</p>
+                  </div>
+                  <div class="review__bottom review__bottom_mobile-column">
+                    <div class="review-link-group">
+                      <a href="#" class="review-link-st">Свой Сервис</a>
+                    </div>
+                    <div class="like-dislike-panel">
+                      <button type="button" class="like-dislike-panel__item">
+                        10 <span class="fa fa-thumbs-up"></span>
+                      </button>
+                      <button type="button" class="like-dislike-panel__item disabled">
+                        <span class="fa fa-thumbs-down"></span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="review-answer review-answer_line">
+                    <div class="review-answer__head">
+                      <div class="review-user-name">Официальный комментарий заведения</div>
+                      <div class="review-date">01.09.2019</div>
+                    </div>
+                    <div class="review-answer__body">
+                      <p>Здравствуйте, Регина! Благодарим Вас за оставленный отзыв. Приятно узнать, что при необходимости Вы неизменно обращаетесь в «Свой Сервис». Будем стараться и в дальнейшем оправдывать все Ваши ожидания! С уважением, администрация автосервиса «Свой Сервис».</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="section-st">
+              <span class="title-site title-site_h2">Text</span>
+              <div class="text-bl">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+                <h1>h1 rubl _> ₽</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+                <div class="text_center">
+                  <h2>h2 Text center</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+                </div>
+                <div class="text_right">
+                  <h3>h3 text right</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+                </div>
+                <div class="text_uppercase">
+                  <h4>h4 text uppercase</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+                </div>
+                <h5>h5 Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+                <h6>h6 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, similique. Architecto quo cum, sunt consequuntur quaerat, commodi ratione natus laboriosam deserunt error numquam et optio, possimus beatae rem ex. Unde.</p>
+                <br>
+                <ul>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum.</li>
+                </ul>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora magnam, similique quam blanditiis aperiam accusamus quia. Sed nam ullam ut maiores. Voluptas deleniti delectus, temporibus nam enim vero ea molestiae.</p>
+                <br>
+                <ol>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum.</li>
+                  <li>Lorem ipsum.</li>
+                </ol>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, similique. Architecto quo cum, sunt consequuntur quaerat, commodi ratione natus laboriosam deserunt error numquam et optio, possimus beatae rem ex. Unde.</p>
+                <br>
+              </div>
+
+
+              <span class="title-site title-site_h3">Two column text</span>
+              <div class="text-bl-grid">
+                <div class="text-bl text-bl-grid__half-col">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sapiente nemo, eligendi facilis accusamus sequi est hic rerum et repellendus voluptas provident. Nisi, nihil qui earum a, pariatur esse, fuga nobis possimus quisquam repudiandae nostrum placeat ipsa itaque? Veniam cumque laboriosam repudiandae, totam nihil doloremque explicabo. Recusandae voluptatibus, tenetur praesentium sed cum dicta a tempora. Esse delectus commodi totam enim, laborum a excepturi assumenda sit voluptatum consequatur accusantium impedit ea quisquam libero. Ipsa, molestiae fugit neque ut, adipisci est iusto dicta aliquam maiores nulla tempora consequatur amet alias, eveniet nam numquam ab iste non possimus similique? Quia quo esse distinctio.</p>
+                </div>
+                <div class="text-bl text-bl-grid__half-col">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, non consequuntur harum aliquam quibusdam placeat. Ipsam alias consequuntur, iure vitae ad. Quas error ut dolorum vero et commodi voluptatum. Distinctio perferendis fuga, excepturi? Tempore, corporis architecto! Pariatur hic dignissimos libero ullam. Molestiae ullam, voluptatibus sunt labore. Consequuntur et sapiente maxime harum esse aperiam, rem amet est numquam quos nobis optio veniam maiores neque repellat minima, debitis blanditiis odio. Quam molestiae non nobis hic qui et explicabo sit, debitis, accusantium laboriosam illum blanditiis. Amet explicabo a vitae quos praesentium doloribus, modi consequatur? Velit dolores officia libero vel sapiente beatae, quibusdam! Fugiat.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="section-st">
+              <div class="tarifs-wrapp">
+                <div class="tarif">
+                  <div class="tarif__head">
+                    <div class="title-site title-site_h3">Бесплатный тариф </div>
+                    <div class="title-site title-site_h2">0 руб./год</div>
+                  </div>
+
+                  <ul class="tarif__list">
+                    <li>Добавление и редактирование информации о компании</li>
+                    <li>Добавление событий</li>
+                    <li>Добавление фотогалереи</li>
+                    <li>Статус официального представителя для ответов на отзывы</li>
+                  </ul>
+
+                  <div class="tarif__bottom">
+                    <a href="#" class="btn btn_lg btn_min-width">Выбрать</a>
+                  </div>
+                </div>
+
+
+                <div class="tarif">
+                  <div class="tarif__head">
+                    <div class="title-site title-site_h3">Тариф для бизнеса</div>
+                    <div class="title-site title-site_h2">3000 руб./год</div>
+                  </div>
+
+                  <ul class="tarif__list">
+                    <li>Добавление и редактирование информации о компании</li>
+                    <li>Добавление событий</li>
+                    <li>Добавление фотогалереи</li>
+                    <li>Статус официального представителя для ответов на отзывы</li>
+                    <li>Приоритетное размещение в каталоге и на карте</li>
+                    <li>Вывод активной гиперссылки на страницу категории</li>
+                    <li>Плашка «Проверенная компания» на странице <span>см <a href="#">условия проверки компании</a></span></li>
+                  </ul>
+
+                  <div class="tarif__bottom">
+                    <a href="#" class="btn btn_lg btn_min-width">Выбрать</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <section class="section-st">
+              <div class="st-list-info">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <span class="st-list-text">Автоаксессуары</span>
+                      <span class="st-list-aside">
+                        <span class="st-list-aside__val">25</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="st-list-text">Автозапчасти для грузовых автомобилей</span>
+                      <span class="st-list-aside">
+                        <span class="st-list-aside__val">112</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="st-list-text">Автозапчасти для иномарок</span>
+                      <span class="st-list-aside">
+                        <span class="st-list-aside__val">295</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="st-list-text">Автозапчасти для отечественных автомобилей</span>
+                      <span class="st-list-aside">
+                        <span class="st-list-aside__val">154</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="st-list-text">Автозвук</span>
+                      <span class="st-list-aside">
+                        <span class="st-list-aside__val">25</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="st-list-text">Автомасла / Мотомасла / Химия</span>
+                      <span class="st-list-aside">
+                        <span class="st-list-aside__val">112</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="st-list-text">Автомобильные аккумуляторы</span>
+                      <span class="st-list-aside">
+                        <span class="st-list-aside__val">295</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="st-list-text">Автомойки</span>
+                      <span class="st-list-aside">
+                        <span class="st-list-aside__val">154</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="st-list-text">Автомобильные аккумуляторы</span>
+                      <span class="st-list-aside">
+                        <span class="st-list-aside__val">16</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="st-list-text">Автомойки</span>
+                      <span class="st-list-aside">
+                        <span class="st-list-aside__val">84</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </main><!-- main -->
+
+
+          <aside class="aside">
+            <div class="aside-bn hidden-devices">
+              <img src="img/aside-bn.png" alt="">
+            </div>
+
+            <ul class="aside-links">
+              <li><a href="#" class="active">Просмотр профиля</a></li>
+              <li><a href="#">Добавление компании</a></li>
+              <li><a href="#">Добавление события</a></li>
+              <li><a href="#">Редактирование профиля</a></li>
+              <li><a href="#">Ответ на отзывы</a></li>
+            </ul>
+
+            <ul class="aside-edit-btns">
+              <li><a href="#" class="btn btn_weight-font btn_max">Редактировать</a></li>
+              <li><a href="#" class="btn btn_weight-font btn_success btn_max">Выделить</a></li>
+              <li><a href="#" class="btn btn_weight-font btn_attention btn_max">Компания закрылась</a></li>
+              <li><a href="#" class="btn btn_weight-font btn_danger btn_max">Удалить</a></li>
+              <li><a href="#" class="btn btn_weight-font btn_default btn_max">button default</a></li>
+            </ul>
+          </aside><!-- aside -->
+        </div>
+      </div>
+        
+
+    </div><!-- body wrapper -->
+
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">Правила сайта</a></li>
+            <li><a href="#">Правообладателям</a></li>
+            <li><a href="#">Реклама</a></li>
+            <li><a href="#">События</a></li>
+            <li><a href="#">Компании</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Добавить компанию</a></li>
+            <li><a href="#">Карта сайта</a></li>
+          </ul>
+    
+          <div class="footer-feedback">
+            Обратная связь
+            <div class="soc-inline">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-vk"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-telegram-plane"></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    
+      <div class="footer-bottom">
+        <div class="container">
+          <span class="copy">
+            <span>&copy; 2019</span>
+            Адреса и телефоны организаций города Казань
+          </span>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+  </div><!-- site wrapper -->
+
+
+  <script src="js/libs/jquery.min.js"></script>
+  <script src="js/libs/jquery-ui.min.js"></script>
+  <script src="js/libs/jquery.fancybox.min.js"></script>
+  <script src="js/libs/jcf.js"></script>
+  <script src="js/libs/owl.carousel.min.js"></script>
+  <script src="js/libs/simplebar.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

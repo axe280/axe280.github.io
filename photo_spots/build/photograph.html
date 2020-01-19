@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Title</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+    <div class="site-body-wrapper">
+
+
+
+      <div id="signin" style="display: none;">
+        <div class="modal-st">
+          <div class="modal-head">
+            <div class="title-site title-site_h2">Вход</div>
+          </div>
+          <div class="modal-inner">
+            <form action="#" class="modal-form">
+              <div class="form-group">
+                <label class="field-item">
+                  <div class="field-item__label">Электронная почта</div>
+                  <div class="field-item__field">
+                    <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+                  </div>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label class="field-item">
+                  <div class="field-item__label">Пароль</div>
+                  <div class="field-item__field">
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра" required>
+                  </div>
+                </label>
+                <div class="m-aside-link text_right"><a href="#">Забыли пароль?</a></div>
+              </div>
+
+              <button class="btn btn_md btn_max" type="submit">Войти</button>
+              <span class="modal-terms">Вход означает согласие с <a href="#">Пользовательским соглашением</a></span>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- header -->
+      <header id="header" class="header">
+        <div class="container container_max">
+          <div class="header-panel">
+
+            <div class="logo"><a href="preview.html">Top Photo Spots</a></div>
+
+
+            <div class="burger-menu">
+              <div class="burger-menu-box">
+                <div class="burger-menu-inner"></div>
+              </div>
+            </div>
+
+
+
+            <div class="mobile-open-head">
+              <div class="header-search">
+                <form action="#" class="form-search">
+                  <input type="text" placeholder="Поиск по названию, городу, региону...">
+                  <button type="submit">
+                    <svg class="icon icon-search">
+                      <use xlink:href="img/icon/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+
+              <a href="#" class="header-fav">
+                <div class="header-fav__icon">
+                  <span class="h-fav-value">2</span>
+                  <svg class="icon icon-favourite">
+                    <use xlink:href="img/icon/sprite.svg#favourite"></use>
+                  </svg>
+                </div>
+                <span class="header-fav__text">Избранное</span>
+              </a>
+
+              <div class="header-authorization h-auth_auhtorized"><!-- h-auth_auhtorized -->
+                <div class="h-auth-btns">
+                  <button data-fancybox data-src="#signin" class="btn btn_head-signin">Войти</button>
+                  <a href="#" class="btn">Регистрация</a>
+                </div>
+
+                <div class="h-auth-panel">
+                  <div class="avatar avatar_sm">
+                    <div class="avatar__img">
+                      <img src="img/avatar.png" alt="">
+                      <svg class="icon icon-photo">
+                        <use xlink:href="img/icon/sprite.svg#photo"></use>
+                      </svg>
+                    </div>
+                    <div class="avatar__info">
+                      <div class="avatar-name">
+                        Александр
+                        <svg class="icon icon-arr-bottom">
+                          <use xlink:href="img/icon/sprite.svg#arr-bottom"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="h-auth-menu">
+                    <ul>
+                      <li><a href="#">Моя лента</a></li>
+                      <li><a href="#">Настройка</a></li>
+                      <li><a href="#">Мои локации</a></li>
+                      <li><a href="#">Понравившиеся места</a></li>
+                      <li><a href="#">Мои закладки</a></li>
+                      <li><a href="#">Выход</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+
+
+      <main class="main">
+        <div class="user-header-wrapp">
+          <div class="user-header-photo active" style="background-image: url('../img/user-bg.jpg');"></div>
+
+          <div class="container">
+            <div class="user-h-avatar">
+              <div class="user-h-avatar__photo">
+                <img src="img/user.jpg" alt="">
+              </div>
+              <div class="user-h-avatar__info">
+                <div class="user-h-avatar-name">
+                  <h1>Марьям Тазиева</h1>
+                </div>
+                <div class="user-h-avatar-city">Россия, Казань</div>
+                <ul class="user-h-avatar-list">
+                  <li>Дата регистрации: <span>15.03.2019</span></li>
+                  <li>Просмотр профиля: <span>120</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-header-info">
+              <p>Меня зовут Марьям, я профессиональный фотограф, а также аккредитованный экскурсовод. Провожу семейные, индивидуальные, свадебные, студийные фотосессии. Я приглашаю Вас на пешеходные экскурсии или фотоэкскурсии по достопримечательностям города Казани. </p>
+              <p>Языки: русский, английский</p>
+              <ul class="user-contacts">
+                <li>
+                  <svg class="icon icon-instagram">
+                    <use xlink:href="img/icon/sprite.svg#instagram"></use>
+                  </svg>
+                  <a href="#" target="_blank">https://www.instagram.com/tzmaryam</a>
+                </li>
+                <li>
+                  <svg class="icon icon-facebook">
+                    <use xlink:href="img/icon/sprite.svg#facebook"></use>
+                  </svg>
+                  <a href="#" target="_blank">https://www.facebook.com/tzmaryam</a>
+                </li>
+              </ul>
+              <ul class="user-contacts">
+                <li>
+                  <svg class="icon icon-tel">
+                    <use xlink:href="img/icon/sprite.svg#tel-icon"></use>
+                  </svg>
+                  <a href="tel: 8 929 335 74 77">8 929 335 74 77</a>
+                </li>
+                <li>
+                  <svg class="icon icon-link">
+                    <use xlink:href="img/icon/sprite.svg#website-icon"></use>
+                  </svg>
+                  <a href="#" target="_blank">www.tzmaryam.ru</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="user-panel-nav">
+          <div class="container">
+            <ul class="user-nav-list user-nav-list_min">
+              <li class="active"><a href="#">Места</a></li>
+              <li><a href="#">Закладки</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="cards-list-max-width">
+          <div class="card-list">
+            <div class="card">
+              <div class="card-inner">
+                <img src="img/card.jpg" alt="">
+                <div class="card__head">
+                  <div class="card-pics-list">
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-heart">
+                        <use xlink:href="img/icon/sprite.svg#heart"></use>
+                      </svg>
+                      <span class="card-pic__value">112</span>
+                      <span class="card-pic__hint">Добавить в отмеченные</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-favourite">
+                        <use xlink:href="img/icon/sprite.svg#favourite"></use>
+                      </svg>
+                      <span class="card-pic__value">15</span>
+                      <span class="card-pic__hint">Добавить в закладки</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-comment">
+                        <use xlink:href="img/icon/sprite.svg#comment"></use>
+                      </svg>
+                      <span class="card-pic__value">3</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="card__bottom">
+                  <div class="card-title">
+                    <div class="card-tt-text">Санкт-Петербург <span class="card-tt-date">10.06.2019 12:30</span></div>
+                    <div class="card-tt"><a href="#">Санкт-петербургский политехнический университет им. Петра Великого</a></div>
+                    <div class="card-tt-name"><a href="#">Александр Александров</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-inner">
+                <img src="img/card.jpg" alt="">
+                <div class="card__head">
+                  <div class="card-pics-list">
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-heart">
+                        <use xlink:href="img/icon/sprite.svg#heart-fill"></use>
+                      </svg>
+                      <span class="card-pic__value">112</span>
+                      <span class="card-pic__hint">Убать из отмеченных</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-favourite">
+                        <use xlink:href="img/icon/sprite.svg#favourite-fill"></use>
+                      </svg>
+                      <span class="card-pic__value">15</span>
+                      <span class="card-pic__hint">Убрать из закладок</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-comment">
+                        <use xlink:href="img/icon/sprite.svg#comment"></use>
+                      </svg>
+                      <span class="card-pic__value">3</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="card__bottom">
+                  <div class="card-title">
+                    <div class="card-tt-text">Санкт-Петербург <span class="card-tt-date">10.06.2019 12:30</span></div>
+                    <div class="card-tt"><a href="#">Санкт-петербургский политехнический университет им. Петра Великого</a></div>
+                    <div class="card-tt-name"><a href="#">Александр Александров</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-inner">
+                <img src="img/card.jpg" alt="">
+                <div class="card__head">
+                  <div class="card-pics-list">
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-heart">
+                        <use xlink:href="img/icon/sprite.svg#heart"></use>
+                      </svg>
+                      <span class="card-pic__value">112</span>
+                      <span class="card-pic__hint">Добавить в отмеченные</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-favourite">
+                        <use xlink:href="img/icon/sprite.svg#favourite"></use>
+                      </svg>
+                      <span class="card-pic__value">15</span>
+                      <span class="card-pic__hint">Добавить в закладки</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-comment">
+                        <use xlink:href="img/icon/sprite.svg#comment"></use>
+                      </svg>
+                      <span class="card-pic__value">3</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="card__bottom">
+                  <div class="card-title">
+                    <div class="card-tt-text">Санкт-Петербург <span class="card-tt-date">10.06.2019 12:30</span></div>
+                    <div class="card-tt"><a href="#">Миланский собор</a></div>
+                    <div class="card-tt-name"><a href="#">Александр Александров</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-inner">
+                <img src="img/card.jpg" alt="">
+                <div class="card__head">
+                  <div class="card-pics-list">
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-heart">
+                        <use xlink:href="img/icon/sprite.svg#heart"></use>
+                      </svg>
+                      <span class="card-pic__value">112</span>
+                      <span class="card-pic__hint">Добавить в отмеченные</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-favourite">
+                        <use xlink:href="img/icon/sprite.svg#favourite"></use>
+                      </svg>
+                      <span class="card-pic__value">15</span>
+                      <span class="card-pic__hint">Добавить в закладки</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-comment">
+                        <use xlink:href="img/icon/sprite.svg#comment"></use>
+                      </svg>
+                      <span class="card-pic__value">3</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="card__bottom">
+                  <div class="card-title">
+                    <div class="card-tt-text">Санкт-Петербург <span class="card-tt-date">10.06.2019 12:30</span></div>
+                    <div class="card-tt"><a href="#">Миланский собор</a></div>
+                    <div class="card-tt-name"><a href="#">Александр Александров</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-inner">
+                <img src="img/card.jpg" alt="">
+                <div class="card__head">
+                  <div class="card-pics-list">
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-heart">
+                        <use xlink:href="img/icon/sprite.svg#heart"></use>
+                      </svg>
+                      <span class="card-pic__value">112</span>
+                      <span class="card-pic__hint">Добавить в отмеченные</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-favourite">
+                        <use xlink:href="img/icon/sprite.svg#favourite"></use>
+                      </svg>
+                      <span class="card-pic__value">15</span>
+                      <span class="card-pic__hint">Добавить в закладки</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-comment">
+                        <use xlink:href="img/icon/sprite.svg#comment"></use>
+                      </svg>
+                      <span class="card-pic__value">3</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="card__bottom">
+                  <div class="card-title">
+                    <div class="card-tt-text">Санкт-Петербург <span class="card-tt-date">10.06.2019 12:30</span></div>
+                    <div class="card-tt"><a href="#">Санкт-петербургский политехнический университет им. Петра Великого</a></div>
+                    <div class="card-tt-name"><a href="#">Александр Александров</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-inner">
+                <img src="img/card.jpg" alt="">
+                <div class="card__head">
+                  <div class="card-pics-list">
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-heart">
+                        <use xlink:href="img/icon/sprite.svg#heart-fill"></use>
+                      </svg>
+                      <span class="card-pic__value">112</span>
+                      <span class="card-pic__hint">Убать из отмеченных</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-favourite">
+                        <use xlink:href="img/icon/sprite.svg#favourite-fill"></use>
+                      </svg>
+                      <span class="card-pic__value">15</span>
+                      <span class="card-pic__hint">Убрать из закладок</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-comment">
+                        <use xlink:href="img/icon/sprite.svg#comment"></use>
+                      </svg>
+                      <span class="card-pic__value">3</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="card__bottom">
+                  <div class="card-title">
+                    <div class="card-tt-text">Санкт-Петербург <span class="card-tt-date">10.06.2019 12:30</span></div>
+                    <div class="card-tt"><a href="#">Санкт-петербургский политехнический университет им. Петра Великого</a></div>
+                    <div class="card-tt-name"><a href="#">Александр Александров</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-inner">
+                <img src="img/card.jpg" alt="">
+                <div class="card__head">
+                  <div class="card-pics-list">
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-heart">
+                        <use xlink:href="img/icon/sprite.svg#heart"></use>
+                      </svg>
+                      <span class="card-pic__value">112</span>
+                      <span class="card-pic__hint">Добавить в отмеченные</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-favourite">
+                        <use xlink:href="img/icon/sprite.svg#favourite"></use>
+                      </svg>
+                      <span class="card-pic__value">15</span>
+                      <span class="card-pic__hint">Добавить в закладки</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-comment">
+                        <use xlink:href="img/icon/sprite.svg#comment"></use>
+                      </svg>
+                      <span class="card-pic__value">3</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="card__bottom">
+                  <div class="card-title">
+                    <div class="card-tt-text">Санкт-Петербург <span class="card-tt-date">10.06.2019 12:30</span></div>
+                    <div class="card-tt"><a href="#">Миланский собор</a></div>
+                    <div class="card-tt-name"><a href="#">Александр Александров</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-inner">
+                <img src="img/card.jpg" alt="">
+                <div class="card__head">
+                  <div class="card-pics-list">
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-heart">
+                        <use xlink:href="img/icon/sprite.svg#heart"></use>
+                      </svg>
+                      <span class="card-pic__value">112</span>
+                      <span class="card-pic__hint">Добавить в отмеченные</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-favourite">
+                        <use xlink:href="img/icon/sprite.svg#favourite"></use>
+                      </svg>
+                      <span class="card-pic__value">15</span>
+                      <span class="card-pic__hint">Добавить в закладки</span>
+                    </a>
+
+                    <a href="#" class="card-pic">
+                      <svg class="icon icon-comment">
+                        <use xlink:href="img/icon/sprite.svg#comment"></use>
+                      </svg>
+                      <span class="card-pic__value">3</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="card__bottom">
+                  <div class="card-title">
+                    <div class="card-tt-text">Санкт-Петербург <span class="card-tt-date">10.06.2019 12:30</span></div>
+                    <div class="card-tt"><a href="#">Миланский собор</a></div>
+                    <div class="card-tt-name"><a href="#">Александр Александров</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <a href="#" class="send-error-mistake">
+            <svg class="icon icon-attention">
+              <use xlink:href="img/icon/sprite.svg#exc"></use>
+            </svg>
+
+            Сообщить об ошибке
+          </a>
+        </div>
+      </main><!-- main -->
+
+    </div><!-- body wrapper -->
+
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">Карта сайта</a></li>
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Правила сайта</a></li>
+            <li><a href="#">Новые локации</a></li>
+            <li><a href="#">Фотографы</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li>
+              <div class="footer-lang-tt">
+                Русский
+                <svg class="icon icon-arr-bottom">
+                  <use xlink:href="img/icon/sprite.svg#arr-bottom"></use>
+                </svg>
+              </div>
+
+              <ul class="footer-lang-list">
+                <li class="active">Русский</li>
+                <li>English</li>
+                <li>Français</li>
+                <li>Deutsch</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="soc-inline">
+            <a href="#" class="soc-inline__icon">
+              <svg class="icon icon-facebook">
+                <use xlink:href="img/icon/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="soc-inline__icon">
+              <svg class="icon icon-twitter">
+                <use xlink:href="img/icon/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="soc-inline__icon">
+              <svg class="icon icon-instagram">
+                <use xlink:href="img/icon/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </div>
+          <span class="copy">&copy; Topphotospots.com, 2019</span>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+  </div><!-- site wrapper -->
+
+
+  <script src="js/libs/jquery.min.js"></script>
+  <script src="js/libs/owl.carousel.min.js"></script>
+  <script src="js/libs/jquery.fancybox.min.js"></script>
+  <script src="js/libs/selectize.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

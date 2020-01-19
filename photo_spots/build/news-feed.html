@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Title</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="site-wrapper">
+    <div class="site-body-wrapper">
+
+
+
+      <div id="signin" style="display: none;">
+        <div class="modal-st">
+          <div class="modal-head">
+            <div class="title-site title-site_h2">Вход</div>
+          </div>
+          <div class="modal-inner">
+            <form action="#" class="modal-form">
+              <div class="form-group">
+                <label class="field-item">
+                  <div class="field-item__label">Электронная почта</div>
+                  <div class="field-item__field">
+                    <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
+                  </div>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label class="field-item">
+                  <div class="field-item__label">Пароль</div>
+                  <div class="field-item__field">
+                    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра" required>
+                  </div>
+                </label>
+                <div class="m-aside-link text_right"><a href="#">Забыли пароль?</a></div>
+              </div>
+
+              <button class="btn btn_md btn_max" type="submit">Войти</button>
+              <span class="modal-terms">Вход означает согласие с <a href="#">Пользовательским соглашением</a></span>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- header -->
+      <header id="header" class="header">
+        <div class="container container_max">
+          <div class="header-panel">
+
+            <div class="logo"><a href="preview.html">Top Photo Spots</a></div>
+
+
+            <div class="burger-menu">
+              <div class="burger-menu-box">
+                <div class="burger-menu-inner"></div>
+              </div>
+            </div>
+
+
+
+            <div class="mobile-open-head">
+              <div class="header-search">
+                <form action="#" class="form-search">
+                  <input type="text" placeholder="Поиск по названию, городу, региону...">
+                  <button type="submit">
+                    <svg class="icon icon-search">
+                      <use xlink:href="img/icon/sprite.svg#search"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+
+              <a href="#" class="header-fav">
+                <div class="header-fav__icon">
+                  <span class="h-fav-value">2</span>
+                  <svg class="icon icon-favourite">
+                    <use xlink:href="img/icon/sprite.svg#favourite"></use>
+                  </svg>
+                </div>
+                <span class="header-fav__text">Избранное</span>
+              </a>
+
+              <div class="header-authorization h-auth_auhtorized"><!-- h-auth_auhtorized -->
+                <div class="h-auth-btns">
+                  <button data-fancybox data-src="#signin" class="btn btn_head-signin">Войти</button>
+                  <a href="#" class="btn">Регистрация</a>
+                </div>
+
+                <div class="h-auth-panel">
+                  <div class="avatar avatar_sm">
+                    <div class="avatar__img">
+                      <img src="img/avatar.png" alt="">
+                      <svg class="icon icon-photo">
+                        <use xlink:href="img/icon/sprite.svg#photo"></use>
+                      </svg>
+                    </div>
+                    <div class="avatar__info">
+                      <div class="avatar-name">
+                        Александр
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="h-auth-menu">
+                    <ul>
+                      <li><a href="#">Моя лента</a></li>
+                      <li><a href="#">Настройка</a></li>
+                      <li><a href="#">Мои локации</a></li>
+                      <li><a href="#">Понравившиеся места</a></li>
+                      <li><a href="#">Мои закладки</a></li>
+                      <li><a href="#">Выход</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+
+
+      <main class="main">
+        <div class="container">
+          <div class="inner-head">
+            <div class="head-user-bl">
+              <div class="avatar">
+                <div class="avatar__img">
+                  <img src="" alt="">
+                  <svg class="icon icon-photo">
+                    <use xlink:href="img/icon/sprite.svg#photo"></use>
+                  </svg>
+                </div>
+                <div class="avatar__info">
+                  <div class="avatar-name">
+                    <h1>Александр Александров</h1>
+                  </div>
+                  <div class="avatar-location">
+                    Россия, Казань
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="user-nav-tt-mobile">
+          <div class="container">
+            <span class="title-site title-site_h2">Моя лента</span>
+          </div>
+        </div>
+
+
+        <div class="user-panel-nav hidden-devices">
+          <div class="container">
+            <ul class="user-nav-list">
+              <li class="active"><a href="#">Моя лента</a></li>
+              <li><a href="#">Настройки</a></li>
+              <li><a href="#">Мои локации</a></li>
+              <li><a href="#">Понравившиеся места</a></li>
+              <li><a href="#">Мои закладки</a></li>
+              <li><a href="#">Мой профиль</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="user-btns-panel">
+            <div class="user-btn-pan-item">
+              <div class="drop-down">
+                <div class="drop-down__title">
+                  В моем городе 
+                  <svg class="icon icon-arr-bottom">
+                    <use xlink:href="img/icon/sprite.svg#arr-bottom"></use>
+                  </svg>
+                </div>
+
+                <ul class="drop-down__list">
+                  <li>В любом месте</li>
+                  <li>Рядом со мной</li>
+                  <li>Новые места </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-btn-pan-item">
+              <div class="drop-down">
+                <div class="drop-down__title">
+                  Самые популярные
+                  <svg class="icon icon-arr-bottom">
+                    <use xlink:href="img/icon/sprite.svg#arr-bottom"></use>
+                  </svg>
+                </div>
+
+                <ul class="drop-down__list">
+                  <li>Самые популярные</li>
+                  <li>Самые популярные</li>
+                  <li>Самые популярные</li>
+                  <li>Самые популярные</li>
+                  <li>Самые популярные</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="user-add-btn"><strong>+</strong> Добавить место</div>
+          </div>
+
+
+          <div class="feed-wrapper">
+            <div class="feed-list">
+              <div class="news-feed">
+                <div class="feed-bl">
+                  <div class="feed-head">
+                    <div class="title-site title-site_h3">Башня Сююмбике</div>
+                    <span class="feed-head__city">Казань</span>
+                  </div>
+
+                  <div class="feed-info">
+                    <p>Это - дозорная башня Сююмбике. Шпиль сооружения отклоняется от вертикали на 1,98 метров. Историки до сих пор спорят о периоде строительства, сходясь во мнении, что она была возведена между 1645-1650 годами. Башня находится в северной части территории Казанского Кремля. Общая высота постройки - 58 метров.</p>
+                  </div>
+
+                  <div class="feed-img-flex">
+                    <div class="feed-img"><img src="img/feed-img.jpg" alt=""></div>
+                    <div class="feed-user">
+                      <div class="avatar avatar_comment">
+                        <div class="avatar__img">
+                          <svg class="icon icon-photo">
+                            <use xlink:href="img/icon/sprite.svg#photo"></use>
+                          </svg>
+                          <img src="" alt="">
+                        </div>
+                        <div class="avatar__info">
+                          <div class="avatar-name">
+                            Александр Александров
+                          </div>
+                          <div class="avatar-date">
+                            10.06.2019 12:30
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="feed-pics">
+                      <div class="card-pics-list">
+                        <a href="#" class="card-pic">
+                          <svg class="icon icon-heart">
+                            <use xlink:href="img/icon/sprite.svg#heart"></use>
+                          </svg>
+                          <span class="card-pic__value">112</span>
+                          <span class="card-pic__hint">Добавить в отмеченные</span>
+                        </a>
+
+                        <a href="#" class="card-pic">
+                          <svg class="icon icon-favourite">
+                            <use xlink:href="img/icon/sprite.svg#favourite"></use>
+                          </svg>
+                          <span class="card-pic__value">15</span>
+                          <span class="card-pic__hint">Добавить в закладки</span>
+                        </a>
+
+                        <a href="#" class="card-pic">
+                          <svg class="icon icon-comment">
+                            <use xlink:href="img/icon/sprite.svg#comment"></use>
+                          </svg>
+                          <span class="card-pic__value">3</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="feed-reviews">
+                    <div class="feed-reviews__tt"><span>Комментарии</span></div>
+
+                    <div class="reviews">
+
+                      <div class="review">
+                        <div class="review__head">
+                          <div class="review-user">
+                            <div class="avatar avatar_comment">
+                              <div class="avatar__img">
+                                <svg class="icon icon-photo">
+                                  <use xlink:href="img/icon/sprite.svg#photo"></use>
+                                </svg>
+                                <img src="img/photographer-img3.jpg" alt="">
+                              </div>
+                              <div class="avatar__info">
+                                <div class="avatar-name">
+                                  Артем Дугин
+                                </div>
+                                <div class="avatar-location">
+                                  Россия, Казань
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="review-date">10.10.2019</div>
+                        </div>
+
+                        <div class="review__body">
+                          <p>Башня находиться на территории кремля казанского, хорошо почитать историю любви этой башни , посещала вечером и не смогла взять экскурсовода . Вечером красиво подсвеченная, рядом резиденция президента Татарстана</p>
+                        </div>
+
+                        <div class="review__bottom">
+                          <span class="review-reply-button">
+                            <span class="fa fa-reply"></span>
+                            <svg class="icon icon-comment">
+                              <use xlink:href="img/icon/sprite.svg#chat-icon"></use>
+                            </svg>
+                            Ответить
+                          </span>
+
+                          <div class="review-reply-field">
+                            <input type="text">
+                            <button class="btn-photo-review">
+                              <svg class="icon icon-img">
+                                <use xlink:href="img/icon/sprite.svg#img-icon"></use>
+                              </svg>
+                            </button>
+                            <button class="btn" type="button">Отправить</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="review">
+                        <div class="review__head">
+                          <div class="review-user">
+                            <div class="avatar avatar_comment">
+                              <div class="avatar__img">
+                                <svg class="icon icon-photo">
+                                  <use xlink:href="img/icon/sprite.svg#photo"></use>
+                                </svg>
+                                <img src="img/photographer-img3.jpg" alt="">
+                              </div>
+                              <div class="avatar__info">
+                                <div class="avatar-name">
+                                  Артем Дугин
+                                </div>
+                                <div class="avatar-location">
+                                  Россия, Казань
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="review-date">10.10.2019</div>
+                        </div>
+
+                        <div class="review__body">
+                          <p>Очень много притч и слаганий. Ясно одно документов конкретно подтверждающих нет. Башня отклонена от вертикали это факт.</p>
+                        </div>
+
+                        <div class="review__bottom">
+                          <span class="review-reply-button">
+                            <span class="fa fa-reply"></span>
+                            <svg class="icon icon-comment">
+                              <use xlink:href="img/icon/sprite.svg#chat-icon"></use>
+                            </svg>
+                            Ответить
+                          </span>
+
+                          <div class="review-reply-field">
+                            <input type="text">
+                            <button class="btn-photo-review">
+                              <svg class="icon icon-img">
+                                <use xlink:href="img/icon/sprite.svg#img-icon"></use>
+                              </svg>
+                            </button>
+                            <button class="btn" type="button">Отправить</button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="news-feed">
+                <div class="feed-bl">
+                  <div class="feed-head">
+                    <div class="title-site title-site_h3">Дворец Земледельцев</div>
+                    <span class="feed-head__city">Казань</span>
+                  </div>
+
+                  <div class="feed-info">
+                    <p>Монументальное сооружение носит название Дворца земледельцев потому, что является офисом Министерства сельского хозяйства и продовольствия. Здание определенно заслуживает того, чтобы называться одной из самых известных и популярных достопримечательностей города. </p>
+                  </div>
+
+                  <div class="feed-img-flex">
+                    <div class="feed-img"><img src="img/feed-img.jpg" alt=""></div>
+                    <div class="feed-user">
+                      <div class="avatar avatar_comment">
+                        <div class="avatar__img">
+                          <svg class="icon icon-photo">
+                            <use xlink:href="img/icon/sprite.svg#photo"></use>
+                          </svg>
+                          <img src="" alt="">
+                        </div>
+                        <div class="avatar__info">
+                          <div class="avatar-name">
+                            Александр Александров
+                          </div>
+                          <div class="avatar-date">
+                            10.06.2019 12:30
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="feed-pics">
+                      <div class="card-pics-list">
+                        <a href="#" class="card-pic">
+                          <svg class="icon icon-heart">
+                            <use xlink:href="img/icon/sprite.svg#heart"></use>
+                          </svg>
+                          <span class="card-pic__value">112</span>
+                          <span class="card-pic__hint">Добавить в отмеченные</span>
+                        </a>
+
+                        <a href="#" class="card-pic">
+                          <svg class="icon icon-favourite">
+                            <use xlink:href="img/icon/sprite.svg#favourite"></use>
+                          </svg>
+                          <span class="card-pic__value">15</span>
+                          <span class="card-pic__hint">Добавить в закладки</span>
+                        </a>
+
+                        <a href="#" class="card-pic">
+                          <svg class="icon icon-comment">
+                            <use xlink:href="img/icon/sprite.svg#comment"></use>
+                          </svg>
+                          <span class="card-pic__value">3</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="feed-reviews">
+                    <div class="feed-reviews__tt"><span>Комментарии</span></div>
+
+                    <div class="reviews">
+
+                      <div class="review">
+                        <div class="review__head">
+                          <div class="review-user">
+                            <div class="avatar avatar_comment">
+                              <div class="avatar__img">
+                                <svg class="icon icon-photo">
+                                  <use xlink:href="img/icon/sprite.svg#photo"></use>
+                                </svg>
+                                <img src="img/photographer-img3.jpg" alt="">
+                              </div>
+                              <div class="avatar__info">
+                                <div class="avatar-name">
+                                  Артем Дугин
+                                </div>
+                                <div class="avatar-location">
+                                  Россия, Казань
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="review-date">10.10.2019</div>
+                        </div>
+
+                        <div class="review__body">
+                          <p>Нашли достопримечательность в интернете. Интересная архитектура здания, нереально красивые фото получились.</p>
+                        </div>
+
+                        <div class="review__bottom">
+                          <span class="review-reply-button">
+                            <span class="fa fa-reply"></span>
+                            <svg class="icon icon-comment">
+                              <use xlink:href="img/icon/sprite.svg#chat-icon"></use>
+                            </svg>
+                            Ответить
+                          </span>
+
+                          <div class="review-reply-field">
+                            <input type="text">
+                            <button class="btn-photo-review">
+                              <svg class="icon icon-img">
+                                <use xlink:href="img/icon/sprite.svg#img-icon"></use>
+                              </svg>
+                            </button>
+                            <button class="btn" type="button">Отправить</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="review">
+                        <div class="review__head">
+                          <div class="review-user">
+                            <div class="avatar avatar_comment">
+                              <div class="avatar__img">
+                                <svg class="icon icon-photo">
+                                  <use xlink:href="img/icon/sprite.svg#photo"></use>
+                                </svg>
+                                <img src="img/photographer-img3.jpg" alt="">
+                              </div>
+                              <div class="avatar__info">
+                                <div class="avatar-name">
+                                  Артем Дугин
+                                </div>
+                                <div class="avatar-location">
+                                  Россия, Казань
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="review-date">10.10.2019</div>
+                        </div>
+
+                        <div class="review__body">
+                          <p>Первый раз рядом были ночью и не пожалели. Днём впечатление не такое. Ночью подсветка придает мифическое настроение.</p>
+                        </div>
+
+                        <div class="review__bottom">
+                          <span class="review-reply-button">
+                            <span class="fa fa-reply"></span>
+                            <svg class="icon icon-comment">
+                              <use xlink:href="img/icon/sprite.svg#chat-icon"></use>
+                            </svg>
+                            Ответить
+                          </span>
+
+                          <div class="review-reply-field">
+                            <input type="text">
+                            <button class="btn-photo-review">
+                              <svg class="icon icon-img">
+                                <use xlink:href="img/icon/sprite.svg#img-icon"></use>
+                              </svg>
+                            </button>
+                            <button class="btn" type="button">Отправить</button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="feed-aside-users">
+              <span class="title-site title-site_h2">Фотографы из Казани</span>
+              <ul class="users-list">
+                <li>
+                  <a href="#" class="avatar avatar_sm">
+                    <div class="avatar__img">
+                      <!-- <img src="img/avatar.png" alt=""> -->
+                      <svg class="icon icon-photo">
+                        <use xlink:href="img/icon/sprite.svg#photo"></use>
+                      </svg>
+                    </div>
+                    <div class="avatar__info">
+                      <div class="avatar-name">
+                        Артем Дугин
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="avatar avatar_sm">
+                    <div class="avatar__img">
+                      <img src="img/avatar.png" alt="">
+                      <svg class="icon icon-photo">
+                        <use xlink:href="img/icon/sprite.svg#photo"></use>
+                      </svg>
+                    </div>
+                    <div class="avatar__info">
+                      <div class="avatar-name">
+                        Ирина Усманова
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="avatar avatar_sm">
+                    <div class="avatar__img">
+                      <!-- <img src="img/avatar.png" alt=""> -->
+                      <svg class="icon icon-photo">
+                        <use xlink:href="img/icon/sprite.svg#photo"></use>
+                      </svg>
+                    </div>
+                    <div class="avatar__info">
+                      <div class="avatar-name">
+                        Любовь Локоткова
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="avatar avatar_sm">
+                    <div class="avatar__img">
+                      <!-- <img src="img/avatar.png" alt=""> -->
+                      <svg class="icon icon-photo">
+                        <use xlink:href="img/icon/sprite.svg#photo"></use>
+                      </svg>
+                    </div>
+                    <div class="avatar__info">
+                      <div class="avatar-name">
+                        Елена Иванова
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main><!-- main -->
+
+    </div><!-- body wrapper -->
+
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">Карта сайта</a></li>
+            <li><a href="#">О проекте</a></li>
+            <li><a href="#">Правила сайта</a></li>
+            <li><a href="#">Новые локации</a></li>
+            <li><a href="#">Фотографы</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li>
+              <div class="footer-lang-tt">
+                Русский
+                <svg class="icon icon-arr-bottom">
+                  <use xlink:href="img/icon/sprite.svg#arr-bottom"></use>
+                </svg>
+              </div>
+
+              <ul class="footer-lang-list">
+                <li class="active">Русский</li>
+                <li>English</li>
+                <li>Français</li>
+                <li>Deutsch</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="soc-inline">
+            <a href="#" class="soc-inline__icon">
+              <svg class="icon icon-facebook">
+                <use xlink:href="img/icon/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+            <a href="#" class="soc-inline__icon">
+              <svg class="icon icon-twitter">
+                <use xlink:href="img/icon/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="soc-inline__icon">
+              <svg class="icon icon-instagram">
+                <use xlink:href="img/icon/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </div>
+          <span class="copy">&copy; Topphotospots.com, 2019</span>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+  </div><!-- site wrapper -->
+
+
+  <script src="js/libs/jquery.min.js"></script>
+  <script src="js/libs/owl.carousel.min.js"></script>
+  <script src="js/libs/jquery.fancybox.min.js"></script>
+  <script src="js/libs/selectize.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

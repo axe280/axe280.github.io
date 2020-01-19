@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="">
+  <meta name="format-detection" content="telephone=no">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800|Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+  <div id="modalReg" style="display: none;" class="st-modal-min">
+    <div class="st-modal-min__head">
+      <span class="title-site title-site_h6">Регистрация</span>
+    </div>
+  
+    <div class="st-modal-min__body">
+      <form action="#" class="st-form">
+        <div class="form-group">
+          <div class="field-item">
+            <label class="field-item__label">Ваше имя</label>
+            <div class="field-item__field">
+              <input type="text">
+            </div>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <div class="field-item">
+            <label class="field-item__label">Ваш email</label>
+            <div class="field-item__field">
+              <input type="text">
+            </div>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <div class="field-item">
+            <label class="field-item__label">Телефон</label>
+            <div class="field-item__field">
+              <input type="text">
+            </div>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <div class="field-item">
+            <label class="field-item__label">Пароль</label>
+            <div class="field-item__field">
+              <input type="password">
+            </div>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <div class="field-item">
+            <label class="field-item__label">Повторите пароль</label>
+            <div class="field-item__field">
+              <input type="password">
+            </div>
+          </div>
+        </div>
+  
+        <div class="form-group-btn text_center">
+          <button class="btn btn_md btn_max" type="submit">зарегистрироваться</button>
+        </div>
+      </form>
+    </div>
+  
+    <div class="st-modal-min__footer">
+      <div class="privacy-inf">Регистрируясь, вы разрешаете обработку своих персональных данных в соответствии с <a href="#">политикой конфиденциальности</a></div>
+    </div>
+  </div>
+  
+  <div id="modalEnter" style="display: none;" class="st-modal-min">
+    <div class="st-modal-min__head">
+      <span class="title-site title-site_h6">Вход в личный кабинет</span>
+      <p>По вашемо запросу найдено 350 обьявлений</p>
+    </div>
+  
+    <div class="st-modal-min__body">
+      <form action="#" class="st-form">
+        <div class="form-group">
+          <div class="field-item">
+            <label class="field-item__label">Логин/email</label>
+            <div class="field-item__field">
+              <input type="text">
+            </div>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <div class="field-item">
+            <label class="field-item__label">Пароль</label>
+            <div class="field-item__field">
+              <input type="password">
+            </div>
+          </div>
+        </div>
+  
+        <div class="form-group-btn text_center">
+          <button class="btn btn_md btn_max" type="submit">Войти</button>
+        </div>
+      </form>
+    </div>
+  
+    <div class="st-modal-min__footer">
+      <div class="modal-inline-links">
+        <a href="#" class="text_light-gray">Забыли пароль?</a>
+        <a href="#" class="text_light-gray">Регистрация</a>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- header -->
+  <header id="header" class="header">
+    <div class="container group">
+      <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+  
+  
+      <div class="head-menu">
+        <div class="burger-menu">
+          <div class="burger-menu-box">
+            <div class="burger-menu-inner"></div>
+          </div>
+        </div>
+  
+  
+        <div class="menu-wrapper-fixed">
+          <div class="menu-open-wrapper">
+  
+            <nav class="header-nav">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="javascript:;" data-fancybox data-src="#modalEnter" class="menu-item__link">Вход</a>
+                </li>
+                <li class="menu-item">
+                  <a href="javascript:;" class="menu-item__link" data-fancybox data-src="#modalReg">Регистрация</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-item__link">Подписаться</a>
+                </li>
+              </ul>
+            </nav>
+  
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </header>
+  <!-- end header -->
+
+
+  <div id="middle">
+
+
+    <section class="section-st section-st_light">
+      <div class="container">
+        <span class="title-site title-site_h2">Pagination</span>
+        <ul class="pagination">
+          <li class="pagination__prev"><a href="#"></a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li class="pagination__active"><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li class="pagination__next"><a href="#"></a></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="section-st section-st_dark">
+      <div class="container">
+        <span class="title-site title-site_h2">Buttons</span>
+        <a href="#" class="btn btn_md btn_min-width btn_light-st">Light style</a>
+        <a href="#" class="btn btn_md btn_min-width btn_light-st btn_border">Border light style</a>
+        <br><br><br>
+        <a href="#" class="btn btn_sm">Small</a>
+        <a href="#" class="btn btn_sm btn_min-width">Min width</a>
+        <a href="#" class="btn btn_sm btn_border">Border</a>
+        <br>
+        <br>
+        <br>
+        <a href="#" class="btn">Default</a>
+        <a href="#" class="btn btn_min-width">Min width</a>
+        <a href="#" class="btn btn_border">Border</a>
+        <br>
+        <br>
+        <br>
+        <a href="#" class="btn btn_md">Middle</a>
+        <a href="#" class="btn btn_md btn_min-width">Min width</a>
+        <a href="#" class="btn btn_md btn_border">Border</a>
+        <br>
+        <br>
+        <br>
+        <a href="#" class="btn btn_lg">Large</a>
+        <a href="#" class="btn btn_lg btn_min-width">Min width</a>
+        <a href="#" class="btn btn_lg btn_border">Border</a>
+      </div>
+    </section>
+
+
+    <br><br><br><br>
+
+    <section class="section-st section-st_light">
+      <div class="container">
+        <span class="title-site title-site_h2">Modals</span>
+        <a href="javascript:;" class="btn btn_md btn_min-width" data-fancybox data-src="#modalReg">Регистрация</a>
+
+        <div id="modalReg" style="display: none;" class="st-modal-min">
+          <div class="st-modal-min__head">
+            <span class="title-site title-site_h6">Зарегистрируйтесь, чтобы посмотреть обьявления или <a href="#" class="text_spec-color">войдите</a></span>
+            <p>По вашемо запросу найдено 350 обьявлений</p>
+          </div>
+
+          <div class="st-modal-min__body">
+            <form action="#" class="st-form">
+              <div class="form-group">
+                <div class="field-item">
+                  <label class="field-item__label">Ваше имя</label>
+                  <div class="field-item__field">
+                    <input type="text">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="field-item">
+                  <label class="field-item__label">Ваш email</label>
+                  <div class="field-item__field">
+                    <input type="text">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="field-item">
+                  <label class="field-item__label">Телефон</label>
+                  <div class="field-item__field">
+                    <input type="text">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="field-item">
+                  <label class="field-item__label">Пароль</label>
+                  <div class="field-item__field">
+                    <input type="password">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="field-item">
+                  <label class="field-item__label">Повторите пароль</label>
+                  <div class="field-item__field">
+                    <input type="password">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group-btn text_center">
+                <button class="btn btn_md btn_max" type="submit">зарегистрироваться</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="st-modal-min__footer">
+            <div class="privacy-inf">Регистрируясь, вы разрешаете обработку своих персональных данных в соответствии с <a href="#">политикой конфиденциальности</a></div>
+          </div>
+        </div>
+
+        <a href="javascript:;" class="btn btn_md btn_min-width" data-fancybox data-src="#modalPay">Оплата</a>
+
+        <div id="modalPay" style="display: none;" class="st-modal-min">
+          <div class="st-modal-min__head">
+            <span class="title-site title-site_h6">Оплатите, чтобы начать <br>активацию сервиса</span>
+            <p class="text_light-gray">Для оплаты Вы будете перенаправлены на <br>платежный шлюз ПАО СБЕРБАНК.</p>
+          </div>
+
+          <div class="st-modal-min__body">
+            <div class="pay-fields-info">
+              <div class="form-group">
+                <div class="pay-field-item">
+                  <span class="pay-fields-tt">30 дней подписки всего за RUB 2990</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <ul class="pay-inline-img">
+                  <li><img src="img/visa.png" alt=""></li>
+                  <li><img src="img/mir.png" alt=""></li>
+                  <li><img src="img/mastercard.png" alt=""></li>
+                </ul>
+              </div>
+
+              <div class="form-group-btn text_center">
+                <button class="btn btn_md btn_max" type="submit">оплатить</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="st-modal-min__footer">
+            <div class="privacy-inf">Совершая оплату, вы принимаете условия <a href="#">пользовательского соглашения</a></div>
+          </div>
+        </div>
+
+
+        <a href="javascript:;" class="btn btn_md btn_min-width" data-fancybox data-src="#modalEnter">Вход</a>
+
+        <div id="modalEnter" style="display: none;" class="st-modal-min">
+          <div class="st-modal-min__head">
+            <span class="title-site title-site_h6">Вход в личный кабинет</span>
+            <p>По вашемо запросу найдено 350 обьявлений</p>
+          </div>
+
+          <div class="st-modal-min__body">
+            <form action="#" class="st-form">
+              <div class="form-group">
+                <div class="field-item">
+                  <label class="field-item__label">Логин/email</label>
+                  <div class="field-item__field">
+                    <input type="text">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="field-item">
+                  <label class="field-item__label">Пароль</label>
+                  <div class="field-item__field">
+                    <input type="password">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group-btn text_center">
+                <button class="btn btn_md btn_max" type="submit">Войти</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="st-modal-min__footer">
+            <div class="modal-inline-links">
+              <a href="#" class="text_light-gray">Забыли пароль?</a>
+              <a href="#" class="text_light-gray">Регистрация</a>
+            </div>
+          </div>
+        </div>
+
+
+        <a href="javascript:;" class="btn btn_md btn_min-width" data-fancybox data-src="#modalPass">Востановление пароля</a>
+
+        <div id="modalPass" style="display: none;" class="st-modal-min">
+          <div class="st-modal-min__head">
+            <span class="title-site title-site_h6">Востановление пароля</span>
+            <p>Введитe email указанный при регистрации <br>и мы вышлем вам новый пароль</p>
+          </div>
+
+          <div class="st-modal-min__body">
+            <form action="#" class="st-form">
+              <div class="form-group">
+                <div class="field-item">
+                  <label class="field-item__label">Email</label>
+                  <div class="field-item__field">
+                    <input type="text">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group-btn text_center">
+                <button class="btn btn_md btn_max" type="submit">отправить пароль</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <a href="javascript:;" class="btn btn_md btn_min-width" data-fancybox data-src="#modalSave">Сохранить поиск</a>
+
+        <div id="modalSave" style="display: none;" class="st-modal-min">
+          <div class="st-modal-min__head">
+            <span class="title-site title-site_h6">Сохранить поиск</span>
+            <p class="text_light-gray">Ежедневная рассылка с <br>результами поиска вам на email </p>
+          </div>
+
+          <div class="st-modal-min__body">
+            <div class="modal-save-info">
+              Параметры поиска были сохранены <i class="icon icon-check-min"></i>
+            </div>
+          </div>
+        </div>
+
+        <a href="javascript:;" class="btn btn_md btn_min-width" data-fancybox data-src="#modalPaymentSuccess">Ваш платёж проведён </a>
+
+        <div id="modalPaymentSuccess" style="display: none;" class="st-modal-min payment-success-modal">
+          <div class="st-modal-min__head">
+            <div class="icon icon-check-md"></div>
+            <span class="title-site title-site_h6">Ваш платёж проведён </span>
+            
+          </div>
+
+          <div class="st-modal-min__body">
+            <p>Просматривайте подобранные объекты прямо<br> на сайте. Система сохраняет введённые вами<br> фильтры для следующих сессий и<br>для email-рассылки.</p>
+            <div class="modal-line"></div>
+            <p class="p-modal-md">Как только новая квартира по вашим параметрам появится<br> на одном из сайтов, на указанный при регистрации email <br> вы получите письмо с ссылкой на новый объект.</p>
+            <p class="text_light-gray p-modal-min">Мы не списываем средства автоматически. <br>Чтобы продлить подписку, пожалуйста, <br>оплатите подписку снова.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <br><br><br><br>
+
+
+    <section class="section-st section-st_light">
+      <div class="container">
+        <form action="#" class="st-form">
+          <span class="st-form__tt title-site title-site_h5">Стандартное поле</span>
+          <div class="form-group">
+            <div class="field-item">
+              <label class="field-item__label">Ваше имя</label>
+              <div class="field-item__field">
+                <input type="text">
+              </div>
+            </div>
+          </div>
+        
+          <span class="st-form__tt title-site title-site_h5">Заполненное поле</span>
+          <div class="form-group">
+            <div class="field-item field-item_focused">
+              <label class="field-item__label">Телефон</label>
+              <div class="field-item__field">
+                <input type="text" value="+7456 305060">
+              </div>
+              <div class="field-item__error-text">Некорректный адрес эл.почты</div>
+            </div>
+          </div>
+        
+          <span class="st-form__tt title-site title-site_h5">Поле с ошибкой</span>
+          <div class="form-group">
+            <div class="field-item field-item_focused field-item_error">
+              <label class="field-item__label">Ваш email</label>
+              <div class="field-item__field">
+                <input type="text" value="tuhoenu@netohu.no">
+              </div>
+              <div class="field-item__error-text">Некорректный адрес эл.почты</div>
+            </div>
+          </div>
+        
+          <div class="form-group-btn text_center">
+            <button class="btn btn_md btn_min-width" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+
+    <section class="section-st section-st_dark">
+      <div class="container">
+        <div class="text-bl">
+          <h1 class="text_uppercase">Title h1</h1>
+          <h2>Title h2</h2>
+          <h3>Title h3</h3>
+          <h4>Title h4</h4>
+          <h5>Title h5</h5>
+          <h6>Title h6</h6>
+          <span class="title-site title-site_h1">Title h1 block</span>
+          <span class="title-site title-site_h2">Title h2 block</span>
+          <span class="title-site title-site_h3">Title h3 block</span>
+          <span class="title-site title-site_h4">Title h4 block</span>
+          <span class="title-site title-site_h5">Title h5 block</span>
+          <span class="title-site title-site_h6">Title h6 block</span>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          <div class="text_center">
+            <h3>Text center</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          </div>
+          <div class="text_right">
+            <h3>text right</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          </div>
+          <div class="text_uppercase">
+            <h3>text uppercase</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda reiciendis, sint quam iste dicta quasi sapiente ipsum blanditiis voluptatum repellat delectus, veniam eligendi non totam, dolore aliquam temporibus quidem commodi.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, similique. Architecto quo cum, sunt consequuntur quaerat, commodi ratione natus laboriosam deserunt error numquam et optio, possimus beatae rem ex. Unde.</p>
+          <br>
+          <ul>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora magnam, similique quam blanditiis aperiam accusamus quia. Sed nam ullam ut maiores. Voluptas deleniti delectus, temporibus nam enim vero ea molestiae.</p>
+          <br>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, similique. Architecto quo cum, sunt consequuntur quaerat, commodi ratione natus laboriosam deserunt error numquam et optio, possimus beatae rem ex. Unde.</p>
+          <br>
+        </div>
+
+
+        <span class="title-site title-site_h3">Two column text</span>
+        <div class="text-bl-grid">
+          <div class="text-bl text-bl-grid__half-col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sapiente nemo, eligendi facilis accusamus sequi est hic rerum et repellendus voluptas provident. Nisi, nihil qui earum a, pariatur esse, fuga nobis possimus quisquam repudiandae nostrum placeat ipsa itaque? Veniam cumque laboriosam repudiandae, totam nihil doloremque explicabo. Recusandae voluptatibus, tenetur praesentium sed cum dicta a tempora. Esse delectus commodi totam enim, laborum a excepturi assumenda sit voluptatum consequatur accusantium impedit ea quisquam libero. Ipsa, molestiae fugit neque ut, adipisci est iusto dicta aliquam maiores nulla tempora consequatur amet alias, eveniet nam numquam ab iste non possimus similique? Quia quo esse distinctio.</p>
+          </div>
+          <div class="text-bl text-bl-grid__half-col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, non consequuntur harum aliquam quibusdam placeat. Ipsam alias consequuntur, iure vitae ad. Quas error ut dolorum vero et commodi voluptatum. Distinctio perferendis fuga, excepturi? Tempore, corporis architecto! Pariatur hic dignissimos libero ullam. Molestiae ullam, voluptatibus sunt labore. Consequuntur et sapiente maxime harum esse aperiam, rem amet est numquam quos nobis optio veniam maiores neque repellat minima, debitis blanditiis odio. Quam molestiae non nobis hic qui et explicabo sit, debitis, accusantium laboriosam illum blanditiis. Amet explicabo a vitae quos praesentium doloribus, modi consequatur? Velit dolores officia libero vel sapiente beatae, quibusdam! Fugiat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section style="padding-top: 100px;">
+      <div class="container">
+        <div class="filter hidden_mobile">
+          <div class="filter-main">
+            <div class="filter-main__item">
+              <div class="st-select-wrapp">
+                <div class="st-select-tt">Купить</div>
+                <div class="st-select-dd">
+                  <ul class="st-select-dd__list select-list-st-option">
+                    <!-- select-list-st-option -->
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="radst" checked class="select-radio__input">
+                        <span class="select-radio__title">Купить</span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="radst" class="select-radio__input">
+                        <span class="select-radio__title">Снять</span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filter-main__item">
+              <div class="st-select-wrapp st-select-wrapp_active-param">
+                <!-- st-select-wrapp_active-param -->
+                <div class="st-select-tt">Комнат</div>
+                <div class="st-select-tt_act-param">Студия, 1-комнатная, 2-комнатная</div>
+                <!-- <div class="st-select-tt_act-param"></div> -->
+                <div class="st-select-dd st-select-dd_min-width">
+                  <ul class="st-select-dd__list">
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" checked class="select-check__input">
+                        <span class="select-check__title">Студия</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" checked class="select-check__input">
+                        <span class="select-check__title">1-комнатная</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" checked class="select-check__input">
+                        <span class="select-check__title">2-комнатная</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">3-комнатная</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">4-комнатная</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">5-комнатная+</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filter-main__item filter-main__item_price">
+              <span class="f-main-tt">Цена</span>
+              <input type="text" placeholder="от">
+              <input type="text" placeholder="до">
+            </div>
+            <div class="filter-main__item filter-main__item_adress">
+              <span class="f-main-tt">Адрес</span>
+              <input type="text" placeholder="Введите один или несколько адресов">
+            </div>
+            <div class="filter-main__item">
+              <button class="f-main-more-btn" type="button">
+                Еще фильтры <span class="f-main-more-btn__value">3</span>
+                <i class="icon icon-arr-bottom-min"></i>
+              </button>
+            </div>
+            <div class="filter-main__item">
+              <button data-fancybox data-src="#modalReg" class="btn btn_find-filter" type="button">найти</button>
+            </div>
+          </div>
+
+          <div class="filter-more">
+            <div class="filter-more__item">
+              <div class="st-select-wrapp st-select-wrapp_active-param">
+                <!-- st-select-wrapp_active-param -->
+                <div class="st-select-tt">Срок аренды</div>
+                <div class="st-select-tt_act-param">Долгосрочная</div>
+                <!-- <div class="st-select-tt_act-param"></div> -->
+                <div class="st-select-dd">
+                  <ul class="st-select-dd__list">
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" checked class="select-check__input">
+                        <span class="select-check__title">Долгосрочная</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">Краткосрочная</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filter-more__item">
+              <div class="st-select-wrapp st-select-wrapp_active-param">
+                <!-- st-select-wrapp_active-param -->
+                <div class="st-select-tt">Тип обьявления</div>
+                <div class="st-select-tt_act-param">Собственник</div>
+                <!-- <div class="st-select-tt_act-param"></div> -->
+                <div class="st-select-dd">
+                  <ul class="st-select-dd__list">
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" checked class="select-check__input">
+                        <span class="select-check__title">Собственник</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">Агенство</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filter-more__item">
+              <div class="st-select-wrapp st-select-wrapp_active-param">
+                <!-- st-select-wrapp_active-param -->
+                <div class="st-select-tt">Район</div>
+                <div class="st-select-tt_act-param">Крюково, Матушкино, Силино</div>
+                <!-- <div class="st-select-tt_act-param"></div> -->
+                <div class="st-select-dd">
+                  <ul class="st-select-dd__list">
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" checked class="select-check__input">
+                        <span class="select-check__title">Крюково</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" checked class="select-check__input">
+                        <span class="select-check__title">Матушкино</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">Савелки</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">Старое Крюково</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">Матушкино-Савёлки</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">Панфиловский</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filter-more__item">
+              <div class="st-select-wrapp">
+                <div class="st-select-tt">Тип здания</div>
+                <div class="st-select-dd">
+                  <ul class="st-select-dd__list">
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">Новостройки</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">Вторичка</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filter-more__item">
+              <div class="st-select-wrapp st-select-wrapp_active-param">
+                <!-- st-select-wrapp_active-param -->
+                <div class="st-select-tt">Общая площадь</div>
+                <div class="st-select-tt_act-param">от 25 м<sup>2</sup></div>
+                <!-- <div class="st-select-tt_act-param"></div> -->
+                <div class="st-select-dd">
+                  <ul class="st-select-dd__list">
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad1" class="select-radio__input">
+                        <span class="select-radio__title">любая</span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad1" checked class="select-radio__input">
+                        <span class="select-radio__title">от 25 м<sup>2</sup></span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad1" class="select-radio__input">
+                        <span class="select-radio__title">от 45 м<sup>2</sup></span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad1" class="select-radio__input">
+                        <span class="select-radio__title">от 65 м<sup>2</sup></span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad1" class="select-radio__input">
+                        <span class="select-radio__title">от 100 м<sup>2</sup></span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="select-input">
+                    <div class="select-input__item">
+                      <input type="text" placeholder="от">
+                    </div>
+                    <div class="select-input__item">
+                      <input type="text" placeholder="до">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-more__item">
+              <div class="st-select-wrapp">
+                <div class="st-select-tt">Площадь кухни</div>
+                <div class="st-select-dd">
+                  <ul class="st-select-dd__list">
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad2" class="select-radio__input">
+                        <span class="select-radio__title">любая</span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad2" class="select-radio__input">
+                        <span class="select-radio__title">от 25 м<sup>2</sup></span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad2" class="select-radio__input">
+                        <span class="select-radio__title">от 45 м<sup>2</sup></span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad2" class="select-radio__input">
+                        <span class="select-radio__title">от 65 м<sup>2</sup></span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad2" class="select-radio__input">
+                        <span class="select-radio__title">от 100 м<sup>2</sup></span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="select-input">
+                    <div class="select-input__item">
+                      <input type="text" placeholder="от">
+                    </div>
+                    <div class="select-input__item">
+                      <input type="text" placeholder="до">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-more__item">
+              <div class="st-select-wrapp">
+                <div class="st-select-tt">Тип здания</div>
+                <div class="st-select-dd">
+                  <ul class="st-select-dd__list">
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">Блочный</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">Кирпич</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">Монолитно-каркаалыовадлы</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">Панель</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-check">
+                        <input type="checkbox" class="select-check__input">
+                        <span class="select-check__title">Утепленная панель</span>
+                        <span class="select-check__checked"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filter-more__item">
+              <div class="st-select-wrapp">
+                <div class="st-select-tt">Этажность дома</div>
+                <div class="st-select-dd">
+                  <ul class="st-select-dd__list">
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad3" class="select-radio__input">
+                        <span class="select-radio__title">от 6 эт.</span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad3" class="select-radio__input">
+                        <span class="select-radio__title">от 10 эт.</span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad3" class="select-radio__input">
+                        <span class="select-radio__title">от 17 эт.</span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad3" class="select-radio__input">
+                        <span class="select-radio__title">от 25 эт.</span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="select-input">
+                    <div class="select-input__item">
+                      <input type="text" placeholder="от">
+                    </div>
+                    <div class="select-input__item">
+                      <input type="text" placeholder="до">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-more__item">
+              <div class="st-select-wrapp">
+                <div class="st-select-tt">Этаж</div>
+                <div class="st-select-dd">
+                  <ul class="st-select-dd__list">
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad4" class="select-radio__input">
+                        <span class="select-radio__title">от 6 эт.</span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad4" class="select-radio__input">
+                        <span class="select-radio__title">от 10 эт.</span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad4" class="select-radio__input">
+                        <span class="select-radio__title">от 17 эт.</span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="select-radio">
+                        <input type="radio" name="rad4" class="select-radio__input">
+                        <span class="select-radio__title">от 25 эт.</span>
+                        <span class="select-radio__checked"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <div class="select-input">
+                    <div class="select-input__item">
+                      <input type="text" placeholder="от">
+                    </div>
+                    <div class="select-input__item">
+                      <input type="text" placeholder="до">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-more__item">
+              <div class="st-checkbox">
+                <input type="checkbox" checked id="ch1" class="st-checkbox__input">
+                <label for="ch1" class="st-checkbox__btn">не первый</label>
+              </div>
+            </div>
+            <div class="filter-more__item">
+              <div class="st-checkbox">
+                <input type="checkbox" id="ch2" class="st-checkbox__input">
+                <label for="ch2" class="st-checkbox__btn">не последний</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-mobile hidden_desktop">
+          <div class="filter-tab">
+            <div class="filter-tab__item">
+              <label class="filter-mob-tab">
+                <input type="radio" name="mobTab" class="filter-mob-tab__input">
+                <span class="filter-mob-tab__title">купить</span>
+              </label>
+            </div>
+            <div class="filter-tab__item">
+              <label class="filter-mob-tab">
+                <input type="radio" name="mobTab" class="filter-mob-tab__input" checked>
+                <span class="filter-mob-tab__title">снять</span>
+              </label>
+            </div>
+          </div>
+
+          <form action="#">
+            <div class="filter-mob-inner">
+              <div class="f-mob-group">
+                <div class="f-mob-group__tt">Количество комнат</div>
+                <div class="f-mob-group__bl">
+                  <div class="f-mob-flex-btn">
+                    <div class="f-mob-check">
+                      <input class="f-mob-check__input" type="checkbox" id="r0">
+                      <label class="f-mob-check__btn" for="r0">Cтудия</label>
+                    </div>
+                    <div class="f-mob-check">
+                      <input class="f-mob-check__input" type="checkbox" id="r1" checked>
+                      <label class="f-mob-check__btn" for="r1">1</label>
+                    </div>
+                    <div class="f-mob-check">
+                      <input class="f-mob-check__input" type="checkbox" id="r2">
+                      <label class="f-mob-check__btn" for="r2">2</label>
+                    </div>
+                    <div class="f-mob-check">
+                      <input class="f-mob-check__input" type="checkbox" id="r3">
+                      <label class="f-mob-check__btn" for="r3">3</label>
+                    </div>
+                    <div class="f-mob-check">
+                      <input class="f-mob-check__input" type="checkbox" id="r4">
+                      <label class="f-mob-check__btn" for="r4">4</label>
+                    </div>
+                    <div class="f-mob-check">
+                      <input class="f-mob-check__input" type="checkbox" id="r5">
+                      <label class="f-mob-check__btn" for="r5">5+</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="f-mob-group">
+                <div class="f-mob-group__tt">Цена</div>
+                <div class="f-mob-group__bl">
+                  <div class="f-mob-half">
+                    <div class="f-mob-half__item">
+                      <input type="text" placeholder="от">
+                    </div>
+                    <div class="f-mob-half__item">
+                      <input type="text" placeholder="до">
+                    </div>
+                    <div class="f-mob-half__item">
+                      ₽
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="f-mob-group">
+                <div class="f-mob-group__tt">Адрес</div>
+                <div class="f-mob-group__bl">
+                  <div class="f-mob-field">
+                    <input type="text" placeholder="Введите один или несколько адресов">
+                  </div>
+                </div>
+              </div>
+
+              <div class="text_center">
+                <button class="f-mob-more-btn" type="button">
+                  Еще фильтры <span class="f-mob-more-btn__value">3</span>
+                  <i class="icon icon-arr-bottom-min-c"></i>
+                </button>
+              </div>
+            </div>
+
+
+            <div class="filter-mob-inner filter-mob-inner_hid hidden"> <!-- open -->
+              <div class="f-mob-group">
+                <div class="f-mob-group__tt">Срок аренды</div>
+                <div class="f-mob-group__bl">
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="a0">
+                    <label class="f-mob-check__btn" for="a0">Краткосрочная</label>
+                  </div>
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="a1">
+                    <label class="f-mob-check__btn" for="a1">Долгосрочная</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="f-mob-group">
+                <div class="f-mob-group__tt">Тип обьявления</div>
+                <div class="f-mob-group__bl">
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="t0">
+                    <label class="f-mob-check__btn" for="t0">Собственник</label>
+                  </div>
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="t1">
+                    <label class="f-mob-check__btn" for="t1">Агенство</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="f-mob-group">
+                <div class="f-mob-group__tt">Район</div>
+                <div class="f-mob-group__bl">
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="rr0">
+                    <label class="f-mob-check__btn" for="rr0">Крюково</label>
+                  </div>
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="rr1">
+                    <label class="f-mob-check__btn" for="rr1">Матушкино </label>
+                  </div>
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="rr2">
+                    <label class="f-mob-check__btn" for="rr2">Савелки</label>
+                  </div>
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="rr3">
+                    <label class="f-mob-check__btn" for="rr3">Силино</label>
+                  </div>
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="rr4">
+                    <label class="f-mob-check__btn" for="rr4">Старое Крюково</label>
+                  </div>
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="rr5">
+                    <label class="f-mob-check__btn" for="rr5">Матушкино-Савёлки</label>
+                  </div>
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="rr6">
+                    <label class="f-mob-check__btn" for="rr6">Панфиловский</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="f-mob-group">
+                <div class="f-mob-group__tt">Тип здания</div>
+                <div class="f-mob-group__bl">
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="tt0">
+                    <label class="f-mob-check__btn" for="tt0">Новостройки</label>
+                  </div>
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="tt1">
+                    <label class="f-mob-check__btn" for="tt1">Вторичка</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="f-mob-group">
+                <div class="f-mob-group__tt">Общая площадь</div>
+                <div class="f-mob-group__bl">
+                  <div class="f-mob-half">
+                    <div class="f-mob-half__item">
+                      <input type="text" placeholder="от">
+                    </div>
+                    <div class="f-mob-half__item">
+                      <input type="text" placeholder="до">
+                    </div>
+                    <div class="f-mob-half__item">
+                      м<sup>2</sup>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="f-mob-group">
+                <div class="f-mob-group__tt">Площадь кухни</div>
+                <div class="f-mob-group__bl">
+                  <div class="f-mob-half">
+                    <div class="f-mob-half__item">
+                      <input type="text" placeholder="от">
+                    </div>
+                    <div class="f-mob-half__item">
+                      <input type="text" placeholder="до">
+                    </div>
+                    <div class="f-mob-half__item">
+                      м<sup>2</sup>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="f-mob-group">
+                <div class="f-mob-group__tt">Тип стен</div>
+                <div class="f-mob-group__bl">
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="w0">
+                    <label class="f-mob-check__btn" for="w0">Блочный</label>
+                  </div>
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="w1">
+                    <label class="f-mob-check__btn" for="w1">Кирпич</label>
+                  </div>
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="w2">
+                    <label class="f-mob-check__btn" for="w2">Панель</label>
+                  </div>
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="w3">
+                    <label class="f-mob-check__btn" for="w3">Монолитно-каркасный</label>
+                  </div>
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="w4">
+                    <label class="f-mob-check__btn" for="w4">Утепленная панель</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="f-mob-group">
+                <div class="f-mob-group__tt">Этажность дома</div>
+                <div class="f-mob-group__bl">
+                  <div class="f-mob-half">
+                    <div class="f-mob-half__item">
+                      <input type="text" placeholder="от">
+                    </div>
+                    <div class="f-mob-half__item">
+                      <input type="text" placeholder="до">
+                    </div>
+                    <div class="f-mob-half__item">
+                      эт.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="f-mob-group">
+                <div class="f-mob-group__tt">Этаж</div>
+                <div class="f-mob-group__bl">
+                  <div class="f-mob-half">
+                    <div class="f-mob-half__item">
+                      <input type="text" placeholder="от">
+                    </div>
+                    <div class="f-mob-half__item">
+                      <input type="text" placeholder="до">
+                    </div>
+                    <div class="f-mob-half__item">
+                      эт.
+                    </div>
+                  </div>
+
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="fl0">
+                    <label class="f-mob-check__btn" for="fl0">Не первый</label>
+                  </div>
+                  <div class="f-mob-check">
+                    <input class="f-mob-check__input" type="checkbox" id="fl1">
+                    <label class="f-mob-check__btn" for="fl1">Не последний</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="f-mob-setting">
+              <button class="f-mob-setting__save" type="button" data-fancybox data-src="#modalSave">Сохранить поиск</button>
+              <button class="f-mob-setting__reset" type="reset">Очистить фильтры</button>
+            </div>
+
+            <div id="modalSave" style="display: none;" class="st-modal-min">
+              <div class="st-modal-min__head">
+                <span class="title-site title-site_h6">Сохранить поиск</span>
+                <p class="text_light-gray">Ежедневная рассылка с <br>результами поиска вам на email </p>
+              </div>
+
+              <div class="st-modal-min__body">
+                <div class="modal-save-info">
+                  Параметры поиска были сохранены <i class="icon icon-check-min"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="text_center">
+              <button class="btn btn_min-width btn_md" type="submit">Показать 964 объекта</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+    <section class="section-question">
+      <div class="container">
+        <div class="section-question__info">
+          <span class="title-site title-site_h2 text_uppercase">Есть вопросы? <span class="text_spec-color">Напишите мы ответим.</span></span>
+        </div>
+
+        <div class="section-question__form-wrapp">
+          <div class="text_center hidden_desktop">
+            <i class="icon icon-mail"></i>
+          </div>
+
+          <form action="#" class="st-form st-form_inline">
+            <div class="form-group">
+              <div class="field-item">
+                <label class="field-item__label">Ваше имя</label>
+                <div class="field-item__field">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="field-item">
+                <label class="field-item__label">Ваш email</label>
+                <div class="field-item__field">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="field-item">
+                <label class="field-item__label">Вопрос</label>
+                <div class="field-item__field">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group-btn">
+              <button class="btn btn_md btn_max" type="submit">
+                отправить <i class="icon icon-send"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- #middle-->
+
+</div><!-- #wrapper -->
+
+
+<!-- footer -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="footer-items">
+      <div class="footer-item">
+        <div class="footer-logo">Лого</div>
+        <p class="hidden_mobile"><b>Big data</b> — инструменты и методы обработки огромного объёма данных,чтобы их использовать для конкретных задач и целей. </p>
+        <div class="soc-inline">
+          <a href="#" class="soc-inline__item">
+            <i class="icon icon-vk"></i>
+          </a>
+          <a href="#" class="soc-inline__item">
+            <i class="icon icon-insta"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-item">
+        <span class="title-site title-site_h6 text_light hidden_mobile">Меню</span>
+        <div class="footer-list footer-list_nav">
+          <div class="footer-list__item"><a href="#">Регистрация</a></div>
+          <div class="footer-list__item"><a href="#">Личный кабинет</a></div>
+          <div class="footer-list__item"><a href="#">Оформление подпсики</a></div>
+        </div>
+      </div>
+
+      <div class="footer-item">
+        <span class="title-site title-site_h6 text_light hidden_mobile">Контакты:</span>
+        <div class="footer-list">
+          <div class="footer-list__item">help@name.com</div>
+          <div class="footer-list__item"><b>ИП Фамилия Имя Отчество</b></div>
+          <div class="footer-list__item">Адрес: 195274, г. Санкт-Петербург, пр-т Луначарского, д. 82, корп. 1, кв. 147</div>
+        </div>
+        <div class="contact-us">
+          <span class="icon icon-f-mail"></span>
+          <b>Связаться</b> с Название
+        </div>
+      </div>
+
+      <div class="footer-item">
+        <div class="footer-pay">
+          <div class="footer-pay__item"><img src="img/master.png" alt=""></div>
+          <div class="footer-pay__item"><img src="img/visa2.png" alt=""></div>
+          <div class="footer-pay__item"><img src="img/ssl.png" alt=""></div>
+          <div class="footer-pay__item"><img src="img/card.png" alt=""></div>
+        </div>
+        <div class="footer-list">
+          <div class="footer-list__item text_uppercase">безопасные платежи</div>
+          <div class="footer-list__item"><a href="#">Пользовательское соглашение</a></div>
+          <div class="footer-list__item"><a href="#">Обработка персональных данных</a></div>
+        </div>
+        <div class="footer-list footer-list_inline-mob">
+          <div class="footer-list__item">ИНН: 780443271793 </div>
+          <div class="footer-list__item">ОГРНИП: 317784700127722</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copy">© 2018/Все права защищены</div>
+  </div>
+</footer>
+<!-- end footer -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libsmin/owl.carousel.min.js"></script>
+<script src="js/libsmin/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
