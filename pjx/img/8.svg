@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2017 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="201px" height="201px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 50.81 50.81"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:url(#id0)}
+    .fil0 {fill:url(#id1)}
+    .fil2 {fill:url(#id2)}
+    .fil3 {fill:url(#id3)}
+    .fil5 {fill:url(#id4)}
+    .fil4 {fill:url(#id5)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="23.11" y1="40.54" x2="27.72" y2="17.15">
+   <stop offset="0" style="stop-opacity:1; stop-color:#400BD1"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#2960DD"/>
+  </linearGradient>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" xlink:href="#id0" x1="22.05" y1="50.61" x2="28.76" y2="0.2">
+  </linearGradient>
+  <linearGradient id="id2" gradientUnits="userSpaceOnUse" xlink:href="#id0" x1="43.75" y1="15.45" x2="44.18" y2="12.77">
+  </linearGradient>
+  <linearGradient id="id3" gradientUnits="userSpaceOnUse" xlink:href="#id0" x1="6.66" y1="15.45" x2="7.09" y2="12.77">
+  </linearGradient>
+  <linearGradient id="id4" gradientUnits="userSpaceOnUse" xlink:href="#id0" x1="43.76" y1="44.92" x2="44.19" y2="42.24">
+  </linearGradient>
+  <linearGradient id="id5" gradientUnits="userSpaceOnUse" xlink:href="#id0" x1="6.65" y1="44.93" x2="7.08" y2="42.24">
+  </linearGradient>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1798828266416">
+   <path class="fil0" d="M1.72 0.12c-2.21,0.47 -1.66,2.52 -1.66,4.36l0 43.36c0,1.04 -0.15,1.7 0.6,2.34 0.76,0.67 1.43,0.59 2.77,0.59l38.76 0c1.26,0 6.13,0.12 6.97,-0.06 0.81,-0.19 1.5,-0.78 1.6,-1.52 0.1,-0.66 0.02,-19.06 0.02,-20.2l0 -26c0,-1.03 0.15,-1.71 -0.59,-2.36 -0.71,-0.63 -1.48,-0.59 -2.78,-0.59l-38.76 0c-1.36,0 -5.95,-0.13 -6.93,0.08zm24.81 8.81l3.21 0.01 0.04 -7.07 -3.25 -0.01 0 7.07zm10.94 0l3.24 0.01 0.01 -7.07 -3.21 -0.01 -0.04 7.07zm-16.4 0.01l0.63 0 2.3 0 0.28 0 0.03 -7.06 -3.25 -0.02 0.01 7.08zm-10.95 -0.02l3.23 0.02 0.02 -7.05c-0.43,-0.06 -2.87,-0.07 -3.26,0.02l0.01 7.01zm21.88 0l3.25 0.02 0 -7.08 -3.25 0.01 0 7.05zm-16.41 0.02l3.25 -0.01 0 -7.05 -3.25 -0.02 0 7.08zm-13.32 -6.8l0 46.78c0.88,0.07 45.33,0.08 46.3,0.01l0 -47.04 -5.64 -0.03 0 7.63c-0.01,1.49 -1.5,1.26 -3.11,1.26l-30.46 0c-1.03,0 -1.45,-0.5 -1.45,-1.33l0 -7.53 -5.64 -0.01 0 0.26z"/>
+   <path class="fil1" d="M8.93 17.09c-1.31,0.31 -1.02,1.31 -1.02,2.47l0 19.57c-0.01,1.45 0.6,1.5 2.24,1.5l23.89 0c1.28,0 7.19,0.13 7.95,-0.04 1.19,-0.27 0.94,-1.42 0.94,-2.5l0 -19.57c0.01,-1.37 -0.69,-1.47 -2.24,-1.47l-23.89 0c-1.28,0 -7.13,-0.13 -7.87,0.04zm1.19 21.72l30.59 0.01 0.01 -19.95 -30.6 0 0 19.94z"/>
+   <path class="fil2" d="M43.64 12.8c-2.2,0.4 -1.42,3.02 0.71,2.62 2.06,-0.38 1.39,-3.01 -0.71,-2.62z"/>
+   <path class="fil3" d="M6.54 12.79c-2.2,0.46 -1.41,3.02 0.73,2.63 0.81,-0.14 1.41,-0.82 1.2,-1.63 -0.16,-0.63 -0.98,-1.19 -1.93,-1z"/>
+   <path class="fil4" d="M6.38 42.31c-2.14,0.58 -1.01,3.1 1.02,2.55 1.95,-0.52 1.11,-3.14 -1.02,-2.55z"/>
+   <path class="fil5" d="M43.52 42.28c-2.04,0.48 -1.25,3.09 0.92,2.59 0.73,-0.16 1.38,-0.85 1.11,-1.68 -0.2,-0.6 -1.05,-1.13 -2.03,-0.91z"/>
+  </g>
+ </g>
+</svg>
