@@ -2494,6 +2494,89 @@ input[type="search"] {
 }
 
 /* end media min width 740 pixels */
+.video-modal_opened {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 80;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 20px;
+}
+
+.video-modal-bl {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+}
+
+.video-modal-bl iframe {
+  display: block;
+  vertical-align: top;
+  width: 100%;
+  height: 200px;
+}
+
+.video-modal-bl .close-elem {
+  position: absolute;
+  top: -30px;
+  right: -5px;
+}
+
+/* Min width 375 pixels */
+@media only screen and (min-width: 375px) {
+  .video-modal-bl iframe {
+    height: 220px;
+  }
+}
+
+/* end media min width 375 pixels */
+/* Min width 740 pixels */
+@media only screen and (min-width: 740px) {
+  .video-modal-bl iframe {
+    height: 360px;
+  }
+}
+
+/* end media min width 740 pixels */
+/* Min width 960 pixels */
+@media only screen and (min-width: 960px) {
+  .video-modal-bl iframe {
+    height: 440px;
+  }
+  .video-modal-bl .close-elem {
+    top: -35px;
+  }
+}
+
+/* end media min width 960 pixels */
+/* Min width 1160 pixels */
+@media only screen and (min-width: 1160px) and (min-height: 720px) {
+  .video-modal-bl {
+    max-width: 1240px;
+  }
+  .video-modal-bl iframe {
+    height: 620px;
+  }
+}
+
+/* end media min width 1160 pixels */
 /* ----- Page structure ---------------- */
 .clear {
   clear: both;
@@ -2609,6 +2692,7 @@ body {
   }
   .section-about-image {
     height: 393px;
+    background-image: url(../img/inner-image.jpg);
     background-position: 50% 50%;
     background-size: cover;
   }
@@ -2623,6 +2707,14 @@ body {
 }
 
 /* end media min width 1160 pixels */
+/* Min width 1300 pixels */
+@media only screen and (min-width: 1300px) {
+  .section-about-image {
+    background-image: url(../img/inner-image@2x.jpg);
+  }
+}
+
+/* end media min width 1300 pixels */
 /* ----- Header ------------------------ */
 .sticky .header {
   height: 63px;
@@ -3239,6 +3331,14 @@ body {
 }
 
 /* end media min width 1160 pixels */
+/* Min width 1300 pixels */
+@media only screen and (min-width: 1300px) {
+  .section-power-options {
+    background-image: url(../img/control-hand@2x.jpg);
+  }
+}
+
+/* end media min width 1300 pixels */
 .section-mobile-app {
   position: relative;
   padding: 80px 0 337px;
@@ -3523,6 +3623,14 @@ body {
 }
 
 /* end media min width 1160 pixels */
+/* Min width 1300 pixels */
+@media only screen and (min-width: 1300px) {
+  .section-energy-economy {
+    background-image: url(../img/phone-person@2x.jpg);
+  }
+}
+
+/* end media min width 1300 pixels */
 .section-products {
   padding: 80px 0 60px;
 }
@@ -4029,6 +4137,14 @@ body {
 }
 
 /* end media min width 1160 pixels */
+/* Min width 1300 pixels */
+@media only screen and (min-width: 1300px) {
+  .section-panels {
+    background-image: url(../img/panels-long@2x.jpg);
+  }
+}
+
+/* end media min width 1300 pixels */
 .section-connect {
   background-color: #fff;
   padding: 80px 0 100px;
@@ -4453,6 +4569,14 @@ body {
 }
 
 /* end media min width 960 pixels */
+/* Min width 1300 pixels */
+@media only screen and (min-width: 1300px) {
+  .section-power {
+    background-image: url(../img/house-dark@2x.jpg);
+  }
+}
+
+/* end media min width 1300 pixels */
 .section-product-tech {
   padding: 80px 0;
   background-color: #F5F5F5;
@@ -4734,6 +4858,14 @@ body {
 }
 
 /* end media min width 960 pixels */
+/* Min width 1300 pixels */
+@media only screen and (min-width: 1300px) {
+  .section-relax {
+    background-image: url(../img/beauty_view@2x.jpg);
+  }
+}
+
+/* end media min width 1300 pixels */
 .section-day-night {
   padding: 90px 0 100px;
 }
