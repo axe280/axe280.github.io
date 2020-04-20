@@ -5992,6 +5992,7 @@ body {
 }
 
 .main-video-fix {
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -6039,6 +6040,9 @@ body {
   }
   .main-section-bottom-info .social-icons .icon {
     fill: #fff;
+  }
+  .main-video-fix {
+    display: block;
   }
 }
 
