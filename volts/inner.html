@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="format-detection" content="telephone=no">
-<link href="assets/css/vendors.3aeee3cced4d73884f14.css" rel="stylesheet"><link href="assets/css/app.3aeee3cced4d73884f14.css" rel="stylesheet"></head>
+<link href="assets/css/vendors.09b0cf5cad896465849b.css" rel="stylesheet"><link href="assets/css/app.09b0cf5cad896465849b.css" rel="stylesheet"></head>
 
 <body>
   <div class="site-wrapper">
@@ -38,7 +38,15 @@
               <label class="field-item">
                 <div class="field-item__label">Имя</div>
                 <div class="field-item__field">
-                  <input type="Text" required="required" />
+                  <input type="text" required="required" />
+                </div>
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="field-item">
+                <div class="field-item__label">Email</div>
+                <div class="field-item__field">
+                  <input type="email" required="required" />
                 </div>
               </label>
             </div>
@@ -228,9 +236,12 @@
               <div class="file-info__text">Домашний накопитель энергии Volts</div>
               <div class="file-info__format">PDF 3mb</div>
             </a>
-          </div>
+          </div>    
           <div class="tech-about-images">
             <div class="tech-about-images__image">
+              <span class="logo-c hidden-devices">
+                <img src="assets/img/logo-c.jpg" width="148" height="53" alt="">
+              </span>
               <img src="assets/img/volt-tec-param.svg" alt="">
             </div>
             <div class="tech-about-images__image-mob">
@@ -322,13 +333,35 @@
 
       <section class="section-more-about">
         <div class="container container_md-space-tablet">
-          <div class="volts-block-info">
-            <div class="volts-block-info__inner">
-              <img data-src="assets/img/modules/volts.296.png" alt="" class="lazyload">
-              <div class="vb-info-text vb-info-text_1">Распределительный электрощиток</div>
-              <div class="vb-info-text vb-info-text_2">Легкий и прочный корпус из алюминия</div>
-              <div class="vb-info-text vb-info-text_3">Вентиляционные отверстия</div>
-              <div class="vb-info-text vb-info-text_4">Предохранитель от перепада напряжения</div>
+          <div class="volts-hint-slider owl-carousel owl-nav-dark">
+            <div class="volts-block-info">
+              <div class="volts-block-info__inner">
+                <img data-src="assets/img/modules/volts.296.png" alt="" class="lazyload">
+                <div class="vb-info-text vb-info-text_1">Распределительный электрощиток</div>
+                <div class="vb-info-text vb-info-text_2">Легкий и прочный корпус из алюминия</div>
+                <div class="vb-info-text vb-info-text_3">Вентиляционные отверстия</div>
+                <div class="vb-info-text vb-info-text_4">Предохранитель от перепада напряжения</div>
+              </div>
+            </div>
+
+            <div class="volts-block-info">
+              <div class="volts-block-info__inner">
+                <img data-src="assets/img/modules/volts.296.png" alt="" class="lazyload">
+                <div class="vb-info-text vb-info-text_1">Распределительный электрощиток</div>
+                <div class="vb-info-text vb-info-text_2">Легкий и прочный корпус из алюминия</div>
+                <div class="vb-info-text vb-info-text_3">Вентиляционные отверстия</div>
+                <div class="vb-info-text vb-info-text_4">Предохранитель от перепада напряжения</div>
+              </div>
+            </div>
+
+            <div class="volts-block-info">
+              <div class="volts-block-info__inner">
+                <img data-src="assets/img/modules/volts.296.png" alt="" class="lazyload">
+                <div class="vb-info-text vb-info-text_1">Распределительный электрощиток</div>
+                <div class="vb-info-text vb-info-text_2">Легкий и прочный корпус из алюминия</div>
+                <div class="vb-info-text vb-info-text_3">Вентиляционные отверстия</div>
+                <div class="vb-info-text vb-info-text_4">Предохранитель от перепада напряжения</div>
+              </div>
             </div>
           </div>
 
@@ -404,51 +437,15 @@
               <div class="volts-modules-count__img">
                 <img src="assets/img/modules/volts.302.png" alt="" class="volts-modules-img">
               </div>
-              <div class="add-module add-m-1">
-                <button type="button" class="add-m">
-                  <svg class="icon">
-                    <use xlink:href="assets/img/sprite.svg#plus" fill="url(#gradPlus)"></use>
-                  </svg>
-                </button>
+              <div class="add-module">
                 <button type="button" class="minus-m" disabled>
                   <svg class="icon">
                     <use xlink:href="assets/img/sprite.svg#minus" fill="url(#gradMinus)"></use>
                   </svg>
                 </button>
-              </div>
-              <div class="add-module add-m-2">
                 <button type="button" class="add-m">
                   <svg class="icon">
                     <use xlink:href="assets/img/sprite.svg#plus" fill="url(#gradPlus)"></use>
-                  </svg>
-                </button>
-                <button type="button" class="minus-m" disabled>
-                  <svg class="icon">
-                    <use xlink:href="assets/img/sprite.svg#minus" fill="url(#gradMinus)"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="add-module add-m-3">
-                <button type="button" class="add-m">
-                  <svg class="icon">
-                    <use xlink:href="assets/img/sprite.svg#plus" fill="url(#gradPlus)"></use>
-                  </svg>
-                </button>
-                <button type="button" class="minus-m" disabled>
-                  <svg class="icon">
-                    <use xlink:href="assets/img/sprite.svg#minus" fill="url(#gradMinus)"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="add-module add-m-4">
-                <button type="button" class="add-m">
-                  <svg class="icon">
-                    <use xlink:href="assets/img/sprite.svg#plus" fill="url(#gradPlus)"></use>
-                  </svg>
-                </button>
-                <button type="button" class="minus-m" disabled>
-                  <svg class="icon">
-                    <use xlink:href="assets/img/sprite.svg#minus" fill="url(#gradMinus)"></use>
                   </svg>
                 </button>
               </div>
@@ -839,6 +836,6 @@
       </symbol>
     </svg>
   </div>
-<script type="text/javascript" src="assets/js/vendors.3aeee3cced4d73884f14.js"></script><script type="text/javascript" src="assets/js/app.3aeee3cced4d73884f14.js"></script></body>
+<script type="text/javascript" src="assets/js/vendors.09b0cf5cad896465849b.js"></script><script type="text/javascript" src="assets/js/app.09b0cf5cad896465849b.js"></script></body>
 
 </html>
