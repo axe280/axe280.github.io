@@ -658,11 +658,8 @@ template {
   0 {
     height: 0;
   }
-  25% {
-    height: 72px;
-  }
   100% {
-    height: 122px;
+    height: 56px;
   }
 }
 
@@ -670,11 +667,44 @@ template {
   0 {
     height: 0;
   }
-  25% {
-    height: 72px;
+  100% {
+    height: 56px;
+  }
+}
+
+@-webkit-keyframes arr-line-w-green_left {
+  0 {
+    width: 0;
   }
   100% {
-    height: 122px;
+    width: 86px;
+  }
+}
+
+@keyframes arr-line-w-green_left {
+  0 {
+    width: 0;
+  }
+  100% {
+    width: 86px;
+  }
+}
+
+@-webkit-keyframes arr-line-w-green_right {
+  0 {
+    width: 0;
+  }
+  100% {
+    width: 48px;
+  }
+}
+
+@keyframes arr-line-w-green_right {
+  0 {
+    width: 0;
+  }
+  100% {
+    width: 48px;
   }
 }
 
@@ -5221,6 +5251,31 @@ body {
 /* end media min width 960 pixels */
 /* Min width 1160 pixels */
 @media only screen and (min-width: 1160px) {
+  .owl-item.active .night-an-arrow-green,
+  .owl-item.active .day-animation {
+    -webkit-animation-name: pulse;
+            animation-name: pulse;
+  }
+  .owl-item.active .d-an-arrow-green {
+    -webkit-animation-name: arr-line-width-green;
+            animation-name: arr-line-width-green;
+  }
+  .owl-item.active .d-an-arrow-blue {
+    -webkit-animation-name: arr-line-height-blue;
+            animation-name: arr-line-height-blue;
+  }
+  .owl-item.active .night-an-arrow-green__center {
+    -webkit-animation-name: arr-line-height-green;
+            animation-name: arr-line-height-green;
+  }
+  .owl-item.active .night-an-arrow-green__left {
+    -webkit-animation-name: arr-line-w-green_left;
+            animation-name: arr-line-w-green_left;
+  }
+  .owl-item.active .night-an-arrow-green__right {
+    -webkit-animation-name: arr-line-w-green_right;
+            animation-name: arr-line-w-green_right;
+  }
   .day-animation {
     position: absolute;
     top: 230px;
@@ -5228,74 +5283,106 @@ body {
     height: 194px;
     right: 221px;
     z-index: 3;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-delay: 3.5s;
+            animation-delay: 3.5s;
+  }
+  .day-animation div {
+    position: absolute;
+    background-repeat: no-repeat;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
   }
   .d-an-arrow-green {
-    position: absolute;
     left: 100px;
     top: 0;
     width: 0;
     height: 0;
     background-image: url(../img/h-arrow-1-green.png);
     background-position: 0 0;
-    background-repeat: no-repeat;
-    -webkit-animation-name: arr-line-width-green;
-            animation-name: arr-line-width-green;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-fill-mode: backwards;
-            animation-fill-mode: backwards;
   }
   .d-an-arrow-blue {
-    position: absolute;
     left: 0;
     top: 10px;
     width: 244px;
     height: 0;
     background-image: url(../img/h-arrow-2-blue.png);
     background-position: 50% 0;
-    background-repeat: no-repeat;
-    -webkit-animation-name: arr-line-height-blue;
-            animation-name: arr-line-height-blue;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-fill-mode: backwards;
-            animation-fill-mode: backwards;
   }
   .night-animation {
     position: absolute;
-    top: 355px;
+    top: 360px;
     left: 598px;
     z-index: 3;
     width: 144px;
     height: 68px;
   }
-  .ninght-an-arrow-green {
+  .night-an-arrow-green {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 144px;
-    height: 0;
-    background-image: url(../img/h-arrow-3-green.png);
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-    -webkit-animation-name: arr-line-height-green;
-            animation-name: arr-line-height-green;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    height: 72px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    -webkit-animation-fill-mode: backwards;
-            animation-fill-mode: backwards;
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+  }
+  .night-an-arrow-green div {
+    position: absolute;
+    background-repeat: no-repeat;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .night-an-arrow-green__center {
+    bottom: 0;
+    left: 50%;
+    width: 14px;
+    height: 0;
+    margin-left: 10px;
+    background-image: url(../img/h-arrow-3-green_center.png);
+    background-position: 50% 100%;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+  .night-an-arrow-green__left {
+    right: 61px;
+    bottom: 0;
+    width: 0;
+    height: 68px;
+    background-image: url(../img/h-arrow-3-green_left.png);
+    background-position: 100% 100%;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  .night-an-arrow-green__right {
+    left: 95px;
+    bottom: 0;
+    width: 0;
+    height: 68px;
+    background-image: url(../img/h-arrow-3-green_right.png);
+    background-position: 0% 100%;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
   }
 }
 
