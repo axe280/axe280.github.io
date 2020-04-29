@@ -605,13 +605,13 @@ template {
     width: 0;
     height: 10px;
   }
-  25% {
+  15% {
     width: 53px;
     height: 10px;
   }
   100% {
     width: 53px;
-    height: 240px;
+    height: 220px;
   }
 }
 
@@ -620,81 +620,61 @@ template {
     width: 0;
     height: 10px;
   }
-  25% {
+  15% {
     width: 53px;
     height: 10px;
   }
   100% {
     width: 53px;
-    height: 240px;
+    height: 220px;
   }
 }
 
 @-webkit-keyframes arr-line-height-blue {
   0 {
     height: 0;
-    width: 0;
   }
   25% {
-    width: 40px;
-    height: 80px;
-  }
-  50% {
-    width: 100px;
-    height: 125px;
+    height: 90px;
   }
   100% {
-    width: 340px;
-    height: 175px;
+    height: 210px;
   }
 }
 
 @keyframes arr-line-height-blue {
   0 {
     height: 0;
-    width: 0;
   }
   25% {
-    width: 40px;
-    height: 80px;
-  }
-  50% {
-    width: 100px;
-    height: 125px;
+    height: 90px;
   }
   100% {
-    width: 340px;
-    height: 175px;
+    height: 210px;
   }
 }
 
 @-webkit-keyframes arr-line-height-green {
   0 {
     height: 0;
-    width: 0;
   }
   25% {
-    width: 30px;
     height: 72px;
   }
   100% {
-    width: 184px;
-    height: 72px;
+    height: 122px;
   }
 }
 
 @keyframes arr-line-height-green {
   0 {
     height: 0;
-    width: 0;
   }
   25% {
-    width: 30px;
     height: 72px;
   }
   100% {
-    width: 184px;
-    height: 72px;
+    height: 122px;
   }
 }
 
@@ -5260,8 +5240,8 @@ body {
     background-repeat: no-repeat;
     -webkit-animation-name: arr-line-width-green;
             animation-name: arr-line-width-green;
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
@@ -5271,20 +5251,17 @@ body {
   }
   .d-an-arrow-blue {
     position: absolute;
-    left: 33%;
-    -webkit-transform: translateX(-33%);
-        -ms-transform: translateX(-33%);
-            transform: translateX(-33%);
+    left: 0;
     top: 10px;
-    width: 0;
+    width: 244px;
     height: 0;
     background-image: url(../img/h-arrow-2-blue.png);
-    background-position: 33% 0;
+    background-position: 50% 0;
     background-repeat: no-repeat;
     -webkit-animation-name: arr-line-height-blue;
             animation-name: arr-line-height-blue;
-    -webkit-animation-duration: 4s;
-            animation-duration: 4s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
@@ -5303,15 +5280,12 @@ body {
   .ninght-an-arrow-green {
     position: absolute;
     bottom: 0;
-    left: 60%;
-    -webkit-transform: translateX(-60%);
-        -ms-transform: translateX(-60%);
-            transform: translateX(-60%);
-    width: 0;
+    left: 0;
+    width: 144px;
     height: 0;
     background-image: url(../img/h-arrow-3-green.png);
     background-repeat: no-repeat;
-    background-position: 60% 100%;
+    background-position: 50% 100%;
     -webkit-animation-name: arr-line-height-green;
             animation-name: arr-line-height-green;
     -webkit-animation-duration: 3s;
