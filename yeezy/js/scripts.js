@@ -119,6 +119,7 @@ $('.quantity').each(function() {
 });
 
 $('.burger').click(function() {
+    $(this).toggleClass('open');
     $('.wrapper').toggleClass('menu-open');
     $('.header').toggleClass('menu-open');
 });
