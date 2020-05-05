@@ -213,3 +213,17 @@ $(window).resize( function() {
         starsCertificateSlider();
     }
 });
+
+let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    // $('.wrapper').addClass('ios');
+
+    if (userAgent.toLowerCase().indexOf('safari') != -1) { 
+        if (userAgent.toLowerCase().indexOf('chrome') > -1) {
+            // console.log('chrome browser');
+        } else {
+            $('.header').addClass('ios-safari');
+        }
+    }
+}

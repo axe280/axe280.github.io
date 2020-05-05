@@ -13,6 +13,19 @@
       top: 0;
       opacity: 1;
       pointer-events: auto; } }
+  @media screen and (max-width: 1024px) {
+    .header.menu-open.ios-safari .header-top .menu-pages {
+      top: calc(50vh + 30px); } }
+  @media screen and (max-width: 1024px) {
+    .header.ios-safari .header-top .menu-pages {
+      height: calc(50vh - 60px); } }
+  .header.ios-safari-middle {
+    background-color: #000;
+    position: relative;
+    z-index: 1; }
+    @media screen and (max-width: 1024px) {
+      .header.ios-safari-middle {
+        height: 50vh; } }
   .header-inner {
     position: relative; }
   .header-top {
@@ -274,7 +287,19 @@
           justify-content: center;
           align-self: stretch;
           flex-shrink: 0;
-          width: 75px; }
+          width: 65px; }
+          @media screen and (max-width: 860px) {
+            .header-middle .mobile-menu-categories .model-category .category-icon {
+              width: 90px; } }
+          @media screen and (max-width: 768px) {
+            .header-middle .mobile-menu-categories .model-category .category-icon {
+              width: 70px; } }
+          @media screen and (max-width: 640px) {
+            .header-middle .mobile-menu-categories .model-category .category-icon {
+              width: 80px; } }
+          @media screen and (max-width: 480px) {
+            .header-middle .mobile-menu-categories .model-category .category-icon {
+              width: 65px; } }
           @media screen and (max-width: 360px) {
             .header-middle .mobile-menu-categories .model-category .category-icon {
               width: 100px; } }
@@ -286,6 +311,12 @@
           @media screen and (max-width: 640px) {
             .header-middle .mobile-menu-categories .model-category .category-title {
               word-break: break-word; } }
+          @media screen and (max-width: 480px) {
+            .header-middle .mobile-menu-categories .model-category .category-title {
+              font-size: 12px; } }
+          @media screen and (max-width: 360px) {
+            .header-middle .mobile-menu-categories .model-category .category-title {
+              font-size: 14px; } }
     .header-middle .menu-link {
       font-size: 14px;
       line-height: 16px;
