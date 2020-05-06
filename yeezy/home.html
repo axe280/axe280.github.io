@@ -113,67 +113,69 @@
                     </div>
                 </div>
                 <div class="header-mobile-menu">
-                    <nav class="menu-group menu-categories">
-                        <a href="/" class="menu-link">
-                            Мужчины
-                        </a>
-                        <a href="/" class="menu-link">
-                            Женщины
-                        </a>
-                        <a href="/" class="menu-link">
-                            Yeezy Boost 350
-                        </a>
-                        <a href="/" class="menu-link">
-                            Yeezy Boost 350 v2
-                        </a>
-                        <a href="/" class="menu-link">
-                            Yeezy Boost 380 Alien
-                        </a>
-                        <a href="/" class="menu-link">
-                            Yeezy Boost 451
-                        </a>
-                        <a href="/" class="menu-link">
-                            Yeezy Boost 500
-                        </a>
-                        <a href="/" class="menu-link">
-                            Yeezy Boost 700
-                        </a>
-                        <a href="/" class="menu-link">
-                            Большие размеры
-                        </a>
-                        <a href="/" class="menu-link">
-                            Светоотражающие
-                        </a>
-                        <a href="/" class="menu-link">
-                            Светлые Yeezy
-                        </a>
-                        <a href="/" class="menu-link">
-                            Тёмные Yeezy
-                        </a>
-                    </nav>
-                    <nav class="menu-group menu-pages">
-                        <a href="/" class="menu-link">
-                            О нас
-                        </a>
-                        <a href="/" class="menu-link">
-                            Документы
-                        </a>
-                        <a href="/" class="menu-link">
-                            Образы
-                        </a>
-                        <a href="/" class="menu-link">
-                            Клиенты
-                        </a>
-                        <a href="/" class="menu-link">
-                            Доставка
-                        </a>
-                        <a href="/" class="menu-link">
-                            Гарантии и возврат
-                        </a>
-                        <a href="/" class="menu-link">
-                            Контакты
-                        </a>
-                    </nav>
+                    <div class="menu-inner">
+                        <nav class="menu-group menu-categories">
+                            <a href="/" class="menu-link">
+                                Мужчины
+                            </a>
+                            <a href="/" class="menu-link">
+                                Женщины
+                            </a>
+                            <a href="/" class="menu-link">
+                                Yeezy Boost 350
+                            </a>
+                            <a href="/" class="menu-link">
+                                Yeezy Boost 350 v2
+                            </a>
+                            <a href="/" class="menu-link">
+                                Yeezy Boost 380 Alien
+                            </a>
+                            <a href="/" class="menu-link">
+                                Yeezy Boost 451
+                            </a>
+                            <a href="/" class="menu-link">
+                                Yeezy Boost 500
+                            </a>
+                            <a href="/" class="menu-link">
+                                Yeezy Boost 700
+                            </a>
+                            <a href="/" class="menu-link">
+                                Большие размеры
+                            </a>
+                            <a href="/" class="menu-link">
+                                Светоотражающие
+                            </a>
+                            <a href="/" class="menu-link">
+                                Светлые Yeezy
+                            </a>
+                            <a href="/" class="menu-link">
+                                Тёмные Yeezy
+                            </a>
+                        </nav>
+                        <nav class="menu-group menu-pages">
+                            <a href="/" class="menu-link">
+                                О нас
+                            </a>
+                            <a href="/" class="menu-link">
+                                Документы
+                            </a>
+                            <a href="/" class="menu-link">
+                                Образы
+                            </a>
+                            <a href="/" class="menu-link">
+                                Клиенты
+                            </a>
+                            <a href="/" class="menu-link">
+                                Доставка
+                            </a>
+                            <a href="/" class="menu-link">
+                                Гарантии и возврат
+                            </a>
+                            <a href="/" class="menu-link">
+                                Контакты
+                            </a>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </header>
@@ -334,7 +336,7 @@
                     </div>
                 </div>
             </section>
-            <section class="block block-catalog-models">
+            <!-- <section class="block block-catalog-models">
                 <div class="wrap">
                     <div class="block-title">
                         кАТАЛОГ yEEZY BOOST
@@ -521,8 +523,8 @@
                         Показать еще
                     </button>
                 </div>
-            </section>
-            <section class="block block-catalog-list">
+            </section> -->
+            <section class="block block-catalog-list home-catalog-list">
                 <div class="wrap">
                     <!-- <div class="sorter">
                         <select class="sort-select">
@@ -531,6 +533,9 @@
                             <option value="2">Значение 2</option>
                         </select>
                     </div> -->
+                    <div class="block-title">
+                        кАТАЛОГ yEEZY BOOST
+                    </div>
                     <div class="catalog-items">
                         <div class="catalog-item">
                             <div class="catalog-item-inner">
@@ -1681,10 +1686,13 @@
                         <div class="inputs">
 
                             <label class="input-label">
-                                <input type="text" placeholder="Ваше имя" required>
+                                <input class="form-input" type="text" placeholder="Ваше имя" required id="input-name">
                             </label>
                             <label class="input-label">
-                                <input type="text" placeholder="+7" required>
+                                <input class="form-input" type="text" placeholder="+7" required id="input-phone">
+                            </label>
+                            <label class="input-label address-label">
+                                <input type="text" placeholder="Ваш адрес" required id="input-adress">
                             </label>
 
                             <label class="social-contact-option">
@@ -1922,6 +1930,7 @@
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
