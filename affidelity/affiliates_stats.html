@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+<link href="assets/css/vendors.a904db6a68bf36f96a20.css" rel="stylesheet"><link href="assets/css/app.a904db6a68bf36f96a20.css" rel="stylesheet"></head>
+
+<body>
+  <div class="site-wrapper">
+    <aside class="aside-nav">
+      <div class="logo">
+        <a href="preview.html">
+          <img src="assets/img/logo.png" alt="">
+        </a>
+      </div>
+      
+      <nav class="main-nav">
+        <div class="aside-nav-tt">navigations</div>
+        
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <span class="icon-sprite ic_dsh"></span>
+              Dashboard
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <span class="icon-sprite ic_user"></span>
+              Leads
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <span class="icon-sprite ic_user_fill"></span>
+              Affiliates
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <span class="icon-sprite ic_programs"></span>
+              Programs
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link active">
+              <span class="icon-sprite ic_reporting"></span>
+              Reporting
+            </a>
+
+            <ul class="main-dd-menu">
+              <li class="main-dd-menu__item">
+                <a href="#" class="main-dd-menu__link">Leads</a>
+              </li>
+              <li class="main-dd-menu__item">
+                <a href="#" class="main-dd-menu__link">Affiliates</a>
+              </li>
+              <li class="main-dd-menu__item">
+                <a href="#" class="main-dd-menu__link">Programs</a>
+              </li>
+              <li class="main-dd-menu__item">
+                <a href="#" class="main-dd-menu__link active">Affiliates stats</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="main-nav">
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <span class="icon-sprite ic_users"></span>
+              Users
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <span class="icon-sprite ic_settings"></span>
+              Settings
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">
+              <span class="icon-sprite ic_logout"></span>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <!-- header -->
+      <header class="header" id="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6"></div>
+            
+            <div class="col-md-6 text-right">
+              <div class="h-user-panel">
+                <a href="#" class="h-user-panel__icon">
+                  <span class="icon-sprite ic_user_pic"></span>
+                </a>
+                <div class="h-user-panel__name">Hello, Iren</div>
+                <div class="h-user-panel__logout">
+                  <a href="#" class="icon-sprite ic_logout_min"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <div class="title-breadcrumbs">
+        <div class="container-fluid">
+          <ol class="breadcrumb">
+            <li><a href="#">Dashboard</a></li>
+            <li class="active">Affiliates stats</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="inner-ligth-container">
+          <div class="filter-panel">
+            <div class="inner-light-title">
+              <button class="collapse-btn" type="button" data-toggle="collapse" data-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
+                <span class="aside-min-line"></span>
+                Filters <span class="icon-sprite ic_arrow_top_green"></span>
+              </button>
+            </div>
+
+            <div class="collapse" id="collapseFilter">
+              <form action="#" class="form-horizontal filter-form">
+                <div class="row">
+                  <div class="col-md-6 col-max-lg-4">
+                    <div class="form-group">
+                      <label for="selectFilter1" class="col-lg-4 control-label">Program name</label>
+                      <div class="col-lg-8">
+                        <select class="selectpicker form-control" id="selectFilter1">
+                          <option class="empty-option"></option>
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Barbecue</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="selectFilter2" class="col-lg-4 control-label">Manager</label>
+                      <div class="col-lg-8">
+                        <select class="selectpicker form-control" id="selectFilter2">
+                          <option class="empty-option"></option>
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Barbecue</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="selectFilter3" class="col-lg-4 control-label">Affiliate username</label>
+                      <div class="col-lg-8">
+                        <select class="selectpicker form-control" id="selectFilter3">
+                          <option class="empty-option"></option>
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Barbecue</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="selectFilter4" class="col-lg-4 control-label">Brand name</label>
+                      <div class="col-lg-8">
+                        <select class="selectpicker form-control" id="selectFilter4">
+                          <option class="empty-option"></option>
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Barbecue</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="selectFilter5" class="col-lg-4 control-label">Affiliate ID</label>
+                      <div class="col-lg-8">
+                        <select class="selectpicker form-control" id="selectFilter5">
+                          <option class="empty-option"></option>
+                          <option>Mustard</option>
+                          <option>Ketchup</option>
+                          <option>Barbecue</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-lg-4 control-label">Create date range</label>
+                      <div class="col-lg-8">
+                        <div class="data-range-wrapper">
+                          <div class="data-range-filter">
+                            <div class="dropdown">
+                              <button id="dDataFilter" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="data-filter">
+                                <span class="icon-sprite ic_filter"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dDataFilter">
+                                <li><a href="#">Today</a></li>
+                                <li><a href="#">Yesterday</a></li>
+                                <li><a href="#">7 Days</a></li>
+                                <li><a href="#">Month</a></li>
+                                <li class="active"><a href="#">Last Month</a></li>
+                                <li><a href="#">This Year</a></li>
+                                <li><a href="#">Last Year</a></li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <div class="data-range-input-wrapp">
+                            <div class="data-range-input">
+                              <input type="text" class="form-control datapicker-input">
+                              <span class="icon-sprite ic_calendar"></span>
+                            </div>
+                            <div class="data-range-between">to</div>
+                            <div class="data-range-input">
+                              <input type="text" class="form-control datapicker-input">
+                              <span class="icon-sprite ic_calendar"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-max-lg-4">
+                    <div class="form-group">
+                      <label class="col-lg-4 control-label">CR,%</label>
+                      <div class="col-lg-8">
+                        <div class="slider-range-comp" id="sliderRange_1">
+                          <input type="text" data-slider-amount-min class="slider-range-field">
+                          <span class="slider-range-separate"></span>
+                          <input type="text" data-slider-amount-max class="slider-range-field">
+                          <div class="slider-range" data-slider-range></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-lg-4 control-label">Deposits,€</label>
+                      <div class="col-lg-8">
+                        <div class="slider-range-comp" id="sliderRange_2">
+                          <input type="text" data-slider-amount-min class="slider-range-field">
+                          <span class="slider-range-separate"></span>
+                          <input type="text" data-slider-amount-max class="slider-range-field">
+                          <div class="slider-range" data-slider-range></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-lg-4 control-label">Gross revebue,€</label>
+                      <div class="col-lg-8">
+                        <div class="slider-range-comp" id="sliderRange_3">
+                          <input type="text" data-slider-amount-min class="slider-range-field">
+                          <span class="slider-range-separate"></span>
+                          <input type="text" data-slider-amount-max class="slider-range-field">
+                          <div class="slider-range" data-slider-range></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-lg-4 control-label">Bonuses,€</label>
+                      <div class="col-lg-8">
+                        <div class="slider-range-comp" id="sliderRange_4">
+                          <input type="text" data-slider-amount-min class="slider-range-field">
+                          <span class="slider-range-separate"></span>
+                          <input type="text" data-slider-amount-max class="slider-range-field">
+                          <div class="slider-range" data-slider-range></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="col-lg-4 control-label">Net revenue,€</label>
+                      <div class="col-lg-8">
+                        <div class="slider-range-comp" id="sliderRange_5">
+                          <input type="text" data-slider-amount-min class="slider-range-field">
+                          <span class="slider-range-separate"></span>
+                          <input type="text" data-slider-amount-max class="slider-range-field">
+                          <div class="slider-range" data-slider-range></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="filter-form-footer">
+                      <button type="button" class="btn btn-default btn-lg text-uppercase">
+                        search
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>№</th>
+                  <th>Program name</th>
+                  <th>Manager</th>
+                  <th>Period</th>
+                  <th>Brand name</th>
+                  <th>Iffiliate ID</th>
+                  <th>Affiliate username</th>
+                  <th>Signups</th>
+                  <th>FTDs</th>
+                  <th>CR,%</th>
+                  <th>Deposits,€</th>
+                  <th>Gross revenue,€</th>
+                  <th>Bonuses,€</th>
+                  <th>GR-Bonuses,€</th>
+                  <th>Net revenue,€</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="st-check">
+                      <label>
+                        <input type="checkbox">
+                        <div class="fake-checkbox"></div>
+                      </label>
+                    </div>
+                  </td>
+                  <td>1</td>
+                  <td>Ultra</td>
+                  <td>Kate</td>
+                  <td>02.2020</td>
+                  <td>Yoyo</td>
+                  <td>123456</td>
+                  <td>Example12</td>
+                  <td>50</td>
+                  <td>20</td>
+                  <td>40</td>
+                  <td>1 500,00</td>
+                  <td>1 000,00</td>
+                  <td>200,00</td>
+                  <td>800,00</td>
+                  <td>550,00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="st-check">
+                      <label>
+                        <input type="checkbox">
+                        <div class="fake-checkbox"></div>
+                      </label>
+                    </div>
+                  </td>
+                  <td>1</td>
+                  <td>Ultra</td>
+                  <td>Kate</td>
+                  <td>02.2020</td>
+                  <td>Yoyo</td>
+                  <td>123456</td>
+                  <td>Example12</td>
+                  <td>50</td>
+                  <td>20</td>
+                  <td>40</td>
+                  <td>1 500,00</td>
+                  <td>1 000,00</td>
+                  <td>200,00</td>
+                  <td>800,00</td>
+                  <td>550,00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="st-check">
+                      <label>
+                        <input type="checkbox">
+                        <div class="fake-checkbox"></div>
+                      </label>
+                    </div>
+                  </td>
+                  <td>1</td>
+                  <td>Ultra</td>
+                  <td>Kate</td>
+                  <td>02.2020</td>
+                  <td>Yoyo</td>
+                  <td>123456</td>
+                  <td>Example12</td>
+                  <td>50</td>
+                  <td>20</td>
+                  <td>40</td>
+                  <td>1 500,00</td>
+                  <td>1 000,00</td>
+                  <td>200,00</td>
+                  <td>800,00</td>
+                  <td>550,00</td>
+                </tr>
+              </tbody>
+
+              <tfoot>
+                <tr>
+                  <td class="empty-td"></td>
+                  <td class="empty-td"></td>
+                  <td class="empty-td"></td>
+                  <td class="empty-td"></td>
+                  <td class="empty-td"></td>
+                  <td class="empty-td"></td>
+                  <td class="empty-td"></td>
+                  <td class="bg-td">Total</td>
+                  <td>50</td>
+                  <td>20</td>
+                  <td>40</td>
+                  <td>1 500,00</td>
+                  <td>1 000,00</td>
+                  <td>200,00</td>
+                  <td>800,00</td>
+                  <td>550,00</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+        <form class="footer-controls">
+          <div class="row">
+            <div class="col-md-3 col-lg-4">
+              <div class="aside-controls">
+                <button type="button" class="btn btn-default btn-lg">
+                  <span class="icon-sprite ic_imp_green"></span>
+                  <span class="btn-icon-text">Import Data</span>
+                </button>
+                <button type="button" class="btn btn-default btn-lg">
+                  <span class="icon-sprite ic_exp_green"></span>
+                  <span class="btn-icon-text">Export Data</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="col-md-7 col-lg-6 text-center">
+              <nav class="pagination-wrapper">
+                <ul class="pagination">
+                  <li>
+                    <a href="#" aria-label="Previous">
+                      <span aria-hidden="true" class="icon-sprite ic_arrow_left_green"></span>
+                    </a>
+                  </li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li>
+                    <a href="#" aria-label="Next">
+                      <span aria-hidden="true" class="icon-sprite ic_arrow_right_green"></span>
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="pagination-info">
+                  Showing: <span>1-20</span> of <span>14,672</span> items.
+                </div>
+              </nav>
+
+              <div class="pagination-go-to-page">
+                <span class="go-to-page-tt">Go to page</span>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+
+            <div class="col-md-2 col-lg-2">
+              <div class="aside-per-page-control">
+                <span class="per-page-tt">On page</span>
+                <div class="per-page-drop-d-wrapper">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    100 <span class="icon-sprite ic_arrow_bottom_green"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">20</a></li>
+                    <li><a href="#">50</a></li>
+                    <li class="active"><a href="#">100</a></li>
+                    <li><a href="#">All</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+
+
+  <!-- footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-logo">
+      <a href="#"><img src="assets/img/logo-inline.png" alt=""></a>
+    </div>
+    <span class="copy text-uppercase">©2019 | Affiliate Software Powered by Affidelity</span>
+  </footer>
+  <!-- end footer -->
+<script type="text/javascript" src="assets/js/vendors.a904db6a68bf36f96a20.js"></script><script type="text/javascript" src="assets/js/app.a904db6a68bf36f96a20.js"></script></body>
+
+</html>
