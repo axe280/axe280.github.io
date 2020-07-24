@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <path id="Shape_1_копия_4" data-name="Shape 1 копия 4" class="cls-1" d="M457.168,103.188a0.682,0.682,0,0,0,0,.9l4.44,4.915-4.44,4.916a0.682,0.682,0,0,0,0,.9,0.54,0.54,0,0,0,.816,0l4.847-5.365a0.681,0.681,0,0,0,0-.9l-4.847-5.364A0.54,0.54,0,0,0,457.168,103.188Z" transform="translate(-457 -103)"/>
+</svg>
