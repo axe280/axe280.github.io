@@ -1,0 +1,13 @@
+ProjectTitle: Fin days
+
+PageList:
+  - file: homepage.html
+    ready: 100
+  - file: static.html
+    ready: 100
+  - file: registration.html
+    ready: 100
+  - file: speakers-page.html
+    ready: 100
+  - file: live.html
+    ready: 100

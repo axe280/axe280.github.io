@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- MADE WITH LOVE BY <> KHMELEVSKOY & ASSOCIATES </> www.khmelevskoy.co-->
+    <meta charset="utf-8">
+    <title>live title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <!-- appstore links-->
+    <!-- seo meta-->
+    <meta name="description" content="Meta description">
+    <meta name="keywords" content="Key, words">
+    <meta name="author" content="Site name">
+    <!-- og meta-->
+    <meta property="og:title" content="Site name">
+    <meta property="og:url" content="https://projectname.surge.sh">
+    <meta property="og:image" content="https://projectname.surge.sh/img/og/1_1080х607.jpg">
+    <meta property="og:description" content="Site name">
+    <meta name="twitter:title" content="Site name">
+    <meta name="twitter:description" content="Site name">
+    <meta name="twitter:image:src" content="https://projectname.surge.sh/img/og/1_1200х628.jpg">
+    <meta name="twitter:url" content="https://projectname.surge.sh">
+    <!-- remove for production-->
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" media="all" href="css/app.css"><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- place where pjax bindings happen's-->
+    <div id="barba-wrapper">
+      <!-- HEADER :: START-->
+      <header class="header sticky-menu">
+        <div class="container-fluid">
+          <div class="header__wrapper"><a class="header__logo" href="homepage.html"><img src="img/logo.svg" alt=""></a>
+            <div class="mobile-navi">
+              <div class="mobile-navi__wrap"><a class="mobile-logo" href="homepage.html"><img src="img/logo.svg" alt=""></a>
+                <ul class="header__menu">
+                  <li class="active"><a href="#">О конференции</a></li>
+                  <li><a href="#">Расписание</a></li>
+                  <li><a href="#">Программа</a></li>
+                  <li><a href="#">Спикеры</a></li>
+                  <li><a href="#">Партнеры</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li class="hidden-desktop"><a href="#">Регистрация</a></li>
+                  <li class="hidden-desktop"><a href="#">Войти</a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="header-min-nav">
+              <li class="header-min-nav__watch"><a href="#">Смотреть</a></li>
+              <li><a href="#">Регистрация</a></li>
+              <li><a href="#">Войти</a></li>
+            </ul>
+            <button class="header__hamburger" type="button">
+              <svg class="ico ico-mono-hamburger">
+                <use xlink:href="img/sprite-mono.svg#ico-mono-hamburger"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- what should be changed with every pjax-->
+      <div class="page live">
+        <div class="page__content">
+          <div class="container">
+            <ul class="bread-crumbs">
+              <li><a class="btn btn--sm btn--icon">
+                  <svg class="ico ico-mono-ch-arr-left">
+                    <use xlink:href="img/sprite-mono.svg#ico-mono-ch-arr-left"></use>
+                  </svg>Назад</a></li>
+              <li><a class="btn btn--sm">Поделиться</a></li>
+            </ul>
+            <div class="setting-wrapp">
+              <div class="setting-open-button">
+                <svg class="ico ico-mono-setting">
+                  <use xlink:href="img/sprite-mono.svg#ico-mono-setting"></use>
+                </svg>
+              </div>
+              <div class="main-setting">
+                <div class="main-setting-tt">Настройки</div>
+                <div class="setting-drop-bl">
+                  <div class="setting-drop-bl__tt">Цвета</div>
+                  <div class="setting-drop-bl__inner">
+                    <ul class="setting-options">
+                      <li>
+                        <div class="ui-group">
+                          <div class="ui-label">Логотип</div>
+                          <div class="ui-field-group">
+                            <div class="ui-field">
+                              <button class="ui-field-btn">
+                                <svg class="ico ico-mono-upload">
+                                  <use xlink:href="img/sprite-mono.svg#ico-mono-upload"></use>
+                                </svg>
+                              </button>
+                              <input class="ui-input" type="text" value="files/img.png"><span class="ui-field__info">png, jpg</span>
+                            </div>
+                            <div class="ui-field-aside">
+                              <div class="setting-round-bl"><img src="img/news2.png" alt=""></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="ui-group">
+                          <div class="ui-label">Основной цвет</div>
+                          <div class="ui-field-group">
+                            <div class="ui-field">
+                              <button class="ui-field-btn">
+                                <svg class="ico ico-mono-paint">
+                                  <use xlink:href="img/sprite-mono.svg#ico-mono-paint"></use>
+                                </svg>
+                              </button>
+                              <input class="ui-input" type="text" value="#f5f5f66">
+                            </div>
+                            <div class="ui-field-aside">
+                              <div class="setting-round-bl primary-color"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="ui-group">
+                          <div class="ui-label">Дополнительный цвет</div>
+                          <div class="ui-field-group">
+                            <div class="ui-field">
+                              <button class="ui-field-btn">
+                                <svg class="ico ico-mono-paint">
+                                  <use xlink:href="img/sprite-mono.svg#ico-mono-paint"></use>
+                                </svg>
+                              </button>
+                              <input class="ui-input" type="text" value="#f5f5f66">
+                            </div>
+                            <div class="ui-field-aside">
+                              <div class="setting-round-bl extra-color"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="ui-group">
+                          <div class="ui-label">Дополнительный цвет</div>
+                          <div class="ui-field-group">
+                            <div class="ui-field">
+                              <button class="ui-field-btn">
+                                <svg class="ico ico-mono-paint">
+                                  <use xlink:href="img/sprite-mono.svg#ico-mono-paint"></use>
+                                </svg>
+                              </button>
+                              <input class="ui-input" type="text" value="#f5f5f66">
+                            </div>
+                            <div class="ui-field-aside">
+                              <div class="setting-round-bl more-color"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="setting-drop-bl">
+                  <div class="setting-drop-bl__tt">Шрифты</div>
+                  <div class="setting-drop-bl__inner">
+                    <ul class="setting-options">
+                      <li>
+                        <div class="ui-group">
+                          <div class="ui-label">Заголовки</div>
+                          <div class="ui-field-group">
+                            <div class="ui-field">
+                              <button class="ui-field-btn">
+                                <svg class="ico ico-mono-ch-arr-bottom">
+                                  <use xlink:href="img/sprite-mono.svg#ico-mono-ch-arr-bottom"></use>
+                                </svg>
+                              </button>
+                              <select class="ui-input">
+                                <option>Exo 2 bold</option>
+                                <option>Exo 2 bold</option>
+                                <option>Exo 2 bold</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="ui-group">
+                          <div class="ui-label">Заголовки</div>
+                          <div class="ui-field-group">
+                            <div class="ui-field">
+                              <button class="ui-field-btn">
+                                <svg class="ico ico-mono-ch-arr-bottom">
+                                  <use xlink:href="img/sprite-mono.svg#ico-mono-ch-arr-bottom"></use>
+                                </svg>
+                              </button>
+                              <select class="ui-input">
+                                <option>Exo 2 bold</option>
+                                <option>Exo 2 bold</option>
+                                <option>Exo 2 bold</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="setting-drop-bl">
+                  <div class="setting-drop-bl__tt">Скругления</div>
+                  <div class="setting-drop-bl__inner">
+                    <ul class="setting-options">
+                      <li>
+                        <div class="ui-group">
+                          <div class="ui-label">Большие</div>
+                          <div class="ui-field-group">
+                            <div class="ui-field">
+                              <input class="ui-input" type="text" value="32">
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="ui-group">
+                          <div class="ui-label">Малые</div>
+                          <div class="ui-field-group">
+                            <div class="ui-field">
+                              <input class="ui-input" type="text" value="10">
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="setting-drop-bl">
+                  <div class="setting-drop-bl__tt">Соцсети</div>
+                  <div class="setting-drop-bl__inner">
+                    <ul class="setting-options">
+                      <li>
+                        <div class="ui-group">
+                          <div class="ui-label">VK</div>
+                          <div class="ui-field-group">
+                            <div class="ui-field">
+                              <button class="ui-field-btn">
+                                <svg class="ico ico-mono-bin">
+                                  <use xlink:href="img/sprite-mono.svg#ico-mono-bin"></use>
+                                </svg>
+                              </button>
+                              <input class="ui-input" type="text" value="vk.com/id12909990">
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="ui-group">
+                          <div class="ui-label">FB</div>
+                          <div class="ui-field-group">
+                            <div class="ui-field">
+                              <button class="ui-field-btn">
+                                <svg class="ico ico-mono-bin">
+                                  <use xlink:href="img/sprite-mono.svg#ico-mono-bin"></use>
+                                </svg>
+                              </button>
+                              <input class="ui-input" type="text" value="vk.com/id12909990">
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="add-social">
+                      <button class="btn btn-primary btn--min">Добавить соцсеть</button>
+                      <ul class="social-options">
+                        <li>
+                          <button class="social-options__close">
+                            <svg class="ico ico-mono-close">
+                              <use xlink:href="img/sprite-mono.svg#ico-mono-close"></use>
+                            </svg>
+                          </button>
+                        </li>
+                        <li>
+                          <svg class="ico ico-mono-twitter">
+                            <use xlink:href="img/sprite-mono.svg#ico-mono-twitter"></use>
+                          </svg>
+                        </li>
+                        <li>
+                          <svg class="ico ico-mono-facebook">
+                            <use xlink:href="img/sprite-mono.svg#ico-mono-facebook"></use>
+                          </svg>
+                        </li>
+                        <li>
+                          <svg class="ico ico-mono-od">
+                            <use xlink:href="img/sprite-mono.svg#ico-mono-od"></use>
+                          </svg>
+                        </li>
+                        <li>
+                          <svg class="ico ico-mono-insta">
+                            <use xlink:href="img/sprite-mono.svg#ico-mono-insta"></use>
+                          </svg>
+                        </li>
+                        <li>
+                          <svg class="ico ico-mono-youtube">
+                            <use xlink:href="img/sprite-mono.svg#ico-mono-youtube"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="setting-drop-bl">
+                  <div class="setting-drop-bl__tt">Блоки</div>
+                  <div class="setting-drop-bl__inner">
+                    <ul class="setting-drop-list">
+                      <li>
+                        <div class="setting-drop-list__tt">Главный блок
+                          <button class="ui-field-btn">
+                            <svg class="ico ico-mono-eye">
+                              <use xlink:href="img/sprite-mono.svg#ico-mono-eye"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="setting-drop-list__tt">Таймер
+                          <button class="ui-field-btn">
+                            <svg class="ico ico-mono-blind-eye">
+                              <use xlink:href="img/sprite-mono.svg#ico-mono-blind-eye"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </li>
+                      <li class="opened">
+                        <div class="setting-drop-list__tt">О конференции
+                          <button class="ui-field-btn"> 
+                            <svg class="ico ico-mono-eye">
+                              <use xlink:href="img/sprite-mono.svg#ico-mono-eye"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="setting-drop-list__inner">
+                          <ul class="setting-options">
+                            <li>
+                              <div class="ui-group">
+                                <div class="ui-label">Фоновое изображение</div>
+                                <div class="ui-field-group">
+                                  <div class="ui-field">
+                                    <button class="ui-field-btn">
+                                      <svg class="ico ico-mono-upload">
+                                        <use xlink:href="img/sprite-mono.svg#ico-mono-upload"></use>
+                                      </svg>
+                                    </button>
+                                    <input class="ui-input" type="text" value="files/img.png"><span class="ui-field__info">png, jpg</span>
+                                  </div>
+                                  <div class="ui-field-aside">
+                                    <div class="setting-round-bl"><img src="img/news2.png" alt=""></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="ui-group">
+                                <div class="ui-label">Цвет фона</div>
+                                <div class="ui-field-group">
+                                  <div class="ui-field">
+                                    <button class="ui-field-btn">
+                                      <svg class="ico ico-mono-paint">
+                                        <use xlink:href="img/sprite-mono.svg#ico-mono-paint"></use>
+                                      </svg>
+                                    </button>
+                                    <input class="ui-input" type="text" value="#f5f5f66">
+                                  </div>
+                                  <div class="ui-field-aside">
+                                    <div class="setting-round-bl primary-color"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="setting-drop-list__tt">Расписание
+                          <button class="ui-field-btn">
+                            <svg class="ico ico-mono-eye">
+                              <use xlink:href="img/sprite-mono.svg#ico-mono-eye"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="setting-drop-list__tt">Программа
+                          <button class="ui-field-btn">
+                            <svg class="ico ico-mono-eye">
+                              <use xlink:href="img/sprite-mono.svg#ico-mono-eye"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="setting-drop-list__tt">Спикеры
+                          <button class="ui-field-btn">
+                            <svg class="ico ico-mono-eye">
+                              <use xlink:href="img/sprite-mono.svg#ico-mono-eye"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="setting-drop-list__tt">Новости
+                          <button class="ui-field-btn">
+                            <svg class="ico ico-mono-eye">
+                              <use xlink:href="img/sprite-mono.svg#ico-mono-eye"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="live-inner">
+              <div class="live-main-bl">
+                <div class="live-main-video"><img src="img/static-video.jpg" alt=""></div>
+                <!-- .mobile-chat-opened-->
+                <div class="live-chat-wrapper">
+                  <div class="live-chat-inner">
+                    <div class="live-chat-messages">
+                      <div class="chat-message">
+                        <div class="chat-message__user-name">Аркадий Мамонтов</div>
+                        <div class="chat-message__time">12:20</div>
+                        <div class="chat-message__text">Возможно ли работать платежной организации с вашим банком в сфере интернет эквайринга в Казахстане?</div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message__user-name">Аркадий Мамонтов</div>
+                        <div class="chat-message__time">12:20</div>
+                        <div class="chat-message__text">Возможно ли работать платежной организации с вашим банком в сфере интернет эквайринга в Казахстане?</div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message__user-name">Аркадий Мамонтов</div>
+                        <div class="chat-message__time">12:20</div>
+                        <div class="chat-message__text">Возможно ли работать платежной организации с вашим банком в сфере интернет эквайринга в Казахстане?</div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message__user-name">Аркадий Мамонтов</div>
+                        <div class="chat-message__time">12:20</div>
+                        <div class="chat-message__text">Возможно ли работать платежной организации с вашим банком в сфере интернет эквайринга в Казахстане?</div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message__user-name">Аркадий Мамонтов</div>
+                        <div class="chat-message__time">12:20</div>
+                        <div class="chat-message__text">Возможно ли работать платежной организации с вашим банком в сфере интернет эквайринга в Казахстане?</div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message__user-name">Аркадий Мамонтов</div>
+                        <div class="chat-message__time">12:20</div>
+                        <div class="chat-message__text">Возможно ли работать платежной организации с вашим банком в сфере интернет эквайринга в Казахстане?</div>
+                      </div>
+                    </div>
+                    <div class="chat-question-panel">
+                      <div class="chat-question-panel__title">Задать вопрос спикеру</div>
+                      <div class="chat-question-controls">
+                        <input class="ui-input" type="text" placeholder="Вопрос">
+                        <button class="btn-arrow-top" type="submit">
+                          <svg class="ico ico-mono-md-arr-top">
+                            <use xlink:href="img/sprite-mono.svg#ico-mono-md-arr-top"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="live-main-info">
+                <h1>Finance Days 2020: Рынки в меняющемся мире</h1><span class="label-info label-info--mcolor label-info--text-dark">Финтех</span>
+                <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона,</p>
+                <button class="btn btn-primary btn--min">Задать вопрос</button>
+              </div>
+              <ul class="speakers-list">
+                <li class="speaker-item">
+                  <div class="speaker-item__photo"><img src="img/photo.png" alt="">
+                    <button class="play-video-btn" type="button">
+                      <svg class="ico ico-mono-play">
+                        <use xlink:href="img/sprite-mono.svg#ico-mono-play"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="speaker-item-info">
+                    <div class="speaker-item__name">Константин Константиновия Константинопольский🇦🇷</div>
+                    <p>Бывший министр экономики и президент Центрального банка Аргентины</p><a class="btn btn-border" href="#">Все выступления спикера</a>
+                  </div>
+                </li>
+                <li class="speaker-item">
+                  <div class="speaker-item__photo"><img src="img/photo.png" alt="">
+                    <button class="play-video-btn" type="button">
+                      <svg class="ico ico-mono-play">
+                        <use xlink:href="img/sprite-mono.svg#ico-mono-play"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="speaker-item-info">
+                    <div class="speaker-item__name">Константин Константиновия Константинопольский🇦🇷</div>
+                    <p>Бывший министр экономики и президент Центрального банка Аргентины</p><a class="btn btn-border" href="#">Все выступления спикера</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="videos-section">
+                <div class="videos-header">
+                  <div class="h2-title">Видеоархив</div>
+                  <div class="tabs-wrapper">
+                    <ul class="tabs-btns">
+                      <li class="active"><span>Все видео</span></li>
+                      <li><span>Финтех</span></li>
+                      <li><span>Экономика</span></li>
+                      <li><span>Агробизнес</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="video-list">
+                  <div class="video-item">
+                    <div class="video-item__obj"><img src="img/video-min.png" alt="">
+                      <button class="play-video-btn" type="button">
+                        <svg class="ico ico-mono-play">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="video-item__tt">Давно выяснено, что при оценке дизайна и композиции </div>
+                  </div>
+                  <div class="video-item">
+                    <div class="video-item__obj"><img src="img/video-min.png" alt="">
+                      <button class="play-video-btn" type="button">
+                        <svg class="ico ico-mono-play">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="video-item__tt">Давно выяснено, что при оценке дизайна и композиции </div>
+                  </div>
+                  <div class="video-item">
+                    <div class="video-item__obj"><img src="img/video-min.png" alt="">
+                      <button class="play-video-btn" type="button">
+                        <svg class="ico ico-mono-play">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="video-item__tt">Давно выяснено, что при оценке дизайна и композиции </div>
+                  </div>
+                  <div class="video-item">
+                    <div class="video-item__obj"><img src="img/video-min.png" alt="">
+                      <button class="play-video-btn" type="button">
+                        <svg class="ico ico-mono-play">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="video-item__tt">Давно выяснено, что при оценке дизайна и композиции </div>
+                  </div>
+                  <div class="video-item">
+                    <div class="video-item__obj"><img src="img/video-min.png" alt="">
+                      <button class="play-video-btn" type="button">
+                        <svg class="ico ico-mono-play">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="video-item__tt">Давно выяснено, что при оценке дизайна и композиции </div>
+                  </div>
+                  <div class="video-item">
+                    <div class="video-item__obj"><img src="img/video-min.png" alt="">
+                      <button class="play-video-btn" type="button">
+                        <svg class="ico ico-mono-play">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="video-item__tt">Давно выяснено, что при оценке дизайна и композиции </div>
+                  </div>
+                  <div class="video-item">
+                    <div class="video-item__obj"><img src="img/video-min.png" alt="">
+                      <button class="play-video-btn" type="button">
+                        <svg class="ico ico-mono-play">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="video-item__tt">Давно выяснено, что при оценке дизайна и композиции </div>
+                  </div>
+                  <div class="video-item">
+                    <div class="video-item__obj"><img src="img/video-min.png" alt="">
+                      <button class="play-video-btn" type="button">
+                        <svg class="ico ico-mono-play">
+                          <use xlink:href="img/sprite-mono.svg#ico-mono-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="video-item__tt">Давно выяснено, что при оценке дизайна и композиции </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER :: START-->
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__wrapper">
+              <div class="footer-logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+              <p>Все фотографии используются для демонстрации контента. Пожалуйста, не используйте тексты и изображения шаблона в коммерческих целях.</p>
+              <ul class="soc-inline">
+                <li><a>
+                    <svg class="ico ico-mono-twitter">
+                      <use xlink:href="img/sprite-mono.svg#ico-mono-twitter"></use>
+                    </svg></a></li>
+                <li><a>
+                    <svg class="ico ico-mono-facebook">
+                      <use xlink:href="img/sprite-mono.svg#ico-mono-facebook"></use>
+                    </svg></a></li>
+                <li><a>
+                    <svg class="ico ico-mono-insta-r">
+                      <use xlink:href="img/sprite-mono.svg#ico-mono-insta-r"></use>
+                    </svg></a></li>
+              </ul>
+              <nav class="footer-nav">
+                <ul>
+                  <li><a href="#">Смотреть</a></li>
+                  <li><a href="#">Регистрация</a></li>
+                  <li><a href="#">Войти</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </footer>
+        <!-- FOOTER :: END-->
+      </div>
+    </div>
+  </body>
+</html>
