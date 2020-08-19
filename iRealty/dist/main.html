@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="format-detection" content="telephone=no">
-<link href="assets/css/vendors.a8049672513d2c3884a1.css" rel="stylesheet"><link href="assets/css/app.a8049672513d2c3884a1.css" rel="stylesheet"></head>
+<link href="assets/css/vendors.d7a6df349983ab4c00f7.css" rel="stylesheet"><link href="assets/css/app.d7a6df349983ab4c00f7.css" rel="stylesheet"></head>
 
 <body>
   <div class="site-wrapper">
@@ -2287,183 +2287,640 @@
               <div class="title-site title-site_h1">iRealty проверяет каждый объект</div>
               <p>Ищите объекты и изучайте сведения из ЕГРН в одном месте. Это удобно и надежно</p>
 
-              <div class="main-filter">
-                filter
-              </div>
-
-              <div class="main-filter-slick-slider slick_arrows-min-round slick_dots-line">
-                <div>
-                  <div class="mf-slide-tt">ЖК «Москва Сити» </div>
-                  <ul class="mf-list">
-                    <li>
-                      <a href="#">
-                        <span>1-комнатные</span> - 35 933
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span>2-комнатные</span> - 24 354
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span>3-комнатные</span> - 12 234
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span>машиноместа</span> - 7 252
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span>ком. недвижимость</span> - 34 238
-                      </a>
-                    </li>
-                  </ul>
+              <form class="main-filter-form">
+                <div class="simple-tabs-wrapper">
+                  <div class="simple-tabs main-filter-tabs">
+                    <label class="simple-tab current">
+                      <input type="radio" name="main-filter-tab" checked>
+                      <span>Продажа</span>
+                    </label>
+                    <label class="simple-tab">
+                      <input type="radio" name="main-filter-tab">
+                      <span>Аренда</span>
+                    </label>
+                    <label class="simple-tab">
+                      <input type="radio" name="main-filter-tab">
+                      <span>Посуточно</span>
+                    </label>
+                  </div>
+    
+                  <div class="simple-tabs-box visible">
+                    <div class="main-filter">
+                      <div class="main-filter-flex-option main-filter-flex-option_md">
+                        <div class="mf-line-control mf-line-control_obj">
+                          <div class="mf-line-control__text">Тип объекта</div>
+                          <div class="mf-line-control__aside">
+                            <span class="fa fa-angle-down"></span>
+                          </div>
+                        </div>
+        
+                        <div class="mf-line-control_obj-dd">
+                          <div class="mf-obj-options">
+                            <div class="mf-obj-options__tt">Жилая</div>
+                            <div class="r-options-list">
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">квартира</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">комната</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">новостройка</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">дом</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">таунхаус</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">участок</span>
+                              </label>
+                            </div>
+                          </div>
+        
+                          <div class="mf-obj-options">
+                            <div class="mf-obj-options__tt">Коммерческая</div>
+                            <div class="r-options-list">
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">офис</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">склад</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">производство</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">торговая площадь</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">ПСН</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">здания</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">гараж</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">бокс</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">машиноместо</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="main-filter-flex-option">
+                        <select data-placeholder="Комнат" class="select-md-main-filter">
+                          <option></option>
+                          <option>студия</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                        </select>
+                      </div>
+          
+                      <div class="main-filter-flex-option">
+                        <select data-placeholder="Метраж" class="select-md-main-filter">
+                          <option></option>
+                          <option>от 5</option>
+                          <option>от 10</option>
+                          <option>от 15</option>
+                          <option>от 20</option>
+                          <option>от 25</option>
+                          <option>от 30</option>
+                          <option>от 35</option>
+                          <option>от 40</option>
+                          <option>от 45</option>
+                        </select>
+                      </div>
+          
+                      <div class="main-filter-flex-option">
+                        <div class="mf-line-control mf-line-control_price">
+                          <div class="mf-line-control__text">Цена</div>
+                          <div class="mf-line-control__aside">
+                            <span class="icon icon-ruble-min"></span>
+                          </div>
+                        </div>
+        
+                        <div class="mf-line-control_price-dd">
+                          <div class="mf-line-price-bl">
+                            <span class="mf-line-price-bl__tt">от</span>
+                            <input type="text">
+                          </div>
+                          <div class="mf-line-price-bl">
+                            <span class="mf-line-price-bl__tt">до</span>
+                            <input type="text">
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="main-filter-flex-option">
+                        <div class="mf-search-option">
+                          <div class="mf-search-option__field">
+                            <input type="text" value="Москва, ул. Карла  Либкнехта 174 кв 56">
+                          </div>
+                          <button type="submit" class="btn btn_md">показать 1205 объектов</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+      
+                  <div class="simple-tabs-box">
+                    <div class="main-filter">
+                      <div class="main-filter-flex-option main-filter-flex-option_md">
+                        <div class="mf-line-control mf-line-control_obj">
+                          <div class="mf-line-control__text">Тип объекта</div>
+                          <div class="mf-line-control__aside">
+                            <span class="fa fa-angle-down"></span>
+                          </div>
+                        </div>
+        
+                        <div class="mf-line-control_obj-dd">
+                          <div class="mf-obj-options">
+                            <div class="mf-obj-options__tt">Жилая</div>
+                            <div class="r-options-list">
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">квартира</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">комната</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">новостройка</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">дом</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">таунхаус</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">участок</span>
+                              </label>
+                            </div>
+                          </div>
+        
+                          <div class="mf-obj-options">
+                            <div class="mf-obj-options__tt">Коммерческая</div>
+                            <div class="r-options-list">
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">офис</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">склад</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">производство</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">торговая площадь</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">ПСН</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">здания</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">гараж</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">бокс</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">машиноместо</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="main-filter-flex-option">
+                        <select data-placeholder="Комнат" class="select-md-main-filter">
+                          <option></option>
+                          <option>студия</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                        </select>
+                      </div>
+          
+                      <div class="main-filter-flex-option">
+                        <select data-placeholder="Метраж" class="select-md-main-filter">
+                          <option></option>
+                          <option>от 5</option>
+                          <option>от 10</option>
+                          <option>от 15</option>
+                          <option>от 20</option>
+                          <option>от 25</option>
+                          <option>от 30</option>
+                          <option>от 35</option>
+                          <option>от 40</option>
+                          <option>от 45</option>
+                        </select>
+                      </div>
+          
+                      <div class="main-filter-flex-option">
+                        <div class="mf-line-control mf-line-control_price">
+                          <div class="mf-line-control__text">Цена</div>
+                          <div class="mf-line-control__aside">
+                            <span class="icon icon-ruble-min"></span>
+                          </div>
+                        </div>
+        
+                        <div class="mf-line-control_price-dd">
+                          <div class="mf-line-price-bl">
+                            <span class="mf-line-price-bl__tt">от</span>
+                            <input type="text">
+                          </div>
+                          <div class="mf-line-price-bl">
+                            <span class="mf-line-price-bl__tt">до</span>
+                            <input type="text">
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="main-filter-flex-option">
+                        <div class="mf-search-option">
+                          <div class="mf-search-option__field">
+                            <input type="text" value="Москва, ул. Карла  Либкнехта 174 кв 56">
+                          </div>
+                          <button type="submit" class="btn btn_md">показать 1205 объектов</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+      
+                  <div class="simple-tabs-box">
+                    <div class="main-filter">
+                      <div class="main-filter-flex-option main-filter-flex-option_md">
+                        <div class="mf-line-control mf-line-control_obj">
+                          <div class="mf-line-control__text">Тип объекта</div>
+                          <div class="mf-line-control__aside">
+                            <span class="fa fa-angle-down"></span>
+                          </div>
+                        </div>
+        
+                        <div class="mf-line-control_obj-dd">
+                          <div class="mf-obj-options">
+                            <div class="mf-obj-options__tt">Жилая</div>
+                            <div class="r-options-list">
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">квартира</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">комната</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">новостройка</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">дом</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">таунхаус</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">участок</span>
+                              </label>
+                            </div>
+                          </div>
+        
+                          <div class="mf-obj-options">
+                            <div class="mf-obj-options__tt">Коммерческая</div>
+                            <div class="r-options-list">
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">офис</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">склад</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">производство</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">торговая площадь</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">ПСН</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">здания</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">гараж</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">бокс</span>
+                              </label>
+                              <label class="r-option-item">
+                                <input type="radio" name="r-option">
+                                <span class="r-option-item__btn">машиноместо</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="main-filter-flex-option">
+                        <select data-placeholder="Комнат" class="select-md-main-filter">
+                          <option></option>
+                          <option>студия</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                        </select>
+                      </div>
+          
+                      <div class="main-filter-flex-option">
+                        <select data-placeholder="Метраж" class="select-md-main-filter">
+                          <option></option>
+                          <option>от 5</option>
+                          <option>от 10</option>
+                          <option>от 15</option>
+                          <option>от 20</option>
+                          <option>от 25</option>
+                          <option>от 30</option>
+                          <option>от 35</option>
+                          <option>от 40</option>
+                          <option>от 45</option>
+                        </select>
+                      </div>
+          
+                      <div class="main-filter-flex-option">
+                        <div class="mf-line-control mf-line-control_price">
+                          <div class="mf-line-control__text">Цена</div>
+                          <div class="mf-line-control__aside">
+                            <span class="icon icon-ruble-min"></span>
+                          </div>
+                        </div>
+        
+                        <div class="mf-line-control_price-dd">
+                          <div class="mf-line-price-bl">
+                            <span class="mf-line-price-bl__tt">от</span>
+                            <input type="text">
+                          </div>
+                          <div class="mf-line-price-bl">
+                            <span class="mf-line-price-bl__tt">до</span>
+                            <input type="text">
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="main-filter-flex-option">
+                        <div class="mf-search-option">
+                          <div class="mf-search-option__field">
+                            <input type="text" value="Москва, ул. Карла  Либкнехта 174 кв 56">
+                          </div>
+                          <button type="submit" class="btn btn_md">показать 1205 объектов</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </form>
 
-                <div>
-                  <div class="mf-slide-tt">ЖК «Москва Сити Сити Сити Сити» </div>
-
-                  <ul class="mf-list">
-                    <li>
-                      <a href="#">
-                        <span>1-комнатные</span> - 35 933
-                      </a>
-                    </li>                    <li>
-                      <a href="#">
-                        <span>2-комнатные</span> - 24 354
-                      </a>
-                    </li>
-                  </ul>
+              <div class="main-slide-first-flex-row">
+                <div class="main-filter-slick-slider slick_arrows-min-round slick_dots-line">
+                  <div>
+                    <div class="mf-slide-tt">ЖК «Москва Сити» </div>
+                    <ul class="mf-list">
+                      <li>
+                        <a href="#">
+                          <span>1-комнатные</span> - 35 933
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>2-комнатные</span> - 24 354
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>3-комнатные</span> - 12 234
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>машиноместа</span> - 7 252
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>ком. недвижимость</span> - 34 238
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+  
+                  <div>
+                    <div class="mf-slide-tt">ЖК «Москва Сити Сити Сити Сити» </div>
+  
+                    <ul class="mf-list">
+                      <li>
+                        <a href="#">
+                          <span>1-комнатные</span> - 35 933
+                        </a>
+                      </li>                    <li>
+                        <a href="#">
+                          <span>2-комнатные</span> - 24 354
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+  
+                  <div>
+                    <div class="mf-slide-tt">ЖК «Москва Сити» </div>
+  
+                    <ul class="mf-list">
+                      <li>
+                        <a href="#">
+                          <span>1-комнатные</span> - 35 933
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>2-комнатные</span> - 24 354
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">                        <span>3-комнатные</span> - 12 234
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>ком. недвижимость</span> - 34 238
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+  
+                  <div>
+                    <div class="mf-slide-tt">ЖК «Москва Сити» </div>
+  
+                    <ul class="mf-list">
+                      <li>
+                        <a href="#">
+                          <span>1-комнатные</span> - 35 933
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>2-комнатные</span> - 24 354
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>3-комнатные</span> - 12 234
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>машиноместа</span> - 7 252
+                        </a>                    </li>
+                      <li>
+                        <a href="#">
+                          <span>ком. недвижимость</span> - 34 238
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+  
+                  <div>
+                    <div class="mf-slide-tt">ЖК «Москва Сити Сити Сити Сити» </div>
+  
+                    <ul class="mf-list">
+                      <li>
+                        <a href="#">
+                          <span>1-комнатные</span> - 35 933
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>2-комнатные</span> - 24 354
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+  
+                  <div>
+                    <div class="mf-slide-tt">ЖК «Москва Сити» </div>
+  
+                    <ul class="mf-list">
+                      <li>
+                        <a href="#">
+                          <span>1-комнатные</span> - 35 933
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>2-комнатные</span> - 24 354
+                        </a>                    </li>
+                      <li>
+                        <a href="#">
+                          <span>3-комнатные</span> - 12 234
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span>ком. недвижимость</span> - 34 238
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+  
+                  <div>
+                    <div class="mf-slide-tt">ЖК «Москва Сити» </div>
+  
+                    <ul class="mf-list">
+                      <li>
+                        <a href="#">
+                          <span>3-комнатные</span> - 12 234
+                        </a>
+                      </li>
+                      <li>                      <a href="#">
+                          <span>ком. недвижимость</span> - 34 238
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-
-                <div>
-                  <div class="mf-slide-tt">ЖК «Москва Сити» </div>
-
-                  <ul class="mf-list">
-                    <li>
-                      <a href="#">
-                        <span>1-комнатные</span> - 35 933
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span>2-комнатные</span> - 24 354
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">                        <span>3-комнатные</span> - 12 234
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span>ком. недвижимость</span> - 34 238
-                      </a>
-                    </li>
-                  </ul>
+                
+                <div class="main-slide-btn-wrapp">
+                  <div class="main-slider-btns">
+                    <a href="#" class="btn btn_md btn_border btn_border-light btn_icon">
+                      <span class="icon icon-map-marker"></span> Поиск на карте
+                    </a>
+                    <a href="#" class="btn btn_md btn_min-width btn_dark">Создать свой запрос</a>
+                  </div>
+                  <div class="main-slider-btns-more-info">Воспользуйтесь умным поиском iRealty и найдите объект подходящий именно вам</div>
                 </div>
-
-                <div>
-                  <div class="mf-slide-tt">ЖК «Москва Сити» </div>
-
-                  <ul class="mf-list">
-                    <li>
-                      <a href="#">
-                        <span>1-комнатные</span> - 35 933
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span>2-комнатные</span> - 24 354
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span>3-комнатные</span> - 12 234
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span>машиноместа</span> - 7 252
-                      </a>                    </li>
-                    <li>
-                      <a href="#">
-                        <span>ком. недвижимость</span> - 34 238
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <div class="mf-slide-tt">ЖК «Москва Сити Сити Сити Сити» </div>
-
-                  <ul class="mf-list">
-                    <li>
-                      <a href="#">
-                        <span>1-комнатные</span> - 35 933
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span>2-комнатные</span> - 24 354
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <div class="mf-slide-tt">ЖК «Москва Сити» </div>
-
-                  <ul class="mf-list">
-                    <li>
-                      <a href="#">
-                        <span>1-комнатные</span> - 35 933
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span>2-комнатные</span> - 24 354
-                      </a>                    </li>
-                    <li>
-                      <a href="#">
-                        <span>3-комнатные</span> - 12 234
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span>ком. недвижимость</span> - 34 238
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <div class="mf-slide-tt">ЖК «Москва Сити» </div>
-
-                  <ul class="mf-list">
-                    <li>
-                      <a href="#">
-                        <span>3-комнатные</span> - 12 234
-                      </a>
-                    </li>
-                    <li>                      <a href="#">
-                        <span>ком. недвижимость</span> - 34 238
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div class="main-slide-btn-wrapp">
-                <div class="main-slider-btns">
-                  <a href="#" class="btn btn_md btn_border btn_border-light btn_icon">
-                    <span class="icon icon-map-marker"></span> Поиск на карте
-                  </a>
-                  <a href="#" class="btn btn_md btn_min-width btn_dark">Создать свой запрос</a>
-                </div>
-                <div class="main-slider-btns-more-info">Воспользуйтесь умным поиском iRealty и найдите объект подходящий именно вам</div>
               </div>
             </div>
           </div>
@@ -2679,23 +3136,23 @@
           <div class="main-cards-slider-header">
             <div class="title-tags-filter">
               <div class="title-site title-site_h2">Новые поступления</div>
-              <div class="inline-tags-filter">
-                <div class="inline-tags-filter-btns">
-                  <label>
+              <div class="simple-tabs-wrapper inline-tags-filter">
+                <div class="simple-tabs inline-tags-filter-btns">
+                  <label class="simple-tab">
                     <input type="radio" name="filter-tags-radio">
                     <span class="round-tags-btn">Все</span>
                   </label>
-                  <label>
+                  <label class="simple-tab">
                     <input type="radio" name="filter-tags-radio">
                     <span class="round-tags-btn">Продать</span>
                   </label>
-                  <label>
+                  <label class="simple-tab">
                     <input type="radio" name="filter-tags-radio">
                     <span class="round-tags-btn">Сдать</span>
                   </label>
                 </div>
 
-                <ul class="inline-tags-filter-more-btns">
+                <ul class="simple-tabs-box inline-tags-filter-more-btns">
                   <li>
                     <label>
                       <input type="radio" checked name="filter-tags-all">
@@ -2728,7 +3185,7 @@
                   </li>
                 </ul>
 
-                <ul class="inline-tags-filter-more-btns">
+                <ul class="simple-tabs-box inline-tags-filter-more-btns">
                   <li>
                     <label>
                       <input type="radio" checked name="filter-tags-sell">
@@ -2755,7 +3212,7 @@
                   </li>
                 </ul>
 
-                <ul class="inline-tags-filter-more-btns">
+                <ul class="simple-tabs-box inline-tags-filter-more-btns">
                   <li>
                     <label>
                       <input type="radio" checked name="filter-tags-rent">
@@ -4115,6 +4572,6 @@
     </div>
   </footer>
   <!-- end footer -->
-<script type="text/javascript" src="assets/js/vendors.a8049672513d2c3884a1.js"></script><script type="text/javascript" src="assets/js/app.a8049672513d2c3884a1.js"></script></body>
+<script type="text/javascript" src="assets/js/vendors.d7a6df349983ab4c00f7.js"></script><script type="text/javascript" src="assets/js/app.d7a6df349983ab4c00f7.js"></script></body>
 
 </html>
