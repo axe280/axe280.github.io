@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="format-detection" content="telephone=no">
-<link href="assets/css/vendors.d7a6df349983ab4c00f7.css" rel="stylesheet"><link href="assets/css/app.d7a6df349983ab4c00f7.css" rel="stylesheet"></head>
+<link href="assets/css/vendors.b9e7b1db166b3b19bcbc.css" rel="stylesheet"><link href="assets/css/app.b9e7b1db166b3b19bcbc.css" rel="stylesheet"></head>
 
 <body>
   <div class="site-wrapper">
@@ -2052,7 +2052,7 @@
   
                 <div>
                   <a href="#" class="m-slide-card">
-                    <span class="m-slide-card__tt">Квартиры от застройщиков</span>
+                    <span class="m-slide-card__tt">Квартира</span>
                     <span class="m-slide-card__val">75 569</span>
                     <span class="m-slide-card__img">
                       <img src="assets/img/apart-1.jpg" alt="">
@@ -2082,7 +2082,7 @@
   
                 <div>
                   <a href="#" class="m-slide-card">
-                    <span class="m-slide-card__tt">Квартиры от застройщиков</span>
+                    <span class="m-slide-card__tt">Квартира</span>
                     <span class="m-slide-card__val">75 569</span>
                     <span class="m-slide-card__img">
                       <img src="assets/img/apart-1.jpg" alt="">
@@ -2444,12 +2444,14 @@
                           <div class="mf-search-option__field">
                             <input type="text" value="Москва, ул. Карла  Либкнехта 174 кв 56">
                           </div>
-                          <button type="submit" class="btn btn_md">показать 1205 объектов</button>
+                          <button type="submit" class="btn btn_md">
+                            <span class="mf-search-btn-inner">Найти</span>
+                            <span class="mf-search-btn-inner">Показать <b class="font-600">1205 объектов</b></span>
+                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
-      
       
                   <div class="simple-tabs-box">
                     <div class="main-filter">
@@ -2591,131 +2593,74 @@
                           <div class="mf-search-option__field">
                             <input type="text" value="Москва, ул. Карла  Либкнехта 174 кв 56">
                           </div>
-                          <button type="submit" class="btn btn_md">показать 1205 объектов</button>
+                          <button type="submit" class="btn btn_md">
+                            <span class="mf-search-btn-inner">Найти</span>
+                            <span class="mf-search-btn-inner">Показать <b class="font-600">1205 объектов</b></span>
+                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
-      
-      
+
                   <div class="simple-tabs-box">
                     <div class="main-filter">
                       <div class="main-filter-flex-option main-filter-flex-option_md">
-                        <div class="mf-line-control mf-line-control_obj">
-                          <div class="mf-line-control__text">Тип объекта</div>
+                        <select data-placeholder="Тип объекта" class="select-md-main-filter">
+                          <option></option>
+                          <option>Квартира</option>
+                          <option>Дом</option>
+                        </select>
+                      </div>
+          
+                      <div class="main-filter-flex-option">
+                        <div class="mf-line-control mf-line-control_date">
+                          <div class="mf-line-control__text">Даты</div>
+                          <div class="mf-line-control__aside">
+                            <span class="fa fa-calendar"></span>
+                          </div>
+                        </div>
+        
+                        <div class="mf-line-control_date-dd">
+                          <!-- // datepicker -->
+                        </div>
+                      </div>
+          
+                      <div class="main-filter-flex-option main-filter-flex-option_md">
+                        <div class="mf-line-control mf-line-control_people">
+                          <div class="mf-line-control__text">Состав</div>
                           <div class="mf-line-control__aside">
                             <span class="fa fa-angle-down"></span>
                           </div>
                         </div>
         
-                        <div class="mf-line-control_obj-dd">
-                          <div class="mf-obj-options">
-                            <div class="mf-obj-options__tt">Жилая</div>
-                            <div class="r-options-list">
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">квартира</span>
-                              </label>
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">комната</span>
-                              </label>
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">новостройка</span>
-                              </label>
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">дом</span>
-                              </label>
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">таунхаус</span>
-                              </label>
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">участок</span>
-                              </label>
+                        <div class="mf-line-control_people-dd">
+                          <div class="mf-people-options">
+                            <div class="mf-people-options__tt">Взрослые</div>
+                            <div class="col-panel-tc">
+                              <span class="minus-input"></span>
+                              <span>
+                                <input type="text" value="1" disabled>
+                              </span>
+                              <span class="plus-input"></span>
                             </div>
                           </div>
-        
-                          <div class="mf-obj-options">
-                            <div class="mf-obj-options__tt">Коммерческая</div>
-                            <div class="r-options-list">
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">офис</span>
-                              </label>
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">склад</span>
-                              </label>
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">производство</span>
-                              </label>
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">торговая площадь</span>
-                              </label>
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">ПСН</span>
-                              </label>
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">здания</span>
-                              </label>
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">гараж</span>
-                              </label>
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">бокс</span>
-                              </label>
-                              <label class="r-option-item">
-                                <input type="radio" name="r-option">
-                                <span class="r-option-item__btn">машиноместо</span>
-                              </label>
+
+                          <div class="mf-people-options">
+                            <div class="mf-people-options__tt">Дети</div>
+                            <div class="col-panel-tc">
+                              <span class="minus-input"></span>
+                              <span>
+                                <input type="text" value="0" disabled>
+                              </span>
+                              <span class="plus-input"></span>
                             </div>
                           </div>
                         </div>
                       </div>
           
-                      <div class="main-filter-flex-option">
-                        <select data-placeholder="Комнат" class="select-md-main-filter">
-                          <option></option>
-                          <option>студия</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                          <option>6</option>
-                          <option>7</option>
-                          <option>8</option>
-                        </select>
-                      </div>
-          
-                      <div class="main-filter-flex-option">
-                        <select data-placeholder="Метраж" class="select-md-main-filter">
-                          <option></option>
-                          <option>от 5</option>
-                          <option>от 10</option>
-                          <option>от 15</option>
-                          <option>от 20</option>
-                          <option>от 25</option>
-                          <option>от 30</option>
-                          <option>от 35</option>
-                          <option>от 40</option>
-                          <option>от 45</option>
-                        </select>
-                      </div>
-          
-                      <div class="main-filter-flex-option">
+                      <div class="main-filter-flex-option main-filter-flex-option_md">
                         <div class="mf-line-control mf-line-control_price">
-                          <div class="mf-line-control__text">Цена</div>
+                          <div class="mf-line-control__text">Цена / сутки</div>
                           <div class="mf-line-control__aside">
                             <span class="icon icon-ruble-min"></span>
                           </div>
@@ -2738,7 +2683,10 @@
                           <div class="mf-search-option__field">
                             <input type="text" value="Москва, ул. Карла  Либкнехта 174 кв 56">
                           </div>
-                          <button type="submit" class="btn btn_md">показать 1205 объектов</button>
+                          <button type="submit" class="btn btn_md">
+                            <span class="mf-search-btn-inner">Найти</span>
+                            <span class="mf-search-btn-inner">Показать <b class="font-600">1205 объектов</b></span>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -2916,6 +2864,9 @@
                   <div class="main-slider-btns">
                     <a href="#" class="btn btn_md btn_border btn_border-light btn_icon">
                       <span class="icon icon-map-marker"></span> Поиск на карте
+                      <span class="btn-map-hint">
+                        <span class="icon icon-map-marker"></span> Поиск на карте
+                      </span>
                     </a>
                     <a href="#" class="btn btn_md btn_min-width btn_dark">Создать свой запрос</a>
                   </div>
@@ -3120,11 +3071,321 @@
                 <button type="button" class="close-btn-md-round">
                   <span class="icon icon-close-md-round"></span>
                 </button>
+
+                <div class="map-ui-wrapper">
+                  <div class="map-ui-buttons-group">
+                    <button class="btn-st-round" type="button">
+                      <span class="fa fa-map-marker"></span> На карте
+                    </button>
+                    <button class="btn-st-round" type="button">
+                      <span class="fa fa-list-ul"></span> Список
+                    </button>
+                    <button class="btn-st-round" type="button">
+                      <span class="fa fa-dot-circle-o"></span> Объекты в этом доме
+                    </button>
+                    <button class="btn-st-round active" type="button">
+                      <span class="fa fa-circle-thin"></span>
+                      <span class="fa fa-circle-thin"></span> Похожие объекты
+                    </button>
+                    <button class="btn-st-round" type="button">
+                      <span class="fa fa-circle-thin"></span> Все объекты
+                    </button>
+                    <button class="btn-st-round" type="button">
+                      <span class="icon icon-elips-i"></span> Выделить область
+                    </button>
+                  </div>
+                  
+                  
+                  <div class="map-ui-search-wrapper">
+                    <button class="map-ui-search-control" type="button">
+                      <span class="fa fa-search"></span>
+                    </button>
+
+                    <div class="map-ui-search-filter">
+                      <div class="map-ui-search-filter-controls">
+                        <div class="map-ui-search-filter-control">
+                          <select class="select-min">
+                            <option>Купить</option>
+                            <option>Продать</option>
+                          </select>
+                        </div>
+
+                        <div class="map-ui-search-filter-control">
+                          <select class="select-min">
+                            <option>Квартиру</option>
+                            <option>Квартиру</option>
+                            <option>Квартиру</option>
+                            <option>Квартиру</option>
+                            <option>Квартиру</option>
+                          </select>
+                        </div>
+
+                        <div class="map-ui-search-filter-control">
+                          <select class="select-min">
+                            <option>1,2,3 комн.</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+
+                        <div class="map-ui-search-filter-control">
+                          <div class="map-ui-search-price">
+                            <input type="text">
+                            <span class="map-ui-search-price__tt">от</span>
+                          </div>
+                        </div>
+
+                        <div class="map-ui-search-filter-control">
+                          <div class="map-ui-search-price">
+                            <input type="text">
+                            <span class="map-ui-search-price__tt">до</span>
+                            <span class="icon icon-ruble-min"></span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="map-ui-search">
+                        <div class="map-ui-search__field">
+                          <input type="text" placeholder="Город, адрес, район, метро или ЖК">
+                        </div>
+                        <button class="btn btn_icon">
+                          <span class="fa fa-search"></span> Найти
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="map-ui-bottom-buttons">
+                    <div class="map-ui-button-list-checks">
+                      <div class="map-ui-button-list-dd">
+                        <ul class="checks-list">
+                          <li>
+                            <div class="form-st-checkbox">
+                              <span class="icon icon-school"></span>
+                              <label>
+                                <input type="checkbox" checked>
+                                <span class="fake-control"></span>
+                                <span class="fake-control-text">Школы</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-st-checkbox">
+                              <span class="icon icon-letters"></span>
+                              <label>
+                                <input type="checkbox">
+                                <span class="fake-control"></span>
+                                <span class="fake-control-text">Детские сады</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-st-checkbox">
+                              <span class="icon icon-hospital"></span>
+                              <label>
+                                <input type="checkbox">
+                                <span class="fake-control"></span>
+                                <span class="fake-control-text">Поликлиники</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-st-checkbox">
+                              <span class="icon icon-shopping-basket"></span>
+                              <label>
+                                <input type="checkbox">
+                                <span class="fake-control"></span>
+                                <span class="fake-control-text">Продукт. магазин</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-st-checkbox">
+                              <span class="icon icon-coffee-cup"></span>
+                              <label>
+                                <input type="checkbox">
+                                <span class="fake-control"></span>
+                                <span class="fake-control-text">Кафе</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="form-st-checkbox">
+                              <span class="icon icon-train"></span>
+                              <label>
+                                <input type="checkbox" checked>
+                                <span class="fake-control"></span>
+                                <span class="fake-control-text">Метро</span>
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                      <button class="btn-st-round" type="button">
+                        Инфраструктура <span class="fa fa-angle-down"></span>
+                      </button>
+                    </div>
+                    <button class="btn-st-round" type="button">
+                      <span class="fa fa-list-ul"></span> Найти клиентов
+                    </button>
+                  </div>
+                  
+                  
+                  <div class="map-ui-sliders-wrapper">
+                    <button class="map-ui-open-objects btn-st-round" type="button">
+                      <span class="fa fa-long-arrow-down"></span> Список объектов
+                    </button>
+                    
+                    <div class="map-ui-sliders">
+                      <div class="map-ui-slider-item">
+                        <div class="slick_dots-line slick-min-slider">
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                        </div>
+  
+                        <div class="map-ui-slider-info">
+                          <div class="map-ui-slider-info__tt"><a href="#" class="link_dark">3 к квартира 150/86/24м2</a></div>
+                          <div class="map-ui-slider-info__text">г. Москва, ул. Свердлова д. 103</div>
+                          <div class="map-ui-slider-info-flex-jc">
+                            <div class="map-ui-slider-info__price">
+                              2 600 000 <span class="icon icon-ruble-min"></span> <small>сут</small>
+                            </div>
+                            <div class="map-ui-slider-icons">
+                              <a href="#" class="fa fa-phone"></a>
+                              <a href="#" class="fa fa-envelope-o"></a>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+  
+  
+                      <div class="map-ui-slider-item">
+                        <div class="slick_dots-line slick-min-slider">
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                        </div>
+  
+                        <div class="map-ui-slider-info">
+                          <div class="map-ui-slider-info__tt"><a href="#" class="link_dark">3 к квартира 150/86/24м2</a></div>
+                          <div class="map-ui-slider-info__text">г. Москва, ул. Свердлова д. 103</div>
+                          <div class="map-ui-slider-info-flex-jc">
+                            <div class="map-ui-slider-info__price">
+                              2 600 000 <span class="icon icon-ruble-min"></span> <small>сут</small>
+                            </div>
+                            <div class="map-ui-slider-icons">
+                              <a href="#" class="fa fa-phone"></a>
+                              <a href="#" class="fa fa-envelope-o"></a>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+  
+  
+                      <div class="map-ui-slider-item">
+                        <div class="slick_dots-line slick-min-slider">
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                          <div>
+                            <a href="#" class="st-card-img">
+                              <img src="assets/img/card-lg-slide.png" alt="">
+                            </a>
+                          </div>
+                        </div>
+  
+                        <div class="map-ui-slider-info">
+                          <div class="map-ui-slider-info__tt"><a href="#" class="link_dark">3 к квартира 150/86/24м2</a></div>
+                          <div class="map-ui-slider-info__text">г. Москва, ул. Свердлова д. 103</div>
+                          <div class="map-ui-slider-info-flex-jc">
+                            <div class="map-ui-slider-info__price">
+                              2 600 000 <span class="icon icon-ruble-min"></span> <small>сут</small>
+                            </div>
+                            <div class="map-ui-slider-icons">
+                              <a href="#" class="fa fa-phone"></a>
+                              <a href="#" class="fa fa-envelope-o"></a>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               
               <div class="main-tiles-long__tt">Поиск по карте</div>
               <p>Теперь вы можете искать на карте не только объекты, но и клиентов в вашем районе и по вашем предпочтениям</p>
-              <button type="button" class="btn btn_md btn_min-width btn_round">Найти на карте</button>
+              <button type="button" class="btn btn_md btn_min-width btn_round m-tiles-btn">Найти на карте</button>
             </div>
           </div>
         </div>
@@ -4572,6 +4833,6 @@
     </div>
   </footer>
   <!-- end footer -->
-<script type="text/javascript" src="assets/js/vendors.d7a6df349983ab4c00f7.js"></script><script type="text/javascript" src="assets/js/app.d7a6df349983ab4c00f7.js"></script></body>
+<script type="text/javascript" src="assets/js/vendors.b9e7b1db166b3b19bcbc.js"></script><script type="text/javascript" src="assets/js/app.b9e7b1db166b3b19bcbc.js"></script></body>
 
 </html>
