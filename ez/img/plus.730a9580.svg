@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="26" viewBox="0 0 39 26">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <g>
+                                    <path fill="#17D547" d="M9.116 0C4.106 0 0 4.099 0 9.1c0 5.001 4.106 9.1 9.116 9.1s9.116-4.099 9.116-9.1c0-5.001-4.106-9.1-9.116-9.1z" transform="translate(-945 -803) translate(140 120) translate(0 55) translate(50 598) translate(715) translate(40.087 30) translate(0 3.25)"/>
+                                    <path fill="#0ABA36" d="M18.232 9.1c0 5.001-4.106 9.1-9.116 9.1V0c5.01 0 9.116 4.099 9.116 9.1z" transform="translate(-945 -803) translate(140 120) translate(0 55) translate(50 598) translate(715) translate(40.087 30) translate(0 3.25)"/>
+                                    <path fill="#FFF" fill-rule="nonzero" d="M14.458 8.034L14.458 10.166 10.184 10.166 10.184 14.432 8.048 14.432 8.048 10.166 3.775 10.166 3.775 8.034 8.048 8.034 8.048 3.768 10.184 3.768 10.184 8.034z" transform="translate(-945 -803) translate(140 120) translate(0 55) translate(50 598) translate(715) translate(40.087 30) translate(0 3.25)"/>
+                                </g>
+                                <g>
+                                    <path fill="#17D547" d="M13.023 0C5.865 0 0 5.855 0 13s5.865 13 13.023 13c7.158 0 13.023-5.855 13.023-13S20.181 0 13.023 0z" transform="translate(-945 -803) translate(140 120) translate(0 55) translate(50 598) translate(715) translate(40.087 30) translate(11.07)"/>
+                                    <path fill="#0ABA36" d="M26.046 13c0 7.145-5.865 13-13.023 13V0c7.158 0 13.023 5.855 13.023 13z" transform="translate(-945 -803) translate(140 120) translate(0 55) translate(50 598) translate(715) translate(40.087 30) translate(11.07)"/>
+                                    <path fill="#FFF" fill-rule="nonzero" d="M20.654 11.477L20.654 14.523 14.549 14.523 14.549 20.617 11.497 20.617 11.497 14.523 5.392 14.523 5.392 11.477 11.497 11.477 11.497 5.383 14.549 5.383 14.549 11.477z" transform="translate(-945 -803) translate(140 120) translate(0 55) translate(50 598) translate(715) translate(40.087 30) translate(11.07)"/>
+                                    <path fill="#D7FFE1" fill-rule="nonzero" d="M20.654 11.477L20.654 14.523 14.549 14.523 14.549 20.617 13.023 20.617 13.023 5.383 14.549 5.383 14.549 11.477z" opacity=".3" transform="translate(-945 -803) translate(140 120) translate(0 55) translate(50 598) translate(715) translate(40.087 30) translate(11.07)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

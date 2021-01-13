@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <g fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path fill="#FFB300" d="M5.564 23.112L21.918 6.77c.367-.364.96-.364 1.324 0l4.28 4.102-17.104 17.097-4.854-4.856z" transform="translate(-698 -1675) translate(140 120) translate(0 1247) translate(50 203) translate(508 100) translate(0 5)"/>
+                                <path fill="#FFAA39" d="M23.236 6.764L6.225 23.775 10.418 27.968 27.521 10.872 23.242 6.77z" transform="translate(-698 -1675) translate(140 120) translate(0 1247) translate(50 203) translate(508 100) translate(0 5)"/>
+                                <path fill="#FFD350" d="M6.227 23.775L2.034 19.583 19.05 2.579 23.242 6.77z" transform="translate(-698 -1675) translate(140 120) translate(0 1247) translate(50 203) translate(508 100) translate(0 5)"/>
+                                <path fill="#FDBF00" d="M26.112 11.898c-.249 0-.487-.099-.662-.275l-7.06-7.06c-.365-.365-.366-.956-.003-1.322l1.822-1.834C21.081.535 22.238.056 23.465.056h.01c1.227.002 2.377.483 3.238 1.352l1.881 1.882c.867.858 1.348 2.008 1.35 3.235.004 1.23-.477 2.391-1.349 3.264l-1.82 1.833c-.176.176-.414.276-.663.276z" transform="translate(-698 -1675) translate(140 120) translate(0 1247) translate(50 203) translate(508 100) translate(0 5)"/>
+                                <path fill="#FFE6CC" d="M.936 30c-.246 0-.486-.097-.662-.274-.222-.221-.316-.538-.255-.845l1.759-8.82c.067-.338.315-.613.646-.713.334-.1.69-.01.933.235l7.061 7.061c.244.243.335.603.235.933-.1.33-.374.58-.712.646l-8.82 1.76L.935 30z" transform="translate(-698 -1675) translate(140 120) translate(0 1247) translate(50 203) translate(508 100) translate(0 5)"/>
+                                <path fill="#FF9100" d="M27.652 2.348l-5.74 5.74 3.537 3.537c.176.176.413.274.661.274h.002c.248 0 .487-.1.662-.277l1.821-1.833c.872-.873 1.353-2.032 1.349-3.264-.002-1.227-.483-2.377-1.35-3.235l-.942-.942z" transform="translate(-698 -1675) translate(140 120) translate(0 1247) translate(50 203) translate(508 100) translate(0 5)"/>
+                                <path fill="#FC9" d="M6.887 23.113L.274 29.726c.176.177.416.274.662.274l.183-.019 8.82-1.759c.338-.067.613-.315.713-.646.1-.33.01-.689-.235-.933l-3.53-3.53z" transform="translate(-698 -1675) translate(140 120) translate(0 1247) translate(50 203) translate(508 100) translate(0 5)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

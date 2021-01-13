@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25">
+    <g fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <path fill="#FFDA44" d="M8.8 14.011l-.67.312.67-.312zM6.823 9.79l4.753.046-4.753-.046z" transform="translate(-516 -803) translate(140 120) translate(0 55) translate(50 598) translate(326 30) translate(0 5)"/>
+                                <path fill="#FDB902" d="M0.04 0.11L0.04 15.17 3.082 11.517 5.058 15.756 6.929 14.884z" transform="translate(-516 -803) translate(140 120) translate(0 55) translate(50 598) translate(326 30) translate(0 5)"/>
+                                <path fill="#FD8C02" d="M6.823 9.773L11.576 9.79 0.04 0.11 6.929 14.884 8.131 14.323 8.799 14.011z" transform="translate(-516 -803) translate(140 120) translate(0 55) translate(50 598) translate(326 30) translate(0 5)"/>
+                            </g>
+                            <g>
+                                <path fill="#FFDA44" d="M13.749 21.893l-1.045.487 1.045-.487zM10.66 15.281l7.427.046-7.426-.046z" transform="translate(-516 -803) translate(140 120) translate(0 55) translate(50 598) translate(326 30) translate(7)"/>
+                                <path fill="#FDB902" d="M0.062 0.172L0.062 23.702 4.815 17.996 7.903 24.619 10.826 23.256z" transform="translate(-516 -803) translate(140 120) translate(0 55) translate(50 598) translate(326 30) translate(7)"/>
+                                <path fill="#FD8C02" d="M10.599 15.098L18.025 15.125 0 0 10.764 23.084 12.642 22.208 13.687 21.721z" transform="translate(-516 -803) translate(140 120) translate(0 55) translate(50 598) translate(326 30) translate(7)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

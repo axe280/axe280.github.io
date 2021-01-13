@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path fill="#FFC43B" d="M34.142 5.858C30.365 2.08 25.342 0 20 0L10 20l10 20c5.342 0 10.365-2.08 14.142-5.858C37.92 30.365 40 25.342 40 20c0-5.342-2.08-10.365-5.858-14.142z" transform="translate(-700 -555) translate(345 60) translate(0 470) translate(315) translate(40 25)"/>
+                            <path fill="#FFD87C" d="M5.858 5.858C2.08 9.635 0 14.658 0 20c0 3.524.925 6.971 2.679 10.003L0 40l9.997-2.679C13.029 39.075 16.477 40 20 40V0C14.658 0 9.635 2.08 5.858 5.858z" transform="translate(-700 -555) translate(345 60) translate(0 470) translate(315) translate(40 25)"/>
+                            <path fill="#FFEBBE" d="M23.315 16.685h5.8v-5.8C26.782 8.552 23.56 7.109 20 7.109l-2.344 4.102L20 15.312c1.295 0 2.466.525 3.315 1.373zM20 24.688l-2.344 4.101L20 32.891c3.56 0 6.782-1.443 9.115-3.776v-5.8h-5.8c-.849.848-2.02 1.372-3.315 1.372z" transform="translate(-700 -555) translate(345 60) translate(0 470) translate(315) translate(40 25)"/>
+                            <path fill="#FFEBBE" d="M20 15.313V7.108c-3.56 0-6.782 1.443-9.115 3.776v5.8h5.8c.849-.848 2.02-1.372 3.315-1.372zM16.685 23.315h-5.8v5.8c2.333 2.333 5.555 3.776 9.115 3.776v-8.203c-1.295 0-2.466-.525-3.315-1.373z" transform="translate(-700 -555) translate(345 60) translate(0 470) translate(315) translate(40 25)"/>
+                            <path fill="#FF9100" d="M29.115 10.885l-5.8 5.8c.848.849 1.372 2.02 1.372 3.315s-.524 2.466-1.372 3.315l5.8 5.8c2.333-2.333 3.776-5.555 3.776-9.115 0-3.56-1.443-6.782-3.776-9.115z" transform="translate(-700 -555) translate(345 60) translate(0 470) translate(315) translate(40 25)"/>
+                            <path fill="#FDBF00" d="M15.313 20c0-1.295.524-2.466 1.372-3.315l-5.8-5.8C8.552 13.218 7.109 16.44 7.109 20c0 3.56 1.443 6.782 3.776 9.115l5.8-5.8c-.848-.849-1.372-2.02-1.372-3.315z" transform="translate(-700 -555) translate(345 60) translate(0 470) translate(315) translate(40 25)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

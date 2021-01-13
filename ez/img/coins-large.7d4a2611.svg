@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="35" viewBox="0 0 50 35">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g>
+                                <g>
+                                    <g transform="translate(-654 -805) translate(140 120) translate(0 55) translate(50 598) translate(440 8) translate(24 20) translate(0 4) translate(0 5)">
+                                        <circle cx="12.5" cy="12.5" r="12.5" fill="#FFE14D" fill-rule="nonzero"/>
+                                        <path fill="#FB3" fill-rule="nonzero" d="M25 12.5C25 5.607 19.393 0 12.5 0v25C19.393 25 25 19.393 25 12.5z"/>
+                                        <path fill="#FDB902" fill-rule="nonzero" d="M12.5 22.021c-5.25 0-9.521-4.271-9.521-9.521 0-5.25 4.271-9.521 9.521-9.521 5.25 0 9.521 4.271 9.521 9.521 0 5.25-4.271 9.521-9.521 9.521z"/>
+                                        <path fill="#FD8C02" fill-rule="nonzero" d="M22.021 12.5c0-5.25-4.271-9.521-9.521-9.521V22.02c5.25 0 9.521-4.271 9.521-9.521z"/>
+                                        <path fill="#DB7900" d="M12.247 7.031l-.001 1.324h.633V7.031h1.215v1.324h4.656v2.453l-3.82 3.801h3.82v1.962h-4.656v1.398H12.88l-.001-1.399h-.633l.001 1.399h-1.215V16.57H9.565l6.174-6.08H6.275V8.355h4.757V7.03h1.215zm-1.974 7.43l-2.15 2.085H6.25v-2.084h4.023zm3.416-3.09l-2.353 2.282h-5.06v-2.281h7.413z"/>
+                                    </g>
+                                    <g transform="translate(-654 -805) translate(140 120) translate(0 55) translate(50 598) translate(440 8) translate(24 20) translate(0 4) translate(15)">
+                                        <circle cx="17.5" cy="17.5" r="17.5" fill="#FFE14D" fill-rule="nonzero"/>
+                                        <path fill="#FB3" fill-rule="nonzero" d="M35 17.5C35 7.85 27.15 0 17.5 0v35C27.15 35 35 27.15 35 17.5z"/>
+                                        <path fill="#FDB902" fill-rule="nonzero" d="M17.5 30.83c-7.35 0-13.33-5.98-13.33-13.33S10.15 4.17 17.5 4.17s13.33 5.98 13.33 13.33-5.98 13.33-13.33 13.33z"/>
+                                        <path fill="#FD8C02" fill-rule="nonzero" d="M30.83 17.5c0-7.35-5.98-13.33-13.33-13.33v26.66c7.35 0 13.33-5.98 13.33-13.33z"/>
+                                        <path fill="#DB7900" d="M17.146 9.844l-.001 1.853h.886V9.844h1.7v1.853h6.519v3.434l-5.35 5.322h5.35v2.746h-6.519v1.957h-1.7V23.2h-.886v1.957h-1.7V23.2h-2.054l8.643-8.514H8.785v-2.987l6.66-.001V9.844h1.7zm-2.763 10.403l-3.012 2.918H8.75v-2.918h5.633zm4.782-4.326l-3.295 3.193H8.785V15.92h10.38z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

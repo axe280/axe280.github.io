@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+    <g fill="none" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path fill="#FFEA80" d="M34 21.98L34 25.965 32.506 26.961 27.877 26.961 25.965 25.965 25.965 21.98z" transform="translate(-33 -320) translate(0 80) translate(23 38) translate(7 202) translate(3)"/>
+                            <path fill="#FFC34D" d="M34 21.98L34 25.965 32.506 26.961 29.949 26.961 29.949 21.98zM25.965 25.965L25.965 29.949 24.471 30.945 19.909 30.945 17.996 29.949 17.996 25.965z" transform="translate(-33 -320) translate(0 80) translate(23 38) translate(7 202) translate(3)"/>
+                            <path fill="#F93" d="M25.965 25.965L25.965 29.949 24.471 30.945 21.98 30.945 21.98 25.965z" transform="translate(-33 -320) translate(0 80) translate(23 38) translate(7 202) translate(3)"/>
+                            <path fill="#FFC34D" d="M34 25.965L34 29.949 32.506 30.945 27.877 30.945 25.965 29.949 25.965 25.965z" transform="translate(-33 -320) translate(0 80) translate(23 38) translate(7 202) translate(3)"/>
+                            <path fill="#F93" d="M34 25.965L34 29.949 32.506 30.945 29.949 30.945 29.949 25.965z" transform="translate(-33 -320) translate(0 80) translate(23 38) translate(7 202) translate(3)"/>
+                            <path fill="#353D4D" d="M34 29.949L34 34 25.965 34 23.973 32.008 25.965 29.949z" transform="translate(-33 -320) translate(0 80) translate(23 38) translate(7 202) translate(3)"/>
+                            <path fill="#1E2533" d="M29.949 29.949L34 29.949 34 34 29.949 34z" transform="translate(-33 -320) translate(0 80) translate(23 38) translate(7 202) translate(3)"/>
+                            <path fill="#FFEA80" d="M25.965 29.949L25.965 34 17.996 34 16.004 32.008 17.996 29.949z" transform="translate(-33 -320) translate(0 80) translate(23 38) translate(7 202) translate(3)"/>
+                            <path fill="#FFC34D" d="M21.98 29.949L25.965 29.949 25.965 34 21.98 34z" transform="translate(-33 -320) translate(0 80) translate(23 38) translate(7 202) translate(3)"/>
+                            <path fill="#FFEA80" d="M10.027 29.949L17.996 29.949 17.996 34 10.027 34z" transform="translate(-33 -320) translate(0 80) translate(23 38) translate(7 202) translate(3)"/>
+                            <path fill="#FFC34D" d="M14.012 29.949L17.996 29.949 17.996 34 14.012 34z" transform="translate(-33 -320) translate(0 80) translate(23 38) translate(7 202) translate(3)"/>
+                            <path fill="#FDB902" d="M31.39.066l-4.875 2.438.891 1.782 1.744-.872c-1.086 2.634-3.324 7.093-7.17 11.19-4.647 4.95-11.718 9.369-21.98 9.369v1.992c9.887 0 17.038-3.958 21.98-8.675 5.028-4.799 7.837-10.383 9.096-13.399l.97 1.942 1.783-.891L31.39.066z" transform="translate(-33 -320) translate(0 80) translate(23 38) translate(7 202) translate(3)"/>
+                            <path fill="#FD8C02" d="M31.076 3.891l.97 1.942 1.783-.891L31.39.066l-4.876 2.438.891 1.782 1.744-.872c-1.086 2.634-3.324 7.093-7.17 11.19v2.686c5.028-4.799 7.837-10.383 9.096-13.399z" transform="translate(-33 -320) translate(0 80) translate(23 38) translate(7 202) translate(3)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
