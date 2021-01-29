@@ -1,0 +1,45 @@
+ProjectTitle: Project-name
+
+PageList:
+  - file: default.html
+    ready: 100
+  - file: homepage.html
+    ready: 100
+  - file: product.html
+    ready: 100
+  - file: product-tarif.html
+    ready: 100
+  - file: product-list.html
+    ready: 100
+  - file: calc.html
+    ready: 100
+  - file: bag.html
+    ready: 100
+  - file: reviews.html
+    ready: 100
+  - file: partners.html
+    ready: 100
+  - file: upd-tarif.html
+    ready: 100
+  - file: about.html
+    ready: 100
+  - file: faq.html
+    ready: 100
+  - file: site-map.html
+    ready: 100
+  - file: news.html
+    ready: 100
+  - file: news-detail.html
+    ready: 100
+  - file: promo.html
+    ready: 100
+  - file: promo-detail.html
+    ready: 100
+  - file: guarantee.html
+    ready: 100
+  - file: delivery.html
+    ready: 100
+  - file: 404.html
+    ready: 100
+  - file: contacts.html
+    ready: 100
