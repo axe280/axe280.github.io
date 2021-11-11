@@ -2225,7 +2225,6 @@ table td:last-child{
 
 @media (min-width:980px){
   .main-section{
-    display:flex;
     max-width:var(--container-width);
     margin:0 auto;
   }
@@ -2385,6 +2384,31 @@ table td:last-child{
 @media (min-width:1360px){
   .main-section__image{
     height:540px;
+  }
+}
+
+.main-section .st-carousel .owl-nav{
+  top:140px;
+}
+
+@media (min-width:740px){
+  .main-section .st-carousel .owl-nav{
+    top:270px;
+  }
+}
+
+@media (min-width:980px){
+  .main-section .st-carousel .owl-nav{
+    top:50%;
+    left:20px;
+    right:20px;
+    width:auto;
+  }
+}
+
+@media (min-width:980px){
+  .main-carousel-item{
+    display:flex;
   }
 }
 
